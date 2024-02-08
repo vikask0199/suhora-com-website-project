@@ -3,6 +3,7 @@ import Navbar from './components/reusable/Navbar';
 import Login from './components/auth/Login';
 import SignUp from './components/auth/SignUp';
 import CardContainer from './components/team/CardContainer';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
@@ -29,9 +30,10 @@ function App() {
   return (
     <>
       <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
-      <Login />
-      <SignUp />
-      <CardContainer />
+      {/* <Login /> */}
+      {/* <SignUp /> */}
+      {/* <CardContainer /> */}
+      <ContactPage />
     </>
   )
 }
