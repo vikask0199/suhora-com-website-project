@@ -1,39 +1,42 @@
 import { useEffect, useState } from 'react';
-import Navbar from './components/reusable/Navbar';
-import Login from './components/auth/Login';
-import SignUp from './components/auth/SignUp';
+import { Route, Routes } from 'react-router-dom';
 import CardContainer from './components/team/CardContainer';
+import PublicOutlet from './outlets/PublicOutlet';
 import ContactPage from './pages/ContactPage';
+import HomePage from './pages/HomePage';
+import TeamsPage from './pages/TeamsPage';
 
 function App() {
-  const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
+  // const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
 
-  const toggleTheme = () => {
-    const newTheme = theme === 'theme-dark' ? 'theme-white' : 'theme-dark';
-    setTheme(newTheme);
-    localStorage.setItem('theme', newTheme);
-  };
+  // const toggleTheme = () => {
+  //   const newTheme = theme === 'theme-dark' ? 'theme-white' : 'theme-dark';
+  //   setTheme(newTheme);
+  //   localStorage.setItem('theme', newTheme);
+  // };
 
-  useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as 'theme-dark' | 'theme-white' | null;
-    if (savedTheme) {
-      setTheme(savedTheme);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const savedTheme = localStorage.getItem('theme') as 'theme-dark' | 'theme-white' | null;
+  //   if (savedTheme) {
+  //     setTheme(savedTheme);
+  //   }
+  // }, []);
 
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
+  // useEffect(() => {
+  //   document.body.className = theme;
+  // }, [theme]);
 
 
 
   return (
     <>
-      <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
-      {/* <Login /> */}
-      {/* <SignUp /> */}
-      {/* <CardContainer /> */}
-      <ContactPage />
+      <Routes>
+        <Route path='/' element={<PublicOutlet />}>
+          <Route index element={<HomePage />} />
+          <Route path='/contact-us' element={<ContactPage />} />
+          <Route path='/team' element={<TeamsPage />} />
+        </Route>
+      </Routes>
     </>
   )
 }
