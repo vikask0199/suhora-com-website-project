@@ -4,24 +4,46 @@
 
 
 .theme-dark {
-    --bg-color: #1a202c;
+    --bg-color: rgb(31 41 55);
     --text-color: #fff;
     --container-bg-color: #2d3748;
-    --button-bg-color: #4a5568;
-    --button-text-color: #fff;
-    --button-hover-bg-color: #718096;
+    --bg-gradient: linear-gradient(43deg, #0f659f 0%, #000000 20%, #000000 80%, #864963 100%);
+    --conatct-card-bg-color: #0F0F11;
+    --button-bg-color: #fff;
+    --button-text-color: #000000;
 }
 
 .theme-white {
     --bg-color: #fff;
     --text-color: #1a202c;
     --container-bg-color: #f7fafc;
-    --button-bg-color: #edf2f7;
-    --button-text-color: #1a202c;
-    --button-hover-bg-color: #cbd5e0;
+    --bg-gradient: linear-gradient(43deg, #8ac4eb 0%, #fff 20%, #fff 80%, #F2DCE5 100%);
+    --conatct-card-bg-color: #F5F8FA;
+    --button-bg-color: #000000;
+    --button-text-color: #fff;
 }
 
 .root-container{
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+.root-card-container{
+    background-image: var(--bg-gradient);
+    color: var(--text-color);
+}
+.contact-card{
+    background-color: var(--conatct-card-bg-color);
+}
+
+.contact-input-container{
+    background-color: transparent;
+    color: var(--text-color);
+}
+.contact-button{
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+}
+.contact-button:hover{
+    background-color: var(--button-text-color);
+    color: var(--button-bg-color);
 }

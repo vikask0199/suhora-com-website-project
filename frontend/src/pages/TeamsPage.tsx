@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Card from "../components/reusable/Card"
 
 
