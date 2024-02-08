@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.theme-dark {
+    --bg-color: #1a202c;
+    --text-color: #fff;
+    --container-bg-color: #2d3748;
+    --button-bg-color: #4a5568;
+    --button-text-color: #fff;
+    --button-hover-bg-color: #718096;
+}
+
+.theme-white {
+    --bg-color: #fff;
+    --text-color: #1a202c;
+    --container-bg-color: #f7fafc;
+    --button-bg-color: #edf2f7;
+    --button-text-color: #1a202c;
+    --button-hover-bg-color: #cbd5e0;
+}
+
+.root-container{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}

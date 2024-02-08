@@ -1,7 +1,7 @@
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <div className="root-container h-screen w-screen">Login</div>
   )
 }
 
