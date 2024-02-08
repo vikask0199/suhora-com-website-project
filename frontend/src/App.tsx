@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './components/reusable/Navbar';
 import Login from './components/auth/Login';
 import SignUp from './components/auth/SignUp';
+import PartnersCarousel from './components/home/PartnersCarousel';
 
 function App() {
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
@@ -31,6 +32,7 @@ function App() {
       <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
       <Login />
       <SignUp />
+      <PartnersCarousel />
     </>
   )
 }
