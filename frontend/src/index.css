@@ -11,6 +11,7 @@
     --button-text-color: #fff;
     --button-hover-bg-color: #718096;
     --bg-gradient: linear-gradient(43deg, #426d89 0%, #000000 20%, #000000 80%, #864963 100%);
+
 }
 
 .theme-white {
@@ -35,9 +36,17 @@
 
 .cards {
     color: var(--text-color);
+
 }
 
 .introo
 {
     color: var(--text-color);
 }
+.contact-card{
+    background-color: var(--conatct-card-bg-color);
+    --conatct-card-bg-color: #F5F8FA;
+--conatct-card-bg-color: #0F0F11;
+
+}
+

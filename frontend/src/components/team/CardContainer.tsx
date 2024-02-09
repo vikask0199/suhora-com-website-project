@@ -11,7 +11,7 @@ const CardContainer = () => {
                     <Intro />
                 </div>
 
-                <div className="flex flex-wrap pt-20">
+                <div className="flex flex-wrap pt-20 root-card-container">
                     {employees.map((employee, index) => (
                         <Card key={index} employee={employee} />
                     ))}
