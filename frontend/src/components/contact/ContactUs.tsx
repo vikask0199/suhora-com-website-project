@@ -47,11 +47,11 @@ const ContactUs = () => {
                 </div>
             </div>
             <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full">
-                <input type="text" placeholder="Your Name" className="focus:border-blue-500 outline-none border-2 border-slate-500 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <input type="text" placeholder="Email Address" className="focus:border-blue-500 outline-none border-2 border-slate-500 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <input type="text" placeholder="Phone Number" className="focus:border-blue-500 outline-none border-2 border-slate-500 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <input type="text" placeholder="Subject" className="focus:border-blue-500 outline-none border-2 border-slate-500 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <textarea name="" id="" placeholder="Your Message" className="focus:border-blue-500 resize-none h-52 contact-input-container rounded-lg indent-5 placeholder:text-lg outline-none border-2 border-slate-500">
+                <input type="text" placeholder="Your Name" name="name" className="focus:border-blue-500 outline-none border-2 border-slate-500 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <input type="text" placeholder="Email Address" name="email" className="focus:border-blue-500 outline-none border-2 border-slate-500 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <input type="text" placeholder="Phone Number" name="phone" className="focus:border-blue-500 outline-none border-2 border-slate-500 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <input type="text" placeholder="Subject" name="subject" className="focus:border-blue-500 outline-none border-2 border-slate-500 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <textarea name="message" id="" placeholder="Your Message" className="focus:border-blue-500 resize-none h-52 contact-input-container rounded-lg indent-5 placeholder:text-lg outline-none border-2 border-slate-500">
 
                 </textarea>
                 <div className="">
