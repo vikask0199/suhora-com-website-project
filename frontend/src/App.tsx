@@ -4,9 +4,8 @@ import PublicOutlet from './outlets/PublicOutlet';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import TeamsPage from './pages/TeamsPage';
-// import CardContainer from './components/team/CardContainer';
-// import PrinciplePage from './pages/PrinciplePage';
 
+import './App.css';
 
 function App() {
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');

@@ -3,8 +3,7 @@
 
 const Footer = () => {
   return (
-    <div className="root-container mt-[5vh]">
-
+    <div className="root-container">
       <footer className="">
         <div className="mx-auto w-full max-w-screen-xl">
           <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
