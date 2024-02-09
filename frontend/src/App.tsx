@@ -2,7 +2,11 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/reusable/Navbar';
 import Login from './components/auth/Login';
 import SignUp from './components/auth/SignUp';
-import CardContainer from './components/team/CardContainer';
+// import CardContainer from './components/team/CardContainer';
+import JourneyPage from './pages/JourneyPage';
+// import PrinciplePage from './pages/PrinciplePage';
+
+
 
 function App() {
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
@@ -31,7 +35,10 @@ function App() {
       <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
       <Login />
       <SignUp />
-      <CardContainer />
+      {/* <CardContainer /> */}
+      {/* <PrinciplePage /> */}
+      <JourneyPage/>
+
     </>
   )
 }

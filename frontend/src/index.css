@@ -23,11 +23,21 @@
     --bg-gradient: linear-gradient(43deg, #8ac4eb 0%, #fff 20%, #fff 80%, #F2DCE5 100%);
 }
 
-.root-container{
+.root-container {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
-.root-card-container{
+
+.root-card-container {
     background-image: var(--bg-gradient);
     color: var(--bg-color);
+}
+
+.cards {
+    color: var(--text-color);
+}
+
+.introo
+{
+    color: var(--text-color);
 }
