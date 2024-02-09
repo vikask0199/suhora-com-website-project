@@ -1,0 +1,181 @@
+
+  
+  .hex {
+    display: inline-block;
+   
+    
+    width: 60%;
+    position: absolute;
+  }
+  
+  .hex::before {
+    content: "";
+    display: block;
+    background: currentColor;
+    padding-top: 86.6%;
+    background-image: url('src/assets/img/defense.jpg');
+    /* 100%*cos(30) */
+    background-position: center;
+    background-size: cover;
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    
+  }
+    
+  .hex1 {
+    display: inline-block; 
+    width: 60%;
+    position: absolute;
+  }
+  
+  .hex1::before {
+    content: "";
+    display: block;
+    background: currentColor;
+    padding-top: 86.6%;
+    background-image: url('src/assets/img/disaster.jpg');
+    background-position: center;
+    background-size: cover;
+    /* 100%*cos(30) */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  
+  .hex2 {
+    display: inline-block; 
+    width: 60%;
+    position: absolute;
+  }
+  
+  .hex2::before {
+    content: "";
+    display: block;
+    background: currentColor;
+    padding-top: 86.6%;
+    background-image: url('src/assets/img/energy.jpg');
+    background-position: center;
+    background-size: cover;
+    /* 100%*cos(30) */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .hex3 {
+    display: inline-block; 
+    width: 60%;
+    position: absolute;
+  }
+  
+  .hex3::before {
+    content: "";
+    display: block;
+    background: currentColor;
+    padding-top: 86.6%;
+    background-image: url('src/assets/img/forest.jpg');
+    background-position: center;
+    background-size: cover;
+    /* 100%*cos(30) */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .hex4 {
+    display: inline-block; 
+    width: 60%;
+    position: absolute;
+  }
+  
+  .hex4::before {
+    content: "";
+    display: block;
+    background: currentColor;
+    padding-top: 86.6%;
+    background-image: url('src/assets/img/mining.jpg');
+    background-position: center;
+    background-size: cover;
+    /* 100%*cos(30) */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .hex5 {
+    display: inline-block; 
+    width: 60%;
+    position: absolute;
+  }
+  
+  .hex5::before {
+    content: "";
+    display: block;
+    background: currentColor;
+    padding-top: 86.6%;
+    background-image: url('src/assets/img/agri.jpg');
+    background-position: center;
+    background-size: cover;
+    /* 100%*cos(30) */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .hex6 {
+    display: inline-block; 
+    width: 60%;
+    position: absolute;
+  }
+  
+  .hex6::before {
+    content: "";
+    display: block;
+    background: currentColor;
+    padding-top: 86.6%;
+    background-image: url('src/assets/img/infra.jpg');
+    background-position: center;
+    background-size: cover;
+    /* 100%*cos(30) */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  .hex7 {
+    display: inline-block; 
+    width: 60%;
+    position: absolute;
+  }
+  
+  .hex7::before {
+    content: "";
+    display: block;
+    background: currentColor;
+    padding-top: 86.6%;
+    background-image: url('src/assets/img/dark_bg.jpg   ');
+    /* 100%*cos(30) */
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  }
+  
+  .pos0 {
+    top: -22%;
+    left: 30%;
+ 
+  }
+
+  .pos1 {
+    top: 6%;
+    left: -19%;
+  }
+  
+  .pos2 {
+    top: 6%;
+    left: 79%;
+  }
+  
+  .pos3 {
+    top: 34%;
+    left: 30%;
+  }
+  
+  .pos4 {
+    top: 62%;
+    left: -19%;
+  }
+  
+  .pos5 {
+    top: 90%;
+    left: 30%;
+  }
+  
+  .pos6 {
+    top: 62%;
+    left: 79%;
+  }
+
+  .hid{
+    visibility: hidden; position: absolute;
+  }

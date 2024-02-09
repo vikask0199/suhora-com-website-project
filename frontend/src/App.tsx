@@ -3,7 +3,10 @@ import { useEffect, useState } from 'react';
 import Navbar from './components/reusable/Navbar';
 // import Tabs from './components/Tabs';
 import AboutUs from './components/home/AboutUs';
-import Services from './components/home/Services';
+import Tailored from './components/home/Tailored';
+import Products from './components/home/Products';
+// import WhomWeServe from './components/home/WhomWeServe';
+import Serve from './components/home/Serve';
 // import HomeCarousel from './components/home/HomeCarousel';
 
 
@@ -35,7 +38,12 @@ function App() {
       {/* <HomeCarousel></HomeCarousel> */}
       {/* <Tabs toggleTheme={toggleTheme} currentTheme={theme}></Tabs> */}
       <AboutUs ></AboutUs>
-      <Services ></Services>
+      {/* <WhomWeServe></WhomWeServe> */}
+      
+     
+      <Serve></Serve>
+       <Products></Products>
+       <Tailored ></Tailored>
  
     </>
   )

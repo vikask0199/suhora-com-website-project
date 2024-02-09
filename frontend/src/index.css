@@ -11,7 +11,9 @@
     --button-text-color: #fff;
     --button-hover-bg-color: #718096;
     --bg-color-alt: #1a202cf9;
-    --bg-image-service: url('../src/assets/img/dark_bg.jpg');
+    --text-color-alt: #fffffffe;
+    --conatct-card-bg-color: #0F0F11;
+    /* --bg-image-service: url('../src/assets/img/dark_bg.jpg'); */
  
 }
 
@@ -23,12 +25,16 @@
     --button-text-color: #1a202c;
     --button-hover-bg-color: #cbd5e0;
     --bg-color-alt:#f7f6f6;
-    --bg-image-service: url('../src/assets/img/light_bg.png');
+    --conatct-card-bg-color: #5f58fa;
+    /* --bg-image-service: url('../src/assets/img/light_bg.png'); */
 }
 
 .root-container{
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+.contact-card{
+    background-color: var(--conatct-card-bg-color);
 }
 
 .root-container-alt{
