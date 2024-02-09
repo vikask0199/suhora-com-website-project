@@ -1,7 +1,12 @@
+import HomeHeader from "../components/home/HomeHeader"
+import PartnersCarousel from "../components/home/PartnersCarousel"
 
 const HomePage = () => {
   return (
-    <div>HomePage</div>
+    <>
+      <HomeHeader />
+      <PartnersCarousel />
+    </>
   )
 }
 

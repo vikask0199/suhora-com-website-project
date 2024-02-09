@@ -1,12 +1,11 @@
 import { useEffect, useState } from 'react';
-import Navbar from './components/reusable/Navbar';
-import Login from './components/auth/Login';
-import SignUp from './components/auth/SignUp';
-import CardContainer from './components/team/CardContainer';
-// import JourneyPage from './pages/JourneyPage';
-// import PrinciplePage from './pages/PrinciplePage';
+import { Route, Routes } from 'react-router-dom';
+import PublicOutlet from './outlets/PublicOutlet';
+import ContactPage from './pages/ContactPage';
+import HomePage from './pages/HomePage';
+import TeamsPage from './pages/TeamsPage';
 
-
+import './App.css';
 
 function App() {
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
@@ -32,13 +31,13 @@ function App() {
 
   return (
     <>
-      <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
-      <Login />
-      <SignUp />
-      <CardContainer />
-      {/* <PrinciplePage /> */}
-      {/* <JourneyPage/> */}
-
+      <Routes>
+        <Route path='/' element={<PublicOutlet />}>
+          <Route index element={<HomePage />} />
+          <Route path='/contact-us' element={<ContactPage />} />
+          <Route path='/team' element={<TeamsPage />} />
+        </Route>
+      </Routes>
     </>
   )
 }
