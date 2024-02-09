@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+
 import { Route, Routes } from 'react-router-dom';
 import PublicOutlet from './outlets/PublicOutlet';
 import ContactPage from './pages/ContactPage';

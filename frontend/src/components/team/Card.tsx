@@ -1,6 +1,6 @@
 
 import { FaLinkedin } from "react-icons/fa6"
-import bb from "../../assets/img/carddImage.jpg"
+
 interface CardProps {
   employee: EmployeeData;
 }
@@ -34,7 +34,7 @@ const Card = ({ employee }: CardProps) => {
         </div>
         <div className="flex gap-6 text-xl">
           <FaLinkedin />
-          <FaLinkedin />
+          
         </div>
       </div>
     </>

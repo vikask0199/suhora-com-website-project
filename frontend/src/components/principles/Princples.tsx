@@ -28,7 +28,7 @@ const Princples = () => {
        <div>
         <WhatWeStandFor/>
        </div>
-            <div className="flex ">
+            <div className="flex">
 
                 {tabs.map((tab, index) => (
                     <button
