@@ -4,6 +4,8 @@ import PublicOutlet from './outlets/PublicOutlet';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import TeamsPage from './pages/TeamsPage';
+// import CardContainer from './components/team/CardContainer';
+// import PrinciplePage from './pages/PrinciplePage';
 
 
 function App() {
