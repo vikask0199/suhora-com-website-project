@@ -10,6 +10,9 @@
     --button-bg-color: #4a5568;
     --button-text-color: #fff;
     --button-hover-bg-color: #718096;
+    --bg-color-alt: #1a202cf9;
+    --bg-image-service: url('../src/assets/img/dark_bg.jpg');
+ 
 }
 
 .theme-white {
@@ -19,9 +22,22 @@
     --button-bg-color: #edf2f7;
     --button-text-color: #1a202c;
     --button-hover-bg-color: #cbd5e0;
+    --bg-color-alt:#f7f6f6;
+    --bg-image-service: url('../src/assets/img/light_bg.png');
 }
 
 .root-container{
     background-color: var(--bg-color);
     color: var(--text-color);
+}
+
+.root-container-alt{
+    background-color: var(--bg-color-alt);
+    color: var(--text-color);
+    background-image: var(--bg-image-service);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+     
+
 }

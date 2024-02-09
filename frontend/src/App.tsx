@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
 
 import Navbar from './components/reusable/Navbar';
-import Login from './components/auth/Login';
-import SignUp from './components/auth/SignUp';
+// import Tabs from './components/Tabs';
+import AboutUs from './components/home/AboutUs';
+import Services from './components/home/Services';
+// import HomeCarousel from './components/home/HomeCarousel';
+
 
 function App() {
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
@@ -29,8 +32,11 @@ function App() {
   return (
     <>
       <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
-      <Login />
-      <SignUp />
+      {/* <HomeCarousel></HomeCarousel> */}
+      {/* <Tabs toggleTheme={toggleTheme} currentTheme={theme}></Tabs> */}
+      <AboutUs ></AboutUs>
+      <Services ></Services>
+ 
     </>
   )
 }
