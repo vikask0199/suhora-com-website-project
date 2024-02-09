@@ -85,4 +85,8 @@
 --conatct-card-bg-color: #0F0F11;
 
 }
-
+.principle
+{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
