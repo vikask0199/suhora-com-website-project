@@ -2,6 +2,7 @@ import { ChevronDownIcon, MoonIcon, SunIcon } from '@heroicons/react/solid';
 import { useState } from 'react';
 import LogoLight from '../../assets/img/suhora_logo.png'; // Import your light theme logo image file
 import LogoDark from '../../assets/img/suhora_white.png'; // Import your dark theme logo image file
+import { Link } from 'react-router-dom';
 
 interface NavbarProps {
   toggleTheme: () => void;
@@ -26,7 +27,7 @@ const Navbar = (props: NavbarProps) => {
   };
 
   return (
-    <header className={`py-4 ${props.currentTheme === 'theme-dark' ? 'bg-gray-900 text-white border-b-2' : 'bg-white text-gray-900 border-b-2' } sticky top-0 left-0 right-0 z-20`}>
+    <header className={`py-4 ${props.currentTheme === 'theme-dark' ? 'bg-gray-900 text-white border-b-2' : 'bg-white text-gray-900 border-b-2'} sticky top-0 left-0 right-0 z-20`}>
       <div className="container mx-auto flex justify-between items-center relative">
         <div className="flex items-center">
           <img src={props.currentTheme === 'theme-dark' ? LogoDark : LogoLight} alt="Logo" className="h-8 mr-4 sm:mr-10" />
@@ -41,21 +42,27 @@ const Navbar = (props: NavbarProps) => {
               <li>
                 <div className="relative">
                   <a onClick={toggleDropdown} className={` flex hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Who We Are
-                  <ChevronDownIcon className={`w-5 h-5 ${dropdownOpen ? 'transform rotate-180' : ''}`} />
+                    <ChevronDownIcon className={`w-5 h-5 ${dropdownOpen ? 'transform rotate-180' : ''}`} />
                   </a>
                   {dropdownOpen && (
-                    <div className={`absolute top-full left-0 py-2 rounded shadow-lg mt-2 sm:mt-0 sm:right-auto sm:bg-transparent sm:text-gray-900 sm:shadow-none inset-0 h-full w-full cursor-default` }>
-                      <a href="#" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>Our Principles</a>
-                      <a href="#" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>Our Team</a>
-                      <a href="#" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>Our Journey</a>
+                    <div className={`absolute top-full left-0 py-2 rounded shadow-lg mt-2 sm:mt-0 sm:right-auto sm:bg-transparent sm:text-gray-900 sm:shadow-none inset-0 h-full w-full cursor-default`}>
+                      <Link to="/our-principles">
+                        <a href="#" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>Our Principles</a>
+                      </Link>
+                      <Link to="/our-teams">
+                        <a href="#" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>Our Team</a>
+                      </Link>
+                      <Link to="/our-journey">
+                        <a href="#" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>Our Journey</a>
+                      </Link>
                     </div>
                   )}
                 </div>
               </li>
               <li>
                 <div className="relative">
-                  <a onClick={toggleDropdown1} className={`flex hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Products 
-                  <ChevronDownIcon className={`w-5 h-5 ${dropdownOpen1 ? 'transform rotate-180' : ''}`} /></a>
+                  <a onClick={toggleDropdown1} className={`flex hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Products
+                    <ChevronDownIcon className={`w-5 h-5 ${dropdownOpen1 ? 'transform rotate-180' : ''}`} /></a>
                   {dropdownOpen1 && (
                     <div className={`absolute top-full left-0 bg-white text-gray-900 py-2 rounded shadow-lg mt-2 sm:mt-0 sm:right-auto sm:bg-transparent sm:text-gray-900 sm:shadow-none`}>
                       <a href="#" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>SPADE</a>
@@ -67,7 +74,9 @@ const Navbar = (props: NavbarProps) => {
               </li>
               <li><a href="#" className={`hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Services</a></li>
               <li><a href="#" className={`hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Blog</a></li>
-              <li><a href="#" className={`hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Contact Us</a></li>
+              <Link to="/contact-us">
+                <li><a href="#" className={`hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Contact Us</a></li>
+              </Link>
             </ul>
           </nav>
         </div>

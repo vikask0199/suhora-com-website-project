@@ -6,7 +6,7 @@ const CardContainer = () => {
     console.log(employees);
     return (
         <>
-            <div className="  w-screen h-screen root-card-container flex gap-4 flex-col  ">
+            <div className="w-screen root-card-container flex gap-4 flex-col  ">
                 <div>
                     <Intro />
                 </div>
