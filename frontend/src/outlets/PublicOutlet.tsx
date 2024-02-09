@@ -28,7 +28,7 @@ const PublicOutlet = () => {
         <>
             <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
             <Outlet />
-            <Footer />
+            <Footer currentTheme={theme}/>
         </>
     )
 }
