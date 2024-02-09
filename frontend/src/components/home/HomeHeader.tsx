@@ -1,0 +1,44 @@
+import img1 from "../../assets/img/hero-1.jpg"
+import img2 from "../../assets/img/hero-4.jpg"
+import img3 from "../../assets/img/hero-5.jpg"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import TypeWriterText from "./TypeWriterText";
+
+const ImageSlider = () => {
+    const  settings = {
+        dots: true,
+        lazyLoad: true as any,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay:true,
+        initialSlide:0,
+        pauseOnHover:false
+    };
+  return (
+<div className="relative overflow-hidden">
+  <div className="absolute z-10 top-[40%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-white">
+    <div className="mt-[3vh]">
+      <span>Space </span>
+      <TypeWriterText text="Analytics" />
+      <span> Simplified</span>
+    </div>
+  </div>
+  <Slider {...settings}>
+    <div className="relative text-center">
+      <img className="h-[80vh] w-[100vw]" src={img3} />
+    </div>
+    <div className="relative text-center">
+      <img className="h-[80vh] w-[100vw]" src={img2} />
+    </div>
+    <div className="relative text-center">
+      <img className="h-[80vh] w-[100vw]" src={img1} />
+    </div>
+  </Slider>
+</div>
+  )
+}
+export default ImageSlider
