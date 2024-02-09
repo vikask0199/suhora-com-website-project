@@ -9,7 +9,7 @@ const Card = () => {
 
 <div className="w-[50vh] mt-[10vh] h-[60vh] bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
     <a href="#">
-   
+
 
     </a>
     <div className="pt-[30vh ] mt-[10vh] ">
