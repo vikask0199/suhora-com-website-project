@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { MoonIcon, SunIcon, ChevronDownIcon } from '@heroicons/react/solid';
+import { ChevronDownIcon, MoonIcon, SunIcon } from '@heroicons/react/solid';
+import { useState } from 'react';
 import LogoLight from '../../assets/img/suhora_logo.png'; // Import your light theme logo image file
 import LogoDark from '../../assets/img/suhora_white.png'; // Import your dark theme logo image file
 
