@@ -76,13 +76,14 @@
     color: var(--text-color);
 
 }
+
 .introo {
     color: var(--text-color);
 }
-.contact-card{
+
+.contact-card {
     background-color: var(--conatct-card-bg-color);
     --conatct-card-bg-color: #F5F8FA;
---conatct-card-bg-color: #0F0F11;
+    --conatct-card-bg-color: #0F0F11;
 
 }
-

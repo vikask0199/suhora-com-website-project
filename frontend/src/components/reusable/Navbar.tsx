@@ -27,10 +27,12 @@ const Navbar = (props: NavbarProps) => {
   };
 
   return (
-    <header className={`py-4 ${props.currentTheme === 'theme-dark' ? 'bg-gray-900 text-white border-b-2' : 'bg-white text-gray-900 border-b-2'} sticky top-0 left-0 right-0 z-20`}>
+    <header className={`py-4 ${props.currentTheme === 'theme-dark' ? 'bg-gray-900 text-white' : 'bg-white text-gray-900'} sticky top-0 left-0 right-0 z-20 px-14`}>
       <div className="container mx-auto flex justify-between items-center relative">
         <div className="flex items-center">
-          <img src={props.currentTheme === 'theme-dark' ? LogoDark : LogoLight} alt="Logo" className="h-8 mr-4 sm:mr-10" />
+          <Link to="/" className='h-10 w-40 flex justify-start items-center mr-4'>
+            <img src={props.currentTheme === 'theme-dark' ? LogoDark : LogoLight} alt="Logo" className="w-full object-cover" />
+          </Link>
           <button onClick={toggleMobileNav} className="block sm:hidden text-white">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -38,7 +40,9 @@ const Navbar = (props: NavbarProps) => {
           </button>
           <nav className={`absolute top-full left-0  w-full sm:relative sm:top-auto sm:left-auto sm:w-auto sm:flex sm:items-center ${mobileNavOpen ? 'block' : 'hidden'}`}>
             <ul className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
-              <li><a href="./" className={`hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Home</a></li>
+              <Link to="/">
+                <li><a href="./" className={`hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Home</a></li>
+              </Link>
               <li>
                 <div className="relative">
                   <a onClick={toggleDropdown} className={` flex hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Who We Are
