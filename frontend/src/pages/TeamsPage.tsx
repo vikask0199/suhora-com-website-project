@@ -1,11 +1,11 @@
 
-import Card from "../components/reusable/Card"
+import CardContainer from "../components/team/CardContainer"
 
 
 const TeamsPage = () => {
     return (
         <>
-            <Card />
+            <CardContainer />
         </>
     )
 }

@@ -23,11 +23,12 @@
     --button-text-color: #fff;
 }
 
-.root-container{
+.root-container {
     background-color: var(--bg-color);
     color: var(--text-color);
 }
-.root-card-container{
+
+.root-card-container {
     background-image: var(--bg-gradient);
     color: var(--text-color);
 }
@@ -46,4 +47,14 @@
 .contact-button:hover{
     background-color: var(--button-text-color);
     color: var(--button-bg-color);
+    color: var(--bg-color);
+}
+
+.cards {
+    color: var(--text-color);
+}
+
+.introo
+{
+    color: var(--text-color); 
 }

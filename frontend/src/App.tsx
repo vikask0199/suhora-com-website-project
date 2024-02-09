@@ -1,10 +1,11 @@
-import { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import CardContainer from './components/team/CardContainer';
 import PublicOutlet from './outlets/PublicOutlet';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import TeamsPage from './pages/TeamsPage';
+// import CardContainer from './components/team/CardContainer';
+// import PrinciplePage from './pages/PrinciplePage';
+
 
 function App() {
   // const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
