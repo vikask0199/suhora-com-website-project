@@ -23,7 +23,7 @@ const PublicOutlet = () => {
         document.body.className = theme;
     }, [theme]);
 
-    
+
     return (
         <>
             <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
