@@ -5,9 +5,6 @@ import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import TeamsPage from './pages/TeamsPage';
 
-import Navbar from './components/reusable/Navbar';
-// import Tabs from './components/Tabs';
-// import HomeCarousel from './components/home/HomeCarousel';
 
 function App() {
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
@@ -40,10 +37,6 @@ function App() {
           <Route path='/team' element={<TeamsPage />} />
         </Route>
       </Routes>
-      {/* <Navbar toggleTheme={toggleTheme} currentTheme={theme} /> */}
-      {/* <HomeCarousel></HomeCarousel> */}
-      {/* <Tabs toggleTheme={toggleTheme} currentTheme={theme}></Tabs> */}
-
     </>
   )
 }
