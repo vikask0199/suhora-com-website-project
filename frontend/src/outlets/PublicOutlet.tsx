@@ -22,13 +22,14 @@ const PublicOutlet = () => {
     useEffect(() => {
         document.body.className = theme;
     }, [theme]);
+    
 
 
     return (
         <>
             <Navbar toggleTheme={toggleTheme} currentTheme={theme} />
             <Outlet />
-            <Footer />
+            <Footer currentTheme={theme}/>
         </>
     )
 }

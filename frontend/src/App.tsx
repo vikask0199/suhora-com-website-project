@@ -1,13 +1,10 @@
-
 import { Route, Routes } from 'react-router-dom';
 import PublicOutlet from './outlets/PublicOutlet';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import TeamsPage from './pages/TeamsPage';
-
-import './App.css';
-import PrinciplePage from './pages/PrinciplePage';
 import JourneyPage from './pages/JourneyPage';
+import PrinciplePage from './pages/PrinciplePage';
 
 function App() {
   // const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');

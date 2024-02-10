@@ -51,10 +51,10 @@ function PartnersCarousel() {
   };
 
   return (
-    <div className="bg-gray-100 min-h-96 align-middle">
-      <h3 className="text-left pt-20 pl-10 text-4xl">Our Amazing Partners</h3>
-      <div className="border-t-4 border-blue-900 "></div>
-      <Slider {...settings} className="pt-16">
+    <div className="align-middle root-container-separator px-14 py-10">
+      <h3 className=" text-4xl mb-2">Our Amazing Partners</h3>
+      <div className="border-t-2 border-blue-900 "></div>
+      <Slider {...settings} className="py-6">
         <div className="w-full blue-border h-[24vh]">
           <img src={img1} alt="img" className="compimg ml-[12vh] mt-[6vh] h-2/4  green-border mb-1" />
         </div>

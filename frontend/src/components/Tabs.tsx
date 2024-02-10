@@ -1,5 +1,5 @@
 // import { TabsProps } from '@material-tailwind/react';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 interface TabsProps {
   toggleTheme: () => void;
