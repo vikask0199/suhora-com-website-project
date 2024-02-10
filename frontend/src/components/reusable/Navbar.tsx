@@ -27,7 +27,7 @@ const Navbar = (props: NavbarProps) => {
   };
 
   return (
-    <header className={`py-4 ${props.currentTheme === 'theme-dark' ? 'bg-gray-900 text-white border-slate-800' : 'bg-white text-gray-900 border-slate-200'} sticky top-0 left-0 right-0 z-20 px-14 border-b`}>
+    <header className={`py-4 ${props.currentTheme === 'theme-dark' ? 'bg-gray-900 text-white border-slate-800' : 'bg-white text-gray-900 border-slate-200'} sticky top-0 left-0 right-0 z-20 px-14 border-b `}>
       <div className="container mx-auto flex justify-between items-center relative">
         <div className="flex items-center">
           <Link to="/" className='h-10 w-40 flex justify-start items-center mr-4'>

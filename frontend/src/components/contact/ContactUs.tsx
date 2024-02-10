@@ -13,9 +13,8 @@ const ContactUs = () => {
 
 
     return (
-        <div className="flex flex-col gap-5 root-container items-center py-5">
+        <div className="flex flex-col gap-5 root-container-separator items-center py-5">
             <p className="font-semibold text-4xl">Contact Form</p>
-            {/* <h1 className="font-bold text-4xl text-center">Contact Form Our Contact Address Here.</h1> */}
             <div className="flex w-full justify-evenly flex-wrap gap-y-5 px-5">
                 <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards">
                     <SlEarphones className="text-4xl text-blue-500" />

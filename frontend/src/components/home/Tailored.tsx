@@ -1,10 +1,8 @@
-import React from "react";
-// import heroicons
-import { DatabaseIcon } from '@heroicons/react/solid'
+import { DatabaseIcon } from '@heroicons/react/solid';
 
 const Tailored = () => {
   return (
-    <section className="pb-12 pt-20 dark:bg-dark lg:pb-[90px] lg:pt-[120px]">
+    <section className="px-14 py-10 root-container">
       <div className="container mx-auto ">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
@@ -12,7 +10,7 @@ const Tailored = () => {
               <span className="mb-2 block text-2xl font-semibold text-primary">
                 Tailored Services
               </span>
-              <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+              <h2 className="mb-3 text-3xl font-bold leading-[1.2]  sm:text-4xl md:text-[40px]">
                 What We Offer
               </h2>
               <p className="text-base text-body-color dark:text-dark-6">
@@ -27,9 +25,9 @@ const Tailored = () => {
           <ServiceCard
             title="Defence Intelligence"
             details="We dejoy working with discerning clients, people for whom qualuty, service, integrity & aesthetics."
-            icon={              
-                 <DatabaseIcon className="h-15 w-15 text-blue-500" />
-                 
+            icon={
+              <DatabaseIcon className="h-15 w-15 text-blue-500" />
+
             }
           />
           <ServiceCard
@@ -82,7 +80,6 @@ const Tailored = () => {
               </svg>
             }
           />
-
         </div>
       </div>
     </section>
@@ -94,15 +91,15 @@ export default Tailored;
 const ServiceCard = ({ icon, title, details }: { icon: any; title: string; details: string }) => {
   return (
     <>
-      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-        <div className="mb-9 rounded-[20px] bg-white p-10 shadow-2 shadow-md hover:shadow-lg dark:bg-dark-2 md:px-7 xl:px-10">
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3 ">
+        <div className="rounded-lg cards p-10 md:px-7 xl:px-10">
           <div className="mb-8 flex h-[70px] w-[70px] items-center justify-center rounded-2xl bg-primary">
             {icon}
           </div>
-          <h4 className="mb-[14px] text-2xl font-semibold text-dark dark:text-white">
+          <h4 className="mb-[14px] text-2xl font-semibold">
             {title}
           </h4>
-          <p className="text-body-color dark:text-dark-6">{details}</p>
+          <p className="">{details}</p>
         </div>
       </div>
     </>

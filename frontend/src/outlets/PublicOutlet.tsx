@@ -22,6 +22,7 @@ const PublicOutlet = () => {
     useEffect(() => {
         document.body.className = theme;
     }, [theme]);
+    
 
 
     return (
