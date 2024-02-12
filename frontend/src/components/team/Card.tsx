@@ -22,7 +22,7 @@ const Card = ({ employee }: CardProps) => {
     <>
       <div className="cards items-center flex-col w-80 h-90 mr-10 mb-9 ml-10 rounded-lg justify-center p-10  flex gap-3">
         <div className="h-60 w-60">
-          <img src={employee.img} alt="" className="rounded-full h-full w-full object-cover" />
+          <img src={employee.img} alt="" className="rounded-full h-full w-full object-cover filter grayscale" />
         </div>
         <div className="flex flex-col items-center ">
           <p className="font-bold ">
