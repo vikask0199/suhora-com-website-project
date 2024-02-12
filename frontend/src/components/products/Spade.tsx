@@ -3,7 +3,7 @@ const Spade = () => {
   return (
     <div className="root-container px-0 py-0">
       <div
-        className="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
+        className="relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
         style={{
           backgroundImage:
             "url('https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg?size=626&ext=jpg')",
@@ -29,13 +29,13 @@ const Spade = () => {
       <div className="flex px-12 py-10">
         <div className="flex-grow" style={{ width: "50%" }}>
           <h5
-            className=" mt-10 mb-2 text-4xl font-semibold"
-            style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 10)" }}
+            className=" mt-10 mb-2 text-3xl font-semibold"
+            
           >
             Spade
           </h5>
           <br />
-          <p className="mb-4font-century-gothic text-base var(--text-color) text-justify ml-5 mr-10" style={{ textShadow: "0px 0.2px 0.5px rgba(0, 0, 0, 5)" }}>
+          <p className="mb-4font-century-gothic text-base var(--text-color) text-justify ml-5 mr-10" >
           {/* <p className=" mb-4 text-base text-justify mr-5 ml-10" style={{ textShadow: "0px 0.2px 0.5px rgba(0, 0, 0, 5)" }}> */}
             <ul className="list-disc">
               <li >Multi Sensor Mission Planning</li>

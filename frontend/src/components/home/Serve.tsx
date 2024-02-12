@@ -7,11 +7,11 @@ const Serve = () => {
 
           <div className="w-full px-4">
             <div className="mx-auto mb-12  text-center lg:mb-20">
-              <h2 className="mb-2 block text-3xl text-center font-semibold text-primary">
+              {/* <h2 className="mb-2 block text-3xl text-center font-semibold text-primary">
                 Our Services
-               </h2>
+               </h2> */}
               <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
-              Industry We Serve
+              Industries We Serve
               </h2>
               <p className="text-base text-body-color">
                 There are many variations of passages of Lorem Ipsum available

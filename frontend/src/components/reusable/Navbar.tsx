@@ -45,7 +45,7 @@ const Navbar = (props: NavbarProps) => {
               </Link>
               <li>
                 <div className="relative">
-                  <a onClick={toggleDropdown} className={` flex hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Who We Are
+                  <a onClick={toggleDropdown} className={` flex cursor-pointer hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Who We Are
                     <ChevronDownIcon className={`w-5 h-5 ${dropdownOpen ? 'transform rotate-180' : ''}`} />
                   </a>
                   {dropdownOpen && (
@@ -65,7 +65,7 @@ const Navbar = (props: NavbarProps) => {
               </li>
               <li>
                 <div className="relative">
-                  <a onClick={toggleDropdown1} className={`flex hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Products
+                  <a onClick={toggleDropdown1} className={`flex cursor-pointer hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Products
                     <ChevronDownIcon className={`w-5 h-5 ${dropdownOpen1 ? 'transform rotate-180' : ''}`} /></a>
                   {dropdownOpen1 && (
                     <div className={`absolute top-full left-0 bg-white text-gray-900 py-2 rounded shadow-lg mt-2 sm:mt-0 sm:right-auto sm:bg-transparent sm:text-gray-900 sm:shadow-none`}>
@@ -84,7 +84,7 @@ const Navbar = (props: NavbarProps) => {
             </ul>
           </nav>
         </div>
-        <button className={`float-right bg-${props.currentTheme === 'theme-dark' ? 'gray-800' : 'gray-200'} hover:${props.currentTheme === 'theme-dark' ? 'bg-gray-700' : 'bg-gray-300'} px-4 py-2 rounded-lg`} onClick={props.toggleTheme}>
+        <button className={`float-right `} onClick={props.toggleTheme}>
           {props.currentTheme === 'theme-dark' ? <SunIcon className="h-5 w-5 text-yellow-500" /> : <MoonIcon className="h-5 w-5 text-gray-900" />}
         </button>
       </div>

@@ -8,16 +8,16 @@ const Tailored = () => {
         <div className=" flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-12 text-center lg:mb-20">
-              <span className="mb-2 block text-3xl font-semibold text-primary">
+              {/* <span className="mb-2 block text-3xl font-semibold text-primary">
                 Our Services
-              </span>
+              </span> */}
               <h2 className="mb-3 text-3xl font-bold leading-[1.2]  sm:text-4xl md:text-[40px]">
                 Tailored Services
               </h2>
-              <p className="text-base text-body-color">
+              {/* <p className="text-base text-body-color">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

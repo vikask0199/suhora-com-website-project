@@ -4,7 +4,7 @@ const Lance = () => {
   return (
     <div className="root-container">
       <div
-        className="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
+        className="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
         style={{
           backgroundImage:
             "url('https://img.freepik.com/free-photo/ultra-detailed-nebula-abstract-wallpaper-4_1562-749.jpg?size=626&ext=jpg')",
@@ -30,32 +30,34 @@ const Lance = () => {
       <div className="flex px-12 py-10">
         <div className="flex-grow" style={{ width: "50%" }}>
           <h5
-            className=" mt-10 mb-2 text-4xl font-semibold"
-            style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 10)" }}
+            className=" mt-7 mb-2 text-3xl font-semibold"
+           
           >
             Lance
           </h5>
           <br />
-          <p className="mb-4 text-base  text-justify mr-10" style={{ textShadow: "0px 0.2px 0.5px rgba(0, 0, 0, 5)" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quas
-            libero voluptatibus quae dolorem porro consectetur voluptates
-            doloribus ipsa maxime ad distinctio quia obcaecati corporis
-            explicabo enim ea placeat vitae.lorem ipsum dolor sit amet
-            consectetur adipis Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dolor, quas libero voluptatibus quae dolorem porro
-            consectetur voluptates doloribus ipsa maxime ad distinctio quia
-            obcaecati corporis explicabo enim ea placeat vitae.lorem ipsum dolor
-            sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dolor, quas libero voluptatibus quae dolorem porro
-            consectetur voluptates doloribus ipsa maxime ad distinctio quia
-            obcaecati corporis explicabo enim ea placeat vitae.lorem ipsum dolor
-            sit amet consectetur adipis
+          <p className="mb-4 text-base  text-justify mr-10">
+          In the rapidly evolving defense sector, LANCE emerges as a groundbreaking fusion of human
+expertise and artificial intelligence, reshaping strategic operations. This advanced ISR platform offers real-time insights, allowing defense and intelligence agencies to transition
+from reactive to proactive strategies, ensuring critical targets are never missed.
+</p>
+<p className="mb-4 text-base  text-justify mr-10">
+Equipped with high-definition sensors and smart algorithms, LANCE cuts through complex
+data, providing actionable intelligence for both maritime and land surveillance. It enhances
+operational effectiveness, offering a 360-degree view of any scenario, making it an essential
+tool for national security.
+</p>
+<p className="mb-4 text-base  text-justify mr-10">
+Designed for versatility, LANCE integrates AI&#39;s analytical power with strategic foresight,
+delivering unparalleled situational awareness. This synergy between technology and human
+judgment not only sets a new benchmark in defense readiness but also ensures a more secure,
+strategically prepared world.
           </p>
         </div>
         {/* <div style={{ width: "50%", marginLeft: "50px", alignItems: "center" }}>  */}
 
         <img
-          className="flex-grow m-1  border-2 border-gray-800 "
+          className="flex-grow mt-10   "
           src="https://images.unsplash.com/photo-1682687219612-b12805df750d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw0MXx8fGVufDB8fHx8fA%3D%3D"
           alt=""
           style={{ width: "500px", height: "400px", marginRight: "5px" }}
@@ -101,7 +103,7 @@ const Lance = () => {
       </div> */}
       <a
         href="/contact-us"
-        className="mt-10 mb-10 ml-12 inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        className="mt-0 mb-10 ml-12 inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >
         Request A Demo
         <svg
