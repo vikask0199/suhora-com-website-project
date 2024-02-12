@@ -131,7 +131,7 @@ const Sid = () => {
         </div>
       </div>
       <a
-        href="#"
+        href="/contact-us"
         className="mt-40 mb-10 inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg "
       >
         Request A Demo
