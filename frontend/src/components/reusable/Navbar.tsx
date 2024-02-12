@@ -38,7 +38,7 @@ const Navbar = (props: NavbarProps) => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
           </button>
-          <nav className={`absolute top-full left-0  w-full sm:relative sm:top-auto sm:left-auto sm:w-auto sm:flex sm:items-center ${mobileNavOpen ? 'block' : 'hidden'}`}>
+          <nav className={`ml-10 absolute top-full left-0  w-full sm:relative sm:top-auto sm:left-auto sm:w-auto sm:flex sm:items-center ${mobileNavOpen ? 'block' : 'hidden'}`}>
             <ul className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
               <Link to="/">
                 <li><a href="./" className={`hover:text-${props.currentTheme === 'theme-dark' ? 'gray-400' : 'gray-800'}`}>Home</a></li>
