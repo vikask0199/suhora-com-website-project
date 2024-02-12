@@ -65,8 +65,13 @@ body {
     color: var(--text-color);
 }
 
+.time-line {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}
+
 /* removing extraa space of slider  */
 
-.slick-slider.slick-initialized{
+.slick-slider.slick-initialized {
     margin-bottom: -1.1vh;
 }
