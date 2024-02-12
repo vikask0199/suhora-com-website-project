@@ -144,7 +144,7 @@ const Portfolio = () => {
               ImageHref={thermal2}
               category="Thermal"
               title="Tenchhekha, Bhutan"
-              button="View Details "
+              button="View Details"
               buttonHref="#"
               showCard={showCard}
             />

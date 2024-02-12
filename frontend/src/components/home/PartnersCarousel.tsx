@@ -51,7 +51,7 @@ function PartnersCarousel() {
   };
 
   return (
-    <div className="align-middle root-container-separator px-14 py-10">
+    <div className="align-middle root-container px-14 py-10">
       <h3 className=" text-4xl mb-2">Our Amazing Partners</h3>
       <div className="border-t-2 border-blue-900 "></div>
       <Slider {...settings} className="py-6">
