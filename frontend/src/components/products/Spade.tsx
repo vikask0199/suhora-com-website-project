@@ -1,7 +1,7 @@
 
 const Spade = () => {
   return (
-    <div className="root-container px-14 py-10">
+    <div className="root-container px-0 py-0">
       <div
         className="relative overflow-hidden rounded-lg bg-cover bg-no-repeat p-12 text-center"
         style={{
@@ -26,29 +26,31 @@ const Spade = () => {
 
       {/* **** About us with img   ****** */}
       {/* first component */}
-      <div className="flex">
+      <div className="flex px-12 py-10">
         <div className="flex-grow" style={{ width: "50%" }}>
           <h5
-            className="text-center mt-10 mb-2 text-4xl font-semibold"
+            className=" mt-10 mb-2 text-4xl font-semibold"
             style={{ textShadow: "1px 1px 2px rgba(0, 0, 0, 10)" }}
           >
             Spade
           </h5>
           <br />
           <p className="mb-4font-century-gothic text-base var(--text-color) text-justify ml-5 mr-10" style={{ textShadow: "0px 0.2px 0.5px rgba(0, 0, 0, 5)" }}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, quas
-            libero voluptatibus quae dolorem porro consectetur voluptates
-            doloribus ipsa maxime ad distinctio quia obcaecati corporis
-            explicabo enim ea placeat vitae.lorem ipsum dolor sit amet
-            consectetur adipis Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dolor, quas libero voluptatibus quae dolorem porro
-            consectetur voluptates doloribus ipsa maxime ad distinctio quia
-            obcaecati corporis explicabo enim ea placeat vitae.lorem ipsum dolor
-            sit amet consectetur adipis Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Dolor, quas libero voluptatibus quae dolorem porro
-            consectetur voluptates doloribus ipsa maxime ad distinctio quia
-            obcaecati corporis explicabo enim ea placeat vitae.lorem ipsum dolor
-            sit amet consectetur adipis
+          {/* <p className=" mb-4 text-base text-justify mr-5 ml-10" style={{ textShadow: "0px 0.2px 0.5px rgba(0, 0, 0, 5)" }}> */}
+            <ul className="list-disc">
+              <li >Multi Sensor Mission Planning</li>
+              <li>Smart Tip & Cue</li>
+              <li>Satellite Imagery Marketplace</li>
+              <li>New Imagery Tasking Planning, Acquisition and Order Management</li>
+              <li>Archive image Search and Order Management</li>
+              <li>Fast, Secure & encrypted access of platform</li>
+              <li>Advanced AI based Satellite Data Agnostic Image Visualization, Analysis and Insight gathering</li>
+              <li>SATC Catalog Support</li>
+              <li>User specific project/workspace management</li>
+              <li>Save,Export and Download of user specific workspace items</li>
+              <li>Contextual Analysis based Search</li>
+            </ul>
+          {/* </p> */}
           </p>
         </div>
         {/* <div style={{ width: "50%", marginLeft: "50px", alignItems: "center" }}>  */}
@@ -63,9 +65,9 @@ const Spade = () => {
       </div>
 
       {/* *** second component**** */}
-
+{/* 
       <div className="flex mt-20">
-        {/* <div style={{ width: "50%", marginLeft: "50px", alignItems: "center" }}> */}
+        <div style={{ width: "50%", marginLeft: "50px", alignItems: "center" }}>
 
         <img
           className="flex-grow m-1  border-2 border-gray-800"
@@ -73,7 +75,7 @@ const Spade = () => {
           alt=""
           style={{ width: "500px", height: "400px", marginRight: "5px" }}
         />
-        {/* </div> */}
+       
 
         <div className="flex-grow" style={{ width: "50%" }}>
           <h5
@@ -98,10 +100,10 @@ const Spade = () => {
             </ul>
           </p>
         </div>
-      </div>
+      </div> */}
       <a
         href="/contact-us"
-        className="mt-40 mb-10 inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        className="mt-10 mb-10 mx-12 inline-flex items-center px-6 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >
         Request A Demo
         <svg
