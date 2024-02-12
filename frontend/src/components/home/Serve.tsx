@@ -1,16 +1,16 @@
 import './Custome.css';
 const Serve = () => {
   return (
-    <section className="py-10 px-14 root-container">
-      <div className="container mx-auto flex">
-        <div className=" flex flex-wrap w-1/2">
+    <section className="py-10 px-14 root-container-separator">
+      <div className="container mx-auto">
+        <div className=" flex flex-wrap ">
           <div className="w-full px-4">
             <div className="mx-auto mb-12  text-center lg:mb-20">
-              <span className="mb-2 block text-3xl font-semibold text-primary">
-                Industry We Serve
-              </span>
-              <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+              <h2 className="mb-2 block text-3xl text-center font-semibold text-primary">
                 Our Services
+               </h2>
+              <h2 className="mb-3 text-3xl font-bold leading-[1.2] text-dark dark:text-white sm:text-4xl md:text-[40px]">
+              Industry We Serve
               </h2>
               <p className="text-base text-body-color">
                 There are many variations of passages of Lorem Ipsum available
@@ -19,9 +19,14 @@ const Serve = () => {
             </div>
           </div>
         </div>
+        </div>
+        <div className='row flex flex-wrap'>
+        <div className='w-1/2 h-[70vh] pb-14 flex justify-center'>
+        
+        </div>
         <div className="w-1/2 h-[70vh] pb-14 flex items-center justify-center">
           <div className="relative w-64 h-64">
-            <div className='hex pos0 hover:transform hover:scale-110 duration-200'>
+            <div className='hex pos0 hover:transform hover:scale-110 duration-300'>
               <div className="absolute inset-0 flex justify-center items-center opacity-0  hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-center">Defense & Intelligence</p>
               </div>
