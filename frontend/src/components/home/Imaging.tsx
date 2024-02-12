@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import optical1 from '../../assets/img/optical-1_Turkey.jpg'
 import optical2 from '../../assets/img/optical-2_Dubai.png'
 import optical3 from '../../assets/img/optical-3_Bhama_askhed_reservoir.jpg'
@@ -108,7 +108,7 @@ const Portfolio = () => {
               category="Optical"
               title="Kahramanmaraş, Turkey"
               button="Optical (0.5m SkySat)"
-              buttonHref="#"
+              // buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard
@@ -116,7 +116,7 @@ const Portfolio = () => {
               category="Optical"
               title="Dubai, UAE"
               button="Optical (0.7m Satellogic)"
-              buttonHref="#"
+              // buttonHref="#"
               showCard={showCard}
             />
              <PortfolioCard
@@ -124,7 +124,7 @@ const Portfolio = () => {
               category="Optical"
               title="Bhama Askhed Reservoir"
               button="Optical (3.5m PlanetScope) "
-              buttonHref="#"
+              // buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard
@@ -132,7 +132,7 @@ const Portfolio = () => {
               category="SAR"
               title="Agra, India"
               button="SAR (25cm ICEYE)"
-              buttonHref="#"
+              // buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard
@@ -140,7 +140,7 @@ const Portfolio = () => {
               category="SAR"
               title="Rotterdam"
               button="SAR (25cm ICEYE)"
-              buttonHref="#"
+              // buttonHref="#"
               showCard={showCard}
             />
              <PortfolioCard
@@ -148,7 +148,7 @@ const Portfolio = () => {
               category="SAR"
               title="Neyveli, Tamilnadu"
               button="SAR (10m Saocom - L Band)"
-              buttonHref="#"
+              // buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard
@@ -156,7 +156,7 @@ const Portfolio = () => {
               category="Thermal"
               title="Oil Refinery, Jamnagar"
               button="Thermal (3.5m Hotsat-1)"
-              buttonHref="#"
+              // buttonHref="#"
               showCard={showCard}
             />
             <PortfolioCard
@@ -164,7 +164,7 @@ const Portfolio = () => {
               category="Thermal"
               title="Tenchhekha, Bhutan"
               button="Thermal (3.5m Hotsat-1)"
-              buttonHref="#"
+              // buttonHref="#"
               showCard={showCard}
             />
               <PortfolioCard
@@ -172,7 +172,7 @@ const Portfolio = () => {
               category="Thermal"
               title="Lowgar, Afghanistan"
               button="Thermal (3.5m Hotsat-1)"
-              buttonHref="#"
+              // buttonHref="#"
               showCard={showCard}
             />
           </div>
@@ -190,13 +190,14 @@ const PortfolioCard = ({
   ImageHref,
   title,
   button,
-  buttonHref,
+  // buttonHref,
 }:{ showCard: string,
   category: string,
   ImageHref: string,
   title: string,
   button: string,
-  buttonHref: string,}) => {
+  // buttonHref: string,
+}) => {
   return (
     <>
       <div
