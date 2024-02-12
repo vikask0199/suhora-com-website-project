@@ -5,6 +5,9 @@ import HomePage from './pages/HomePage';
 import TeamsPage from './pages/TeamsPage';
 import JourneyPage from './pages/JourneyPage';
 import PrinciplePage from './pages/PrinciplePage';
+import SpadePage from './pages/SpadePage';
+import SidPage from './pages/SidPage';
+import LancePage from './pages/LancePage';
 
 function App() {
   // const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
@@ -37,6 +40,9 @@ function App() {
           <Route path='our-teams' element={<TeamsPage />} />
           <Route path='our-principles' element={<PrinciplePage />} />
           <Route path='our-journey' element={<JourneyPage />} />
+          <Route path='products/spade' element={<SpadePage />} />
+          <Route path='products/sid' element={<SidPage />} />
+          <Route path='products/lance' element={<LancePage />} />
         </Route>
       </Routes>
     </>

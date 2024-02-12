@@ -2,7 +2,7 @@ import ProductsCard from './ProductsCard';
 
 const Products = () => {
   return (
-    <section className="py-10 px-14 root-container-separator">
+    <section className="py-10 px-14 root-container-separator ">
       <div className="container mx-auto">
         <div className=" flex flex-wrap">
           <div className="w-full px-4">

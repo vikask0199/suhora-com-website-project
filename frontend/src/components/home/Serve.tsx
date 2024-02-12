@@ -1,7 +1,7 @@
 import './Custome.css';
 const Serve = () => {
   return (
-    <section className="py-10 px-14 root-container">
+    <section className="py-10 px-14 root-container ">
       <div className="container mx-auto flex">
         <div className=" flex flex-wrap w-1/2">
           <div className="w-full px-4">

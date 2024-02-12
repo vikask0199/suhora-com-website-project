@@ -1,7 +1,7 @@
-import { Outlet } from "react-router-dom"
-import Navbar from "../components/reusable/Navbar"
-import Footer from "../components/reusable/Footer"
 import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
+import Footer from "../components/reusable/Footer";
+import Navbar from "../components/reusable/Navbar";
 
 const PublicOutlet = () => {
     const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');

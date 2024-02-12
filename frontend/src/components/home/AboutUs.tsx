@@ -3,7 +3,7 @@
 
 const AboutUs = () => {
     return (
-        <section className={`py-16 root-container-separator px-14`}>
+        <section className={`py-16 root-container-separator px-14 `}>
             <div className={`absolute top-0 left-0 w-full h-full  transform `}>
             </div>
             <div className="container mx-auto text-center relative">

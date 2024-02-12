@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 interface NavbarProps {
   toggleTheme: () => void;
-  currentTheme: 'theme-dark' | 'theme-white';
+  currentTheme: 'theme-white' | 'theme-dark';
 }
 
 const Navbar = (props: NavbarProps) => {
@@ -33,7 +33,7 @@ const Navbar = (props: NavbarProps) => {
           <Link to="/" className='h-10 w-40 flex justify-start items-center mr-4'>
             <img src={props.currentTheme === 'theme-dark' ? LogoDark : LogoLight} alt="Logo" className="w-full object-cover" />
           </Link>
-          <button onClick={toggleMobileNav} className="block sm:hidden text-white">
+          <button onClick={toggleMobileNav} className="block sm:hidden">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
@@ -69,9 +69,9 @@ const Navbar = (props: NavbarProps) => {
                     <ChevronDownIcon className={`w-5 h-5 ${dropdownOpen1 ? 'transform rotate-180' : ''}`} /></a>
                   {dropdownOpen1 && (
                     <div className={`absolute top-full left-0 bg-white text-gray-900 py-2 rounded shadow-lg mt-2 sm:mt-0 sm:right-auto sm:bg-transparent sm:text-gray-900 sm:shadow-none`}>
-                      <a href="#" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>SPADE</a>
-                      <a href="#" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>LANCE</a>
-                      <a href="#" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>SID</a>
+                      <a href="/products/spade" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>SPADE</a>
+                      <a href="/products/lance" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>LANCE</a>
+                      <a href="/products/sid" className={`block px-4 py-2 ${props.currentTheme === 'theme-dark' ? 'bg-white text-gray-900' : 'bg-gray-800 text-white'}`}>SID</a>
                     </div>
                   )}
                 </div>

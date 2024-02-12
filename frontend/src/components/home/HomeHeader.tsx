@@ -8,7 +8,7 @@ import TypeWriterText from "./TypeWriterText";
 
 const ImageSlider = () => {
   const settings = {
-    dots: true,
+    dots: false,
     lazyLoad: true as any,
     infinite: true,
     speed: 1000,

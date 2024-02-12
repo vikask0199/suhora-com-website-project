@@ -1,4 +1,3 @@
-
 import Vision from "./Vision"
 import Vaalue from "./Vaalue"
 import Mision from "./Mision"
@@ -38,8 +37,6 @@ const Princples = () => {
             </div>
             <div className="root-container-separator pb-10">{renderTabContent()}</div>
         </div>
-
-
     )
 }
 

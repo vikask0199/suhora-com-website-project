@@ -2,7 +2,7 @@ import { DatabaseIcon } from '@heroicons/react/solid';
 
 const Tailored = () => {
   return (
-    <section className="px-14 py-10 root-container">
+    <section className="px-14 py-10 root-container ">
       <div className="container mx-auto ">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4">
