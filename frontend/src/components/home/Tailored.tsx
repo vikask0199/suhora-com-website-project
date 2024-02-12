@@ -1,4 +1,4 @@
-import ProductsCard from './ProductsCard'; 
+// import ProductsCard from './ProductsCard'; 
 import TailoredCards from './TailoredCards';
 
 const Tailored = () => {
