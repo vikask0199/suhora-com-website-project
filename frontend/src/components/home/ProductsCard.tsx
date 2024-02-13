@@ -14,7 +14,7 @@ const ProductsCard = (props: ProductsCardProps) => {
       {/* </a> */}
       <div className="flex justify-between flex-col pt-3 px-3 pb-5 ">
         {/* <a href="#"> */}
-          <h5 className="mb-3 text-2xl font-bold tracking-tight">
+          <h5 className="mb-3 text-xl font-bold tracking-tight">
             {props.name}
           </h5>
         {/* </a> */}

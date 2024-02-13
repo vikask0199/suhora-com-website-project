@@ -3,7 +3,7 @@ import rupesh from '../assets/img/teams/rupesh.jpg'
 import amit from '../assets/img/teams/Amit.jpg'
 import ruby from '../assets/img/teams/Ruby.jpg'
 // import lokesh from '../assets/img/teams/Lokesh.jpg'
-import lokesh from '../assets/img/teams/lokesh_alt.png'
+import lokesh from '../assets/img/teams/lokesh_alt.jpg'
 import keerthana from '../assets/img/teams/Keerthana.jpg'
 import hamna from '../assets/img/teams/Hamna.jpg'
 import pratanu from '../assets/img/teams/Pratanu.jpg'
@@ -15,7 +15,8 @@ import vinodbothale from '../assets/img/teams/Vinodbothale.jpg'
 import vishal from '../assets/img/teams/Vishal.png'
 import tanmoyadhikari from '../assets/img/teams/TanmoyAdhikari.jpg'
 import vikas from '../assets/img/teams/Vikas.jpg'
-
+import surojitbose from '../assets/img/teams/Surojit-Bose.jpg'
+import navneetkaushik from '../assets/img/teams/NavneetKaushik.png'
 
 
 
@@ -38,7 +39,7 @@ const employees: Employee[] = [
         img: krishanu,
         links: {
             website: 'https://www.example.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/johndoe',
+            linkedin: 'https://www.linkedin.com/in/krishanuacharya/',
             github: 'https://github.com/johndoe'
         }
     },
@@ -58,7 +59,7 @@ const employees: Employee[] = [
         img: amit,
         links: {
             website: 'https://www.example.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/johndoe',
+            linkedin: 'https://www.linkedin.com/in/amitkumarsaini/',
             github: 'https://github.com/johndoe'
         }
     },
@@ -78,7 +79,27 @@ const employees: Employee[] = [
         img: vinodbothale,
         links: {
             website: 'https://www.example.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/johndoe',
+            linkedin: 'https://www.linkedin.com/in/vinod-bothale-7689407/',
+            github: 'https://github.com/johndoe'
+        }
+    },
+    {
+        name: 'Surojit Bose',
+        designation: 'Advisor',
+        img: surojitbose,
+        links: {
+            website: 'https://www.example.com/johndoe',
+            linkedin: 'https://www.linkedin.com/in/surojitbose/',
+            github: 'https://github.com/johndoe'
+        }
+    },
+    {
+        name: 'Navneet Kaushik',
+        designation: 'Advisor',
+        img: navneetkaushik,
+        links: {
+            website: 'https://www.example.com/johndoe',
+            linkedin: 'https://www.linkedin.com/in/cdr-navneet-kaushik-veteran-98964b82/',
             github: 'https://github.com/johndoe'
         }
     },
@@ -109,7 +130,7 @@ const employees: Employee[] = [
         img: pratanu,
         links: {
             website: 'https://www.example.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/johndoe',
+            linkedin: 'https://www.linkedin.com/in/pratanu-maity-301548202',
             github: 'https://github.com/johndoe'
         }
     },
@@ -180,7 +201,7 @@ const employees: Employee[] = [
         img: hamna,
         links: {
             website: 'https://www.example.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/johndoe',
+            linkedin: 'https://www.linkedin.com/in/hamna-khan-769535247/',
             github: 'https://github.com/johndoe'
         }
     },

@@ -21,9 +21,11 @@ const Products = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap justify-center'>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
+            {/* <ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
+data for a spectrum of commercial applications." link="/products/spade" /> */}
+<ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
 data for a spectrum of commercial applications." link="/products/spade" />
             <ProductsCard image={light1} name="LANCE" description="Advanced, near real-time ISR solutions, elevating maritime and land surveillance
 for defense and intelligence sectors." link="/products/lance" />
