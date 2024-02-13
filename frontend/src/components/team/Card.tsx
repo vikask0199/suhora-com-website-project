@@ -34,7 +34,6 @@ const Card = ({ employee }: CardProps) => {
         </div>
         <div className="flex gap-6 text-xl">
           <FaLinkedin />
-          
         </div>
       </div>
     </>

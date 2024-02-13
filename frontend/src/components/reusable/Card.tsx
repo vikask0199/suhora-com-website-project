@@ -11,7 +11,7 @@ const Card = () => {
       </a>
       <div className="pt-[30vh ] mt-[10vh] ">
         <div className="flex justify-center item-center">
-          <img src={bb} alt="" className="rounded-full h-20 w-20 flex justify-center item-center " />
+          <img src={bb} alt="" className="rounded-full h-20 w-20 flex justify-center item-center" />
         </div>
         <p className="mb-3 font-bold text-gray-700 dark:text-gray-400">Name</p>
         <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">Desination</p>

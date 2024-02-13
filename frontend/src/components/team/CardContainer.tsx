@@ -3,10 +3,10 @@ import { teamsData } from '../../constant/teamData';
 import Intro from "./Intro";
 const CardContainer = () => {
     const { employees } = teamsData;
-    console.log(employees);
+
     return (
         <>
-            <div className="w-screen flex gap-4 flex-col  root-container">
+            <div className="flex gap-4 flex-col  root-container">
                 <div className="mb-10">
                     <Intro />
                 </div>

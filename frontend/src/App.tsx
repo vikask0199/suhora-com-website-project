@@ -10,26 +10,6 @@ import SidPage from './pages/SidPage';
 import LancePage from './pages/LancePage';
 
 function App() {
-  // const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
-
-  // const toggleTheme = () => {
-  //   const newTheme = theme === 'theme-dark' ? 'theme-white' : 'theme-dark';
-  //   setTheme(newTheme);
-  //   localStorage.setItem('theme', newTheme);
-  // };
-
-  // useEffect(() => {
-  //   const savedTheme = localStorage.getItem('theme') as 'theme-dark' | 'theme-white' | null;
-  //   if (savedTheme) {
-  //     setTheme(savedTheme);
-  //   }
-  // }, []);
-
-  // useEffect(() => {
-  //   document.body.className = theme;
-  // }, [theme]);
-
-
 
   return (
     <>
