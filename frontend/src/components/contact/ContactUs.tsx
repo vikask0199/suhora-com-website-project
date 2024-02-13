@@ -45,7 +45,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full">
+            <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full" method="post" action="send_mail.php">
                 <input type="text" placeholder="Your Name" name="name" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
                 <input type="text" placeholder="Email Address" name="email" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
                 <input type="text" placeholder="Phone Number" name="phone" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
