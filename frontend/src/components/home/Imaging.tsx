@@ -2,9 +2,13 @@ import  { useState } from "react";
 import optical1 from '../../assets/img/optical-1_Turkey.jpg'
 import optical2 from '../../assets/img/optical-2_Dubai.png'
 import optical3 from '../../assets/img/optical-3_Bhama_askhed_reservoir.jpg'
-import sar1 from '../../assets/img/rotterdam_iceye_SL.png'
-import sar2 from '../../assets/img/agra_iceye_SLH.png'
-import sar3 from '../../assets/img/city_saocom_olf.png'
+// import sar1 from '../../assets/img/rotterdam_iceye_SL.png'
+// import sar2 from '../../assets/img/agra_iceye_SLH.png'
+// import sar3 from '../../assets/img/city_saocom_olf.png'
+import sar1 from '../../assets/img/sar_chennai_floods_iceye_SM_colorized_resized.jpg'
+import sar2 from '../../assets/img/sar_lhonak_new_iceye-nez_colorized2.png'
+import sar3 from '../../assets/img/rotterdam_iceye_SL_colorized_resized.png'
+// import sar4 from '../../assets/img/Taj Mahal_ICEYE_Dwell.jpg'
 import thermal1 from '../../assets/img/Jamnagar_oilrefinery.png'
 import thermal2 from '../../assets/img/Tenchhekha.png'
 import thermal3 from '../../assets/img/padkhvab-e-Shaneh.png'
@@ -130,7 +134,7 @@ const Portfolio = () => {
             <PortfolioCard
               ImageHref={sar2}
               category="SAR"
-              title="Agra, India"
+              title="Chennai (Floods), India"
               button="SAR (25cm ICEYE)"
               // buttonHref="#"
               showCard={showCard}
@@ -138,7 +142,7 @@ const Portfolio = () => {
             <PortfolioCard
               ImageHref={sar1}
               category="SAR"
-              title="Rotterdam"
+              title="South Lhonak Lake, India "
               button="SAR (25cm ICEYE)"
               // buttonHref="#"
               showCard={showCard}
@@ -146,8 +150,8 @@ const Portfolio = () => {
              <PortfolioCard
               ImageHref={sar3}
               category="SAR"
-              title="Neyveli, Tamilnadu"
-              button="SAR (10m Saocom - L Band)"
+              title="Rotterdam, Netherlands"
+              button="SAR (25cm ICEYE)"
               // buttonHref="#"
               showCard={showCard}
             />

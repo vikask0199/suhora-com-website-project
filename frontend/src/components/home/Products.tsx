@@ -1,5 +1,6 @@
 import ProductsCard from './ProductsCard'; 
-
+import dark1 from '../../assets/img/dark_bg.jpg';
+import light1 from '../../assets/img/light_bg.png';
 const Products = () => {
   return (
     <section className="py-10 px-14 root-container">
@@ -22,11 +23,11 @@ const Products = () => {
         </div>
         <div className='flex flex-wrap'>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <ProductsCard image="src/assets/img/dark_bg.jpg" name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
+            <ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
 data for a spectrum of commercial applications." link="/products/spade" />
-            <ProductsCard image="src/assets/img/light_bg.png" name="LANCE" description="Advanced, near real-time ISR solutions, elevating maritime and land surveillance
+            <ProductsCard image={light1} name="LANCE" description="Advanced, near real-time ISR solutions, elevating maritime and land surveillance
 for defense and intelligence sectors." link="/products/lance" />
-            <ProductsCard image="src/assets/img/dark_bg.jpg" name="SID" description="Integrated space analytics and rapid satellite data converge to enhance disaster response
+            <ProductsCard image={dark1} name="SID" description="Integrated space analytics and rapid satellite data converge to enhance disaster response
 and streamline insurance management." link="/products/sid" />
           </div>
         </div>

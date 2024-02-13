@@ -2,13 +2,27 @@ import { SlEarphones } from "react-icons/sl";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import whatsapp from "../../assets/img/whatsapp.png"
-
+import $ from 'jquery';
 
 const ContactUs = () => {
     const handleWhatsAppClick = () => {
         const phoneNumber = '9999664437';
         const whatsappUrl = `https://wa.me/${phoneNumber}`;
         window.open(whatsappUrl, '_blank');
+    };
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        const form = $(e.target);
+        $.ajax({
+            type: "POST",
+            url: form.attr("action"),
+            data: form.serialize(),
+            success(data) {
+                // setResult(data);
+                // alert("Thank you for contacting us, we will get back to you soon!");
+                alert(data)
+            },
+        });
     };
 
 
@@ -45,7 +59,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full" method="post" action="send_mail.php">
+            <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full" method="post" action="send_mail.php" onSubmit={(event) => handleSubmit(event)}>
                 <input type="text" placeholder="Your Name" name="name" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
                 <input type="text" placeholder="Email Address" name="email" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
                 <input type="text" placeholder="Phone Number" name="phone" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />

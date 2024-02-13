@@ -22,7 +22,7 @@ const Card = ({ employee }: CardProps) => {
     <>
       <div className="cards items-center flex-col w-80 h-90 mr-5 mb-9 ml-5 rounded-lg justify-center p-10  flex gap-3 hover:transform hover:scale-105 duration-300">
         <div className="h-60 w-60">
-          <img src={employee.img} alt="" className="rounded-full h-full w-full object-cover filter grayscale" />
+          <img src={employee.img} alt="" className="rounded-full h-full w-full  filter grayscale" />
         </div>
         <div className="flex flex-col items-center ">
           <p className="font-bold ">
@@ -32,8 +32,8 @@ const Card = ({ employee }: CardProps) => {
            {employee.designation}
           </p>
         </div>
-        <div className="flex gap-6 text-xl">
-          <FaLinkedin />
+        <div className="flex gap-6 text-xl hover:transform hover:scale-110 duration-100 hover:text-[#0077b5]">
+          <a href={employee.links.linkedin}><FaLinkedin /></a>
           
         </div>
       </div>
