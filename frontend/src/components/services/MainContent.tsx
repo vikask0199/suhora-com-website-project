@@ -16,7 +16,7 @@ const Mission = (props: MaincontentProps) => {
                 <div className='flex gap-4 h-96'>
                     <div className="p-5 w-1/2">
                         {/* <a href="#"> */}
-                            <h5 className="mb-5 text-2xl font-bold tracking-tight pl-4">{props.name}</h5>
+                            <h5 className="mb-5 text-2xl font-bold tracking-tight pl-4 text">{props.name}</h5>
                         {/* </a> */}
                         <p className="mb-3 font-normal flex pl-4">
                         <div dangerouslySetInnerHTML={{ __html: props.description }}></div>

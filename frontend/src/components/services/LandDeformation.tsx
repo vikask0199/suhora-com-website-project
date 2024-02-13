@@ -7,12 +7,12 @@ import dark1 from '../../assets/img/dark_bg.jpg'
 import light1 from '../../assets/img/light_bg.png'
 const Spade = () => {
   const [selectedTab, setSelectedTab] = useState(0);
-    const tabs = ['SPADE'];
+    const tabs = ['Land Deformation Monitoring'];
 
     const renderTabContent = () => {
         switch (selectedTab) {
             case 0:
-                return <div><Mission name='About SPADE' image={dark1} description='
+                return <div><Mission name='About Land Deformation Monitoring' image={dark1} description='
                 
                 
 <ul class="space-y-4 text-left ">
@@ -32,19 +32,19 @@ const Spade = () => {
 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-700"  viewBox="0 0 20 20" fill="currentColor">
 <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
 </svg>
-    <span>Team size: <span class="font-semibold text-gray-900 dark:text-white">1 developer</span></span>
+    <span>Team size: <span class="font-semibold">1 developer</span></span>
 </li>
 <li class="flex items-center space-x-3 rtl:space-x-reverse">
 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-700"  viewBox="0 0 20 20" fill="currentColor">
 <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
 </svg>
-    <span>Premium support: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+    <span>Premium support: <span class="font-semibold">6 months</span></span>
 </li>
 <li class="flex items-center space-x-3 rtl:space-x-reverse">
 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-700"  viewBox="0 0 20 20" fill="currentColor">
 <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
 </svg>
-    <span>Free updates: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+    <span>Free updates: <span class="font-semibold ">6 months</span></span>
 </li>
 </ul>  
                 '/>
@@ -73,7 +73,7 @@ const Spade = () => {
         }}
       >
 <div className='text-5xl font-bold  text-white align-middle justify-center'>
-        <h2>SPADE</h2>
+        <h2>Land Deformation Monitoring</h2>
         </div>
       </div>
   
@@ -82,7 +82,7 @@ const Spade = () => {
    <div className="flex root-container-separator px-14 pt-10">
                 {tabs.map((tab, index) => (
                     <button key={index}
-                        className={`py-2 w-28 text-lg font-semibold ${selectedTab === index ? 'root-container' : 'text-gray-500'}`}
+                        className={`py-2 px-2 w-55 text-lg font-semibold ${selectedTab === index ? 'root-container' : 'text-gray-500'}`}
                         onClick={() => setSelectedTab(index)}>
                         {tab}
                     </button>
@@ -92,7 +92,7 @@ const Spade = () => {
 
 
 
-   <h2 className='text-center text-2xl font-bold pt-10 hover:text-pretty hover:underline'>Features of SPADE</h2>
+   <h2 className='text-center text-2xl font-bold pt-10 hover:text-pretty hover:underline'>Features of Land Deformation Monitoring</h2>
             <div className='flex flex-wrap justify-center py-10'>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {/* <ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
