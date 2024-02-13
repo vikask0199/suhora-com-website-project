@@ -16,7 +16,7 @@ const ContactUs = () => {
         <div className="flex flex-col gap-5 root-container-separator items-center py-5">
             <p className="font-semibold text-4xl">Contact Form</p>
             <div className="flex w-full justify-evenly flex-wrap gap-y-5 px-5">
-                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards">
+                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards hover:transform hover:scale-105 duration-300">
                     <SlEarphones className="text-4xl text-blue-500" />
                     <p className="font-bold text-xl">Contact Phone Number</p>
                     <div className="flex gap-2 flex-col">
@@ -25,7 +25,7 @@ const ContactUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards">
+                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards hover:transform hover:scale-105 duration-300">
                     <MdOutlineEmail className="text-4xl text-blue-500" />
                     <p className="font-bold text-xl">Our Email Address</p>
                     <div className="flex gap-2 flex-col">
@@ -34,7 +34,7 @@ const ContactUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards">
+                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards hover:transform hover:scale-105 duration-300">
                     <IoLocationOutline className="text-4xl text-blue-500" />
                     <p className="font-bold text-xl">Our Location</p>
                     <div className="flex gap-2 flex-col">

@@ -20,7 +20,7 @@ const Card = ({ employee }: CardProps) => {
 
   return (
     <>
-      <div className="cards items-center flex-col w-80 h-90 mr-5 mb-9 ml-5 rounded-lg justify-center p-10  flex gap-3">
+      <div className="cards items-center flex-col w-80 h-90 mr-5 mb-9 ml-5 rounded-lg justify-center p-10  flex gap-3 hover:transform hover:scale-105 duration-300">
         <div className="h-60 w-60">
           <img src={employee.img} alt="" className="rounded-full h-full w-full object-cover filter grayscale" />
         </div>
