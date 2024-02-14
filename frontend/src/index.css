@@ -11,6 +11,8 @@
     --button-border-color: #fff;
     --bg-color-light: #141f38;
     --nav-shadow-color: 0 -2px 7px #035c9c;
+    --service-tab-color: #035c9c;
+    --service-tab-text-color: #fff;
 }
 
 .theme-white {
@@ -21,6 +23,8 @@
     --button-border-color: rgb(203 213 225);
     --bg-color-light: #f5f5f5;
     --nav-shadow-color: 0 -2px 8px #91989d;
+    --service-tab-color: #035c9c;
+    --service-tab-text-color: #fff;
 }
 
 body {
@@ -91,4 +95,9 @@ body {
     background-color: #1976D2;
     color: #fff;
 
+}
+
+.servicetabs{
+    color: var(--service-tab-text-color);
+    background-color: var(--service-tab-color);
 }

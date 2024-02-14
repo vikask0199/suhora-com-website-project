@@ -10,10 +10,6 @@ import disaster from "../../assets/img/disaster.jpg"
 
 
 
-interface SliderProps {
-    slides: string[];
-}
-
 const slides = [
     {
         image:  defence ,
@@ -90,7 +86,7 @@ const SliderAndTabs = () => {
             </div>
             <div className="flex justify-center items-center flex-wrap">
                 {slides.map((slide, index) => (
-                    <div key={index} className={classNames("px-4 flex-grow py-2 cursor-pointer text-center text-sm ", { "root-container border-l border-r": index === currentSlideIndex, "bg-blue-900": index !== currentSlideIndex, })} onClick={() => handleTabClick(index)}>
+                    <div key={index} className={classNames("px-4 flex-grow py-2 cursor-pointer text-center text-sm ", { "root-container border-l border-r": index === currentSlideIndex, "servicetabs": index !== currentSlideIndex, })} onClick={() => handleTabClick(index)}>
                         <h3>{slide.heading}</h3>
                     </div>
                 ))}
