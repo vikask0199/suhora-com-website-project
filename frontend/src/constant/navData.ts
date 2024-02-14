@@ -65,15 +65,15 @@ export const links: Link[] = [
         subLinks: [
             {
                 name: "Blogs",
-                link: "/"
+                link: "/blogs"
             },
             {
                 name: "Events & News",
-                link: "/"
+                link: "/events-news"
             },
             {
                 name: "Careers",
-                link: "/"
+                link: "/careers"
             }
         ]
     }

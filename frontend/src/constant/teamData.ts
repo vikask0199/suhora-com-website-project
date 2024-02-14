@@ -9,14 +9,14 @@ import hamna from '../assets/img/teams/Hamna.jpg'
 import pratanu from '../assets/img/teams/Pratanu.jpg'
 import pratibha from '../assets/img/teams/Pratibha.jpg'
 import sarunisha from '../assets/img/teams/Sarunisha.jpg'
-import sikandar from '../assets/img/teams/Sikander.png'
-import subhajit from '../assets/img/teams/Subhajit.jpeg'
+import sikandar from '../assets/img/teams/Sikander.jpg'
+import subhajit from '../assets/img/teams/Subhajit.jpg'
 import vinodbothale from '../assets/img/teams/Vinodbothale.jpg'
 import vishal from '../assets/img/teams/Vishal.png'
 import tanmoyadhikari from '../assets/img/teams/TanmoyAdhikari.jpg'
 import vikas from '../assets/img/teams/Vikas.jpg'
 import surojitbose from '../assets/img/teams/Surojit-Bose.jpg'
-import navneetkaushik from '../assets/img/teams/NavneetKaushik.png'
+import navneetkaushik from '../assets/img/teams/NavneetKaushik.jpg'
 
 
 

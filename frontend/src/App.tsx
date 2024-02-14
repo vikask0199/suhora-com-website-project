@@ -11,6 +11,10 @@ import LancePage from './pages/LancePage';
 import HydrologyPage from './pages/HydrologyPage';
 import TerrainMappingPage from './pages/TerrainMappingPage';
 import LandDeformationPage from './pages/LandDeformationPage';
+// import Careers from './components/Careers';
+import BlogsPage from './pages/BlogsPage';
+import CareersPage from './pages/CareersPage';
+import NewsEventsPage from './pages/EventsNewsPage';
 
 function App() {
 
@@ -29,6 +33,9 @@ function App() {
           <Route path='services/hydrology' element={<HydrologyPage />} />
           <Route path='services/terrain-mapping' element={<TerrainMappingPage />} />
           <Route path='services/land-deformation' element={<LandDeformationPage />} />
+          <Route path='careers' element={<CareersPage />} />
+          <Route path='blogs' element={<BlogsPage />} />
+          <Route path='events-news' element={<NewsEventsPage />} />
         </Route>
       </Routes>
     </>

@@ -27,7 +27,7 @@ const Navbar = (props: NavbarProps) => {
 
 
   return (
-    <nav className="sticky top-0 left-0 z-[99999] md:px-14 root-container">
+    <nav className="sticky top-0 left-0 z-[99999] md:px-14 root-container nav-shadow">
       <div className="flex items-center justify-between">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <Link to="/" className='h-10 w-44'>
@@ -59,7 +59,7 @@ const Navbar = (props: NavbarProps) => {
         {/* Mobile nav */}
         <ul className={`md:hidden root-container fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4 duration-500 ${open ? "left-0" : "left-[-100%]"}`}>
           <li>
-            <Link to="/" className="py-6 inline-block hover:text-blue-500" onClick={()=>setOpen(!open)}>
+            <Link to="/" className="py-6 inline-block hover:text-[#1266a0]" onClick={()=>setOpen(!open)}>
               Home
             </Link>
           </li>
