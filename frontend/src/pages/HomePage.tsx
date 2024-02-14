@@ -1,11 +1,10 @@
 import AboutUs from "../components/home/AboutUs"
 import HomeHeader from "../components/home/HomeHeader"
+import Imaging from "../components/home/Imaging"
 import PartnersCarousel from "../components/home/PartnersCarousel"
 import Products from "../components/home/Products"
-import Serve from "../components/home/Serve"
+import SliderAndTabs from "../components/home/SliderAndTabs"
 import Tailored from "../components/home/Tailored"
-import Imaging from "../components/home/Imaging"
-import Services from "../components/home/Services"
 
 const HomePage = () => {
   return (
@@ -13,8 +12,7 @@ const HomePage = () => {
       <HomeHeader />
       <AboutUs />
       <Imaging />
-      <Services />
-      <Serve />
+      <SliderAndTabs />
       <Products />
       <Tailored />
       <PartnersCarousel />

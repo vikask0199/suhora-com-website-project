@@ -1,15 +1,9 @@
-import { SlEarphones } from "react-icons/sl";
-import { MdOutlineEmail } from "react-icons/md";
-import { IoLocationOutline } from "react-icons/io5";
-import whatsapp from "../../assets/img/whatsapp.png"
 import $ from 'jquery';
+import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
+import { SlEarphones } from "react-icons/sl";
 
 const ContactUs = () => {
-    const handleWhatsAppClick = () => {
-        const phoneNumber = '9999664437';
-        const whatsappUrl = `https://wa.me/${phoneNumber}`;
-        window.open(whatsappUrl, '_blank');
-    };
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         const form = $(e.target);
@@ -70,9 +64,6 @@ const ContactUs = () => {
                 <div className="">
                     <button className=" text-lg h-16 w-40 rounded-lg contact-button duration-300">
                         Submit Now
-                    </button>
-                    <button onClick={handleWhatsAppClick} className="z-20 fixed right-3 bottom-3 h-10 w-10">
-                        <img src={whatsapp} alt="" />
                     </button>
                 </div>
             </form>
