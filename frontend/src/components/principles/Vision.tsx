@@ -13,15 +13,15 @@ const Vision = () => {
                             transforming satellite insights into powerful tools that enhance lives, promote global safety,
                             sustainability, and drive strategic advancement. We aim to make space data universally
                             accessible, establishing it as a key element in shaping a more informed and improved future.</p>
-                        <a href="#" className=" mb-3 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                        {/* <a href="#" className=" mb-3 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                             Read more
-                        </a>
+                        </a> */}
                     </div>
 
-                    <div className="w-1/2 flex items-center justify-center p-5">
-                        <a href="#" className='h-full w-full'>
+                    <div className="w-1/2 flex items-center justify-center p-5 hover:transform hover:scale-105 duration-300">
+                        {/* <a href="#" className='h-full w-full'> */}
                             <img className="rounded-lg h-full w-full object-cover" src={rrr} alt="" />
-                        </a>
+                        {/* </a> */}
                     </div>
                 </div>
             </div>

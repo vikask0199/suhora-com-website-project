@@ -2,7 +2,7 @@ import { SlEarphones } from "react-icons/sl";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLocationOutline } from "react-icons/io5";
 import whatsapp from "../../assets/img/whatsapp.png"
-
+import $ from 'jquery';
 
 const ContactUs = () => {
     const handleWhatsAppClick = () => {
@@ -10,13 +10,27 @@ const ContactUs = () => {
         const whatsappUrl = `https://wa.me/${phoneNumber}`;
         window.open(whatsappUrl, '_blank');
     };
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
+        const form = $(e.target);
+        $.ajax({
+            type: "POST",
+            url: form.attr("action"),
+            data: form.serialize(),
+            success(data) {
+                // setResult(data);
+                // alert("Thank you for contacting us, we will get back to you soon!");
+                alert(data)
+            },
+        });
+    };
 
 
     return (
         <div className="flex flex-col gap-5 root-container-separator items-center py-5">
             <p className="font-semibold text-4xl">Contact Form</p>
             <div className="flex w-full justify-evenly flex-wrap gap-y-5 px-5">
-                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards">
+                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards hover:transform hover:scale-105 duration-300">
                     <SlEarphones className="text-4xl text-blue-500" />
                     <p className="font-bold text-xl">Contact Phone Number</p>
                     <div className="flex gap-2 flex-col">
@@ -25,7 +39,7 @@ const ContactUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards">
+                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards hover:transform hover:scale-105 duration-300">
                     <MdOutlineEmail className="text-4xl text-blue-500" />
                     <p className="font-bold text-xl">Our Email Address</p>
                     <div className="flex gap-2 flex-col">
@@ -34,7 +48,7 @@ const ContactUs = () => {
                         </p>
                     </div>
                 </div>
-                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards">
+                <div className="p-8 md:w-80 w-full gap-6 flex flex-col rounded-lg cards hover:transform hover:scale-105 duration-300">
                     <IoLocationOutline className="text-4xl text-blue-500" />
                     <p className="font-bold text-xl">Our Location</p>
                     <div className="flex gap-2 flex-col">
@@ -45,7 +59,7 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full">
+            <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full" method="post" action="send_mail.php" onSubmit={(event) => handleSubmit(event)}>
                 <input type="text" placeholder="Your Name" name="name" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
                 <input type="text" placeholder="Email Address" name="email" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
                 <input type="text" placeholder="Phone Number" name="phone" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />

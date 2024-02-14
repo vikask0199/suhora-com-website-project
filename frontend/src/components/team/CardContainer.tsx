@@ -6,12 +6,12 @@ const CardContainer = () => {
 
     return (
         <>
-            <div className="flex gap-4 flex-col  root-container">
+            <div className="w-screen flex gap-4 flex-col  root-container ">
                 <div className="mb-10">
                     <Intro />
                 </div>
 
-                <div className="flex flex-wrap justify-center">
+                <div className="flex flex-wrap justify-center ">
                     {employees.map((employee, index) => (
                         <Card key={index} employee={employee} />
                     ))}

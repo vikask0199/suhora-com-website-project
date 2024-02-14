@@ -1,5 +1,6 @@
 import ProductsCard from './ProductsCard'; 
-
+import dark1 from '../../assets/img/dark_bg.jpg';
+import light1 from '../../assets/img/light_bg.png';
 const Products = () => {
   return (
     <section className="py-10 px-14 root-container">
@@ -7,24 +8,29 @@ const Products = () => {
         <div className=" flex flex-wrap">
           <div className="w-full px-4">
             <div className="mx-auto mb-12 text-center lg:mb-20">
-              <span className="mb-2 block text-3xl font-semibold text-primary">
+              {/* <span className="mb-2 block text-3xl font-semibold text-primary">
                 Our Products
-              </span>
-              <h2 className="mb-3 text-3xl font-bold leading-[1.2]  sm:text-4xl md:text-[40px]">
-                What We Offer
+              </span> */}
+              <h2 className="mb-3 text-2xl font-bold leading-[1.2]  sm:text-4xl md:text-[40px]">
+                Our Products
               </h2>
-              <p className="text-base text-body-color">
+              {/* <p className="text-base text-body-color">
                 There are many variations of passages of Lorem Ipsum available
                 but the majority have suffered alteration in some form.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
-        <div className='flex flex-wrap'>
+        <div className='flex flex-wrap justify-center'>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <ProductsCard image="src/assets/img/dark_bg.jpg" name="SAPDE" description="/" link="/" />
-            <ProductsCard image="src/assets/img/light_bg.png" name="LANCE" description="/" link="/" />
-            <ProductsCard image="src/assets/img/dark_bg.jpg" name="SID" description="/" link="/" />
+            {/* <ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
+data for a spectrum of commercial applications." link="/products/spade" /> */}
+<ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
+data for a spectrum of commercial applications." link="/products/spade" />
+            <ProductsCard image={light1} name="LANCE" description="Advanced, near real-time ISR solutions, elevating maritime and land surveillance
+for defense and intelligence sectors." link="/products/lance" />
+            <ProductsCard image={dark1} name="SID" description="Integrated space analytics and rapid satellite data converge to enhance disaster response
+and streamline insurance management." link="/products/sid" />
           </div>
         </div>
       </div>

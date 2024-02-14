@@ -8,6 +8,9 @@ import PrinciplePage from './pages/PrinciplePage';
 import SpadePage from './pages/SpadePage';
 import SidPage from './pages/SidPage';
 import LancePage from './pages/LancePage';
+import HydrologyPage from './pages/HydrologyPage';
+import TerrainMappingPage from './pages/TerrainMappingPage';
+import LandDeformationPage from './pages/LandDeformationPage';
 
 function App() {
 
@@ -23,6 +26,9 @@ function App() {
           <Route path='products/spade' element={<SpadePage />} />
           <Route path='products/sid' element={<SidPage />} />
           <Route path='products/lance' element={<LancePage />} />
+          <Route path='services/hydrology' element={<HydrologyPage />} />
+          <Route path='services/terrain-mapping' element={<TerrainMappingPage />} />
+          <Route path='services/land-deformation' element={<LandDeformationPage />} />
         </Route>
       </Routes>
     </>

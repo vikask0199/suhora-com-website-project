@@ -48,15 +48,15 @@ export const links: Link[] = [
         subLinks: [
             {
                 name: "Hydrology",
-                link: "/"
+                link: "/services/hydrology"
             },
             {
                 name: "Terrain Mapping",
-                link: "/"
+                link: "/services/terrain-mapping"
             },
             {
                 name: "Land Deformation Monitoring",
-                link: "/"
+                link: "/services/land-deformation"
             }
         ]
     },

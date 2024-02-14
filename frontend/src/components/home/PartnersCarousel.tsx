@@ -55,22 +55,22 @@ function PartnersCarousel() {
       <h3 className=" text-4xl mb-2">Our Amazing Partners</h3>
       <div className="border-t-2 border-blue-900 "></div>
       <Slider {...settings} className="py-6">
-        <div className="w-full blue-border h-[24vh]">
+        <div className="w-full blue-border h-[24vh] hover:transform hover:scale-110 duration-300">
           <img src={img1} alt="img" className="compimg ml-[12vh] mt-[6vh] h-2/4  green-border mb-1" />
         </div>
-        <div className="w-full blue-border h-[24vh]">
+        <div className="w-full blue-border h-[24vh] hover:transform hover:scale-110 duration-300">
           <img src={img2} alt="img" className="compimg ml-[9vh] mt-[6vh] h-2/4 green-border " />
         </div>
-        <div className="w-full blue-border h-[24vh]">
+        <div className="w-full blue-border h-[24vh] hover:transform hover:scale-110 duration-300">
           <img src={img3} alt="img" className="compimg ml-[9vh] mt-[6vh] h-2/4 green-border " />
         </div>
-        <div className="w-full blue-border  h-[24vh]">
+        <div className="w-full blue-border  h-[24vh] hover:transform hover:scale-110 duration-300">
           <img src={img4} alt="img" className="compimg ml-[11vh] mt-[6vh] h-2/4 green-border " />
         </div>
-        <div className="w-full blue-border h-[24vh]">
+        <div className="w-full blue-border h-[24vh] hover:transform hover:scale-110 duration-300">
           <img src={img5} alt="img" className="compimg ml-[9vh] mt-[8vh] h-1/3 green-border" />
         </div >
-        <div className="w-full blue-border h-[24vh] ">
+        <div className="w-full blue-border h-[24vh] hover:transform hover:scale-110 duration-300 ">
           <img src={img6} alt="img" className="compimg ml-24 mt-9 h-2/4 green-border " />
         </div>
       </Slider>
