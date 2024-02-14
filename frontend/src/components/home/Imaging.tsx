@@ -132,7 +132,7 @@ const Portfolio = () => {
               showCard={showCard}
             />
             <PortfolioCard
-              ImageHref={sar2}
+              ImageHref={sar1}
               category="SAR"
               title="Chennai (Floods), India"
               button="SAR (25cm ICEYE)"
@@ -140,9 +140,9 @@ const Portfolio = () => {
               showCard={showCard}
             />
             <PortfolioCard
-              ImageHref={sar1}
+              ImageHref={sar2}
               category="SAR"
-              title="South Lhonak Lake, India "
+              title="South Lhonak Lake, India"
               button="SAR (25cm ICEYE)"
               // buttonHref="#"
               showCard={showCard}
