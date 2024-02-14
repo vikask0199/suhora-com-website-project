@@ -9,10 +9,12 @@ import img3 from "../../assets/img/3.png"
 import img4 from "../../assets/img/4.png"
 import img5 from "../../assets/img/5.png"
 import img6 from "../../assets/img/6.png"
+interface NavbarProps {
+  toggleTheme: () => void;
+  currentTheme: 'theme-white' | 'theme-dark';
+}
 
-
-
-function PartnersCarousel() {
+function PartnersCarousel(props: NavbarProps) {
   var settings = {
     dots: false,
     infinite: true,

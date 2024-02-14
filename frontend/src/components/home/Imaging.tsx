@@ -20,16 +20,16 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="root-container px-14">
-      <section className="pt-10 pb-12 lg:pt-[120px] lg:pb-[90px] ">
+    <div className="root-container px-14 py-12">
+      <section className="">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
-              <div className="mx-auto mb-[60px] max-w-[510px] text-center">
+              <div className="mx-auto text-center">
                 {/* <span className="text-primary mb-2 block text-lg font-semibold">
                   Our Capabilities
                 </span> */}
-                <h2 className="text-dark mb-3 text-3xl leading-[1.208] font-bold sm:text-4xl md:text-[40px]">
+                <h2 className="text-dark mb-8 text-3xl  font-bold">
                   Imaging Capabilities
                 </h2>
                 {/* <p className="text-body-color text-base dark:text-dark-6">

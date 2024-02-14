@@ -1,17 +1,17 @@
-import ProductsCard from './ProductsCard'; 
+import ProductsCard from './ProductsCard';
 import dark1 from '../../assets/img/dark_bg.jpg';
 import light1 from '../../assets/img/light_bg.png';
 const Products = () => {
   return (
-    <section className="py-10 px-14 root-container">
+    <section className="py-12 px-14 root-container">
       <div className="container mx-auto">
         <div className=" flex flex-wrap">
           <div className="w-full px-4">
-            <div className="mx-auto mb-12 text-center lg:mb-20">
+            <div className=" text-center mb-8">
               {/* <span className="mb-2 block text-3xl font-semibold text-primary">
                 Our Products
               </span> */}
-              <h2 className="mb-3 text-2xl font-bold leading-[1.2]  sm:text-4xl md:text-[40px]">
+              <h2 className=" text-3xl font-bold">
                 Our Products
               </h2>
               {/* <p className="text-base text-body-color">
@@ -25,7 +25,7 @@ const Products = () => {
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {/* <ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
 data for a spectrum of commercial applications." link="/products/spade" /> */}
-<ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
+            <ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
 data for a spectrum of commercial applications." link="/products/spade" />
             <ProductsCard image={light1} name="LANCE" description="Advanced, near real-time ISR solutions, elevating maritime and land surveillance
 for defense and intelligence sectors." link="/products/lance" />
