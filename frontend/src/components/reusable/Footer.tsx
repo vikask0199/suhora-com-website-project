@@ -20,13 +20,13 @@ const Footer = (props: footerProps) => {
         <div className="mx-auto w-full max-w-screen-xl">
           <div className="flex justify-between p-[5vh]">
             <div>
-              <div className="h-10 w-44 flex items-center justify-start">
+              <div className="h-10 w-44 flex items-center justify-start relative right-[2vh] bottom-[0.4vh]">
                 <Link to="/" className='h-10 w-44'>
                   <img src={props.currentTheme === 'theme-white' ? LogoLight : LogoDark} alt="logo" className="cursor-pointer h-full w-full object-center object-cover" />
                 </Link>
               </div>
               <ul className=" font-sm">
-                <li className="mb-2">
+                <li className="mb-2 mt-[1vh]">
                   <a href="#about" className=" hover:underline hover:text-blue-800">About</a>
                 </li>
                 <li className="mb-2">
