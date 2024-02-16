@@ -4,6 +4,11 @@ import ProductsPageCards from './ProdcutsPageCards';
 // import { BadgeCheckIcon } from '@heroicons/react/solid';
 // import TailoredCards from '../home/TailoredCards';
 import dark1 from '../../assets/img/dark_bg.jpg';
+// import multisensor from '../../assets/img/multi-sensor.png'
+import { MdSatelliteAlt, MdOutlineSecurity  } from "react-icons/md";
+import { AiFillBuild } from "react-icons/ai";
+import { GrDeploy } from "react-icons/gr";
+import { PiStrategy } from "react-icons/pi";
 import light1 from '../../assets/img/light_bg.png';
 import bg_spade from '../../assets/img/planet-2087558_1920.jpg';
 const Spade = () => {
@@ -127,7 +132,7 @@ const Spade = () => {
                                         className="text-xl font-bold  before:mb-2 before:block before:font-mono before:text-sm before:text-gray-500">
                                         Draw
                                     </h3>
-                                    <h4 className="mt-2 text-base ">Drae AOI/POI by clicking on the map.</h4>
+                                    <h4 className="mt-2 text-base ">Draw AOI/POI by clicking on the map.</h4>
                                 </div>
                             </li>
                             <li className="flex-start group relative flex lg:flex-col">
@@ -195,7 +200,7 @@ Pick best scenes from Archive or Auto-select for new collection request.</h4>
 
                             <ul className="grid place-content-center sm:grid-cols-2 gap-8">
                                 <li className="flex">
-                                    <div className="px-4 text-5xl font-extralight ">01.</div>
+                                    <div className="px-4 text-5xl font-extralight "><MdOutlineSecurity /></div>
                                     <div>
                                         <div className="text-xl font-bold ">Research</div>
                                         <p className="max-w-xs py-2 text-sm ">We love numbers! We collect data and insights, analyze
@@ -204,7 +209,7 @@ Pick best scenes from Archive or Auto-select for new collection request.</h4>
                                     </div>
                                 </li>
                                 <li className="flex">
-                                    <div className="px-4 text-5xl font-extralight ">02.</div>
+                                    <div className="px-4 text-5xl font-extralight "><PiStrategy /></div>
                                     <div>
                                         <div className="text-xl font-bold ">Strategey</div>
                                         <p className="max-w-xs py-2 text-sm ">Solutions are born from proper research, hard work, and
@@ -213,7 +218,7 @@ Pick best scenes from Archive or Auto-select for new collection request.</h4>
                                     </div>
                                 </li>
                                 <li className="flex">
-                                    <div className="px-4 text-5xl font-extralight ">03.</div>
+                                    <div className="px-4 text-5xl font-extralight "><MdSatelliteAlt /></div>
                                     <div>
                                         <div className="text-xl font-bold ">Design</div>
                                         <p className="max-w-xs py-2 text-sm ">We design the right solution for your business. We
@@ -222,7 +227,7 @@ Pick best scenes from Archive or Auto-select for new collection request.</h4>
                                     </div>
                                 </li>
                                 <li className="flex">
-                                    <div className="px-4 text-5xl font-extralight ">04.</div>
+                                    <div className="px-4 text-5xl font-extralight "><AiFillBuild /></div>
                                     <div>
                                         <div className="text-xl font-bold ">Development</div>
                                         <p className="max-w-xs py-2 text-sm ">We build the right solution for your business. We
@@ -231,7 +236,7 @@ Pick best scenes from Archive or Auto-select for new collection request.</h4>
                                     </div>
                                 </li>
                                 <li className="flex">
-                                    <div className="px-4 text-5xl font-extralight ">05.</div>
+                                    <div className="px-4 text-5xl font-extralight "><GrDeploy /></div>
                                     <div>
                                         <div className="text-xl font-bold ">Deployment</div>
                                         <p className="max-w-xs py-2 text-sm ">We build the right solution for your business. We
