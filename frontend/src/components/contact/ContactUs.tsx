@@ -28,9 +28,7 @@ const ContactUs = () => {
     };
 
     const handleSubmit = (e: React.FormEvent) => {
-
         e.preventDefault();
-
         axios.post('https://test.suhora.com/send/', {
             name: name,
             email: email,
