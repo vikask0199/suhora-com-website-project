@@ -10,7 +10,7 @@ import { IoMoon } from "react-icons/io5";
 
 interface NavbarProps {
   toggleTheme: () => void;
-  currentTheme: 'theme-white' | 'theme-dark';
+  currentTheme: 'theme-white' | 'theme-dark'; // This expects specific string literals
 }
 
 const Navbar = (props: NavbarProps) => {

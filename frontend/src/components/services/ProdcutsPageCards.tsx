@@ -6,7 +6,7 @@ interface ProductsCardProps {
   }
   
   const ProductsPageCards = (props: ProductsCardProps) => {
-    console.log(props);
+
     return (
       <div className="max-w-sm  rounded-lg shadow cards flex flex-col justify-between hover:transform hover:scale-105 duration-300">
         {/* <a href="#"> */}
