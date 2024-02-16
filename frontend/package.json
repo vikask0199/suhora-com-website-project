@@ -14,8 +14,16 @@
     "@heroicons/react": "^1.0.6",
     "@types/react-slick": "^0.23.13",
     "axios": "^1.6.7",
+<<<<<<< HEAD
     "framer-motion": "^11.0.3",
     "googleapis": "^133.0.0",
+=======
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.4",
+    "framer-motion": "^11.0.3",
+    "google-auth-library": "^9.6.3",
+    "google-spreadsheet": "^4.1.1",
+>>>>>>> main
     "jquery": "^3.7.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -29,6 +37,7 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.29",
+    "@types/node": "^20.11.17",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@types/react-slick": "^0.23.13",

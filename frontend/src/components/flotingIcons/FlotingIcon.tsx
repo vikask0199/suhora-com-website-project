@@ -1,6 +1,6 @@
-import { FaLinkedin } from "react-icons/fa6";
-import { MdMail } from "react-icons/md";
-import { Link } from "react-router-dom";
+// import { FaLinkedin } from "react-icons/fa6";
+// import { MdMail } from "react-icons/md";
+// import { Link } from "react-router-dom";
 import whatsapp from "../../assets/img/whatsapp.png"
 
 
