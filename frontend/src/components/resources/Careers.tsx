@@ -1,25 +1,25 @@
 // import React from 'react'
 
 const Careers = () => {
-  return (
-<>
+    return (
+        <>
 
-<div className="relative bg-cover bg-center h-48 root-container">
-            <div className="absolute inset-0 opacity-50"></div>
+            <div className="relative bg-cover bg-center h-48 root-container">
+                <div className="absolute inset-0 opacity-50"></div>
 
-            <div className="absolute inset-0 flex items-center justify-center">
-                <div className="text-center">
-                    <h1 className="text-4xl font-bold mb-4">Careers</h1>
+                <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-center">
+                        <h1 className="text-4xl font-bold mb-4">Careers</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-    <div className="root-container-alt shadow-md cards w-full  flex md:flex-col gap-36 sm:items-center  justify-between px-5 py-4">
+            <div className="root-container-alt shadow-md cards w-full  flex md:flex-col gap-36 sm:items-center  justify-between px-5 py-4">
 
-        <div className="">
-            <h2 className="text-xl font-bold p-28 text-red-500">Currently we don't have any open positions</h2>
-        </div>
-        {/* Single Job post card */}
-        {/* <div className="relative flex min-h-screen w-full jus items-center justify-center overflow-hidden root-container-separator bg-gray-50">
+                <div className="">
+                    <h2 className="text-xl font-bold p-28 text-red-500">Currently we don't have any open positions</h2>
+                </div>
+                {/* Single Job post card */}
+                {/* <div className="relative flex min-h-screen w-full jus items-center justify-center overflow-hidden root-container-separator bg-gray-50">
         
             <div className="bg-white  shadow-md cards w-full max-w-4xl flex flex-col sm:flex-row gap-1 sm:items-center  justify-between px-5 py-4 rounded-md">
             <div>
@@ -47,13 +47,13 @@ const Careers = () => {
         </div> */}
 
 
-    </div>
+            </div>
 
-    {/* Card for a single job */}
-    
- </>
-    
-  )
+            {/* Card for a single job */}
+
+        </>
+
+    )
 }
 
 export default Careers

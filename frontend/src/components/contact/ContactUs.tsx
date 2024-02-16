@@ -1,23 +1,63 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { SlEarphones } from "react-icons/sl";
 
+import { useState } from "react";
+// import { event } from "jquery";
+import axios from "axios";
+
 const ContactUs = () => {
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        const form = $(e.target);
-        $.ajax({
-            type: "POST",
-            url: form.attr("action"),
-            data: form.serialize(),
-            success(data) {
-                // setResult(data);
-                // alert("Thank you for contacting us, we will get back to you soon!");
-                alert(data)
-            },
-        });
+    // const [formdata, setFormData]=useState({});
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [phone, setPhone] = useState('');
+    const [subject, setSubject] = useState('');
+    const [message, setMessage] = useState('');
+    const resetForm = () => {
+        setName('');
+        setEmail('');
+        setPhone('');
+        setSubject('');
+        setMessage('');
     };
+ 
+    const handleSubmit = (e: React.FormEvent) => {
+        
+        e.preventDefault();
+
+        axios.post('https://test.suhora.com/send/', {
+            name: name,
+            email: email,
+            phone: phone,
+            subject: subject,
+            message: message
+    
+          },{
+            headers: {
+                'Content-Type': 'application/json'
+              }
+          }
+          )
+        .then((response) => {
+            console.log("res" + response.data.errors);
+            if (response.data.status === 'success') {
+                resetForm();
+                alert("Your message was sent successfully. Someone will get back to you!");
+                
+            } else if (response.data.status == 'error' ) {
+                resetForm();
+                alert("Message failed to send.");
+            }
+        })
+        .catch((error) => {
+            resetForm();
+            console.log("error" + error.message);
+            //window.alert(error);
+        });
+            // console.log(Form)
+    };
+
 
 
     return (
@@ -53,12 +93,12 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full" method="post" action="send_mail.php" onSubmit={(event) => handleSubmit(event)}>
-                <input type="text" placeholder="Your Name" name="name" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <input type="text" placeholder="Email Address" name="email" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <input type="text" placeholder="Phone Number" name="phone" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <input type="text" placeholder="Subject" name="subject" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <textarea name="message" id="" placeholder="Your Message" className="focus:border-blue-500 resize-none h-52 contact-input-container rounded-lg indent-5 placeholder:text-lg outline-none border-2 border-slate-300">
+            <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full" method="post" onSubmit={handleSubmit}>
+                <input type="text" placeholder="Your Name" name="name" value={name} onChange={(e) => setName(e.target.value)} className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <input type="text" placeholder="Email Address" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <input type="text" placeholder="Phone Number" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <input type="text" placeholder="Subject" name="subject" value={subject} onChange={(e) => setSubject(e.target.value)} className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <textarea name="message" id="" placeholder="Your Message" value={message} onChange={(e) => setMessage(e.target.value)} className="focus:border-blue-500 resize-none h-52 contact-input-container rounded-lg indent-5 placeholder:text-lg outline-none border-2 border-slate-300">
 
                 </textarea>
                 <div className="">
