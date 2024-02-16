@@ -69,13 +69,14 @@ const SliderAndTabs = () => {
 
     return (
         <div className="root-container root-container-separator md:px-14 py-10 flex flex-col">
+            <h2 className={`text-3xl font-bold mb-6 text-center font-century-gothic scroll-smooth focus:scroll-auto `}>Industries We Serve</h2>
             <div className="overflow-hidden root-container">
                 <div className={classNames("flex", { "transition-transform duration-500 ease-in-out": direction === "forward", "transition-none": direction === "backward", })} style={{ transform: `translateX(-${currentSlideIndex * 100}%)`, }} >
                     {slides.map((slide, index) => (
                         <div key={index} className="flex-shrink-0 w-full flex items-center flex-col md:flex-row justify-center">
                             <div className="md:w-1/2 flex flex-col h-full p-7 gap-5">
-                                <h2 className="font-bold">{slide.heading}</h2>
-                                <p>{slide.content}</p>
+                                <h2 className="font-bold text-xl">{slide.heading}</h2>
+                                <p className="">{slide.content}</p>
                             </div>
                             <div className="md:w-1/2 h-full">
                                 <img src={slide.image} alt={`Slide ${index + 1}`} className="h-full w-full object-cover" />

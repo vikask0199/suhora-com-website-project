@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 interface ProductsCardProps {
   image: string;
   name: string;
@@ -6,7 +8,6 @@ interface ProductsCardProps {
 }
 
 const ProductsCard = (props: ProductsCardProps) => {
-  console.log(props);
   return (
     <div className="max-w-sm  rounded-lg shadow cards flex flex-col justify-between hover:transform hover:scale-105 duration-300">
       {/* <a href="#"> */}
@@ -14,7 +15,7 @@ const ProductsCard = (props: ProductsCardProps) => {
       {/* </a> */}
       <div className="flex justify-between flex-col pt-3 px-3 pb-5 ">
         {/* <a href="#"> */}
-          <h5 className="mb-3 text-xl font-bold tracking-tight">
+          <h5 className="mb-3 text-xl font-bold">
             {props.name}
           </h5>
         {/* </a> */}
@@ -23,9 +24,9 @@ const ProductsCard = (props: ProductsCardProps) => {
           {props.description}
         </p>
         <div className="flex justify-end pr-3">
-        <a
-          href={props.link}
-          className="inline-flex float-right items-center px-3 py-2 w-fit text-sm font-medium text-center text-white bg-[#1266a0] rounded-lg hover:bg-[#174773] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        <Link
+          to={props.link}
+          className="inline-flex float-right items-center px-3 py-2 w-fit text-sm font-medium text-center text-white bg-[#1266a0] rounded-lg hover:bg-[#174773] focus:ring-4 focus:outline-none"
         >
           Read more
           <svg
@@ -43,7 +44,7 @@ const ProductsCard = (props: ProductsCardProps) => {
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>
-        </a>
+        </Link>
         </div>
       </div>
     </div>

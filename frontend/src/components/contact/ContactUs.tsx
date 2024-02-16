@@ -1,23 +1,66 @@
-import $ from 'jquery';
+import { useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { MdOutlineEmail } from "react-icons/md";
 import { SlEarphones } from "react-icons/sl";
+import axios from "axios"
+
+interface FormData {
+    name: string,
+    email: string,
+    phone: string,
+    subject: string,
+    message: string
+}
 
 const ContactUs = () => {
-    const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        const form = $(e.target);
-        $.ajax({
-            type: "POST",
-            url: form.attr("action"),
-            data: form.serialize(),
-            success(data) {
-                // setResult(data);
-                // alert("Thank you for contacting us, we will get back to you soon!");
-                alert(data)
-            },
+
+    const spreadsheetId = '12LLCf-BglolGl80vDFobwMBgrVt0OMhnej99IgL71Y4';
+    const range = 'Sheet1!A1:E1';
+    const accessToken = 'ya29.a0AfB_byBA4pvGFTlBhpC_1jOgKvTbw9vkttjrOciWEJ8XkSZOlGa6wlSD-_3bu24nDMXTYqtNCwCCHSzSQ18SP2GjDDOztNLspHHNeECeVc_lnbngf2cNgfNtvzaWHycW1fYA0v2DuU7j0x1S1KwDwWpR0aS0TtAQICA3aCgYKAdcSARMSFQHGX2Miq366UYFt4W4p_f4RAfKngA0171';
+
+    const [formData, setFormData] = useState<FormData>({
+        name: "",
+        email: "",
+        phone: "",
+        subject: "",
+        message: ""
+    })
+
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
         });
     };
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+
+        const data = {
+            values: [
+                ['Name', 'Email', 'Phone', 'Subject', 'Message'],
+                [formData.name, formData.email, formData.phone, formData.subject, formData.message]
+            ]
+        };
+
+        axios.post(
+            `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}:append?valueInputOption=RAW`,
+            data,
+            {
+                headers: {
+                    'Authorization': `Bearer ${accessToken}`,
+                    'Content-Type': 'application/json'
+                }
+            }
+        )
+            .then(response => {
+                console.log('Data posted successfully:', response.data);
+            })
+            .catch(error => {
+                console.error('Error posting data:', error.response.data);
+            });
+    };
+
 
 
     return (
@@ -53,16 +96,14 @@ const ContactUs = () => {
                     </div>
                 </div>
             </div>
-            <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full" method="post" action="send_mail.php" onSubmit={(event) => handleSubmit(event)}>
-                <input type="text" placeholder="Your Name" name="name" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <input type="text" placeholder="Email Address" name="email" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <input type="text" placeholder="Phone Number" name="phone" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <input type="text" placeholder="Subject" name="subject" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <textarea name="message" id="" placeholder="Your Message" className="focus:border-blue-500 resize-none h-52 contact-input-container rounded-lg indent-5 placeholder:text-lg outline-none border-2 border-slate-300">
-
-                </textarea>
+            <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full" onSubmit={handleSubmit} >
+                <input type="text" value={formData.name} onChange={handleChange} required placeholder="Your Name" name="name" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <input type="email" value={formData.email} onChange={handleChange} required placeholder="Email Address" name="email" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <input type="text" value={formData.phone} onChange={handleChange} required placeholder="Phone Number" name="phone" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <input type="text" value={formData.subject} onChange={handleChange} required placeholder="Subject" name="subject" className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <textarea name="message" value={formData.message} onChange={handleChange} required id="" placeholder="Your Message" className="focus:border-blue-500 resize-none h-52 contact-input-container rounded-lg indent-5 placeholder:text-lg outline-none border-2 border-slate-300"></textarea>
                 <div className="">
-                    <button className=" text-lg h-16 w-40 rounded-lg contact-button duration-300">
+                    <button type="submit" className=" text-lg h-16 w-40 rounded-lg contact-button duration-300">
                         Submit Now
                     </button>
                 </div>

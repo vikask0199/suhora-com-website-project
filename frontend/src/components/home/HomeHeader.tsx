@@ -20,7 +20,7 @@ const ImageSlider = () => {
   };
 
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden ">
       <div className="absolute z-10 top-[40%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-white">
         <div className="mt-[3vh] text-5xl font-semibold">
           <span>Space </span>
@@ -28,15 +28,15 @@ const ImageSlider = () => {
           <span> Simplified</span>
         </div>
       </div>
-      <Slider {...settings}>
+      <Slider {...settings} >
         <div className="relative text-center">
-          <img className="h-[80vh] w-[100vw]" src={img3} />
+          <img className="" src={img3} />
         </div>
         <div className="relative text-center">
-          <img className="h-[80vh] w-[100vw]" src={img2} />
+          <img className="" src={img2} />
         </div>
         <div className="relative text-center">
-          <img className="h-[80vh] w-[100vw]" src={img1} />
+          <img className="" src={img1} />
         </div>
       </Slider>
     </div>

@@ -6,7 +6,12 @@ import Products from "../components/home/Products"
 import SliderAndTabs from "../components/home/SliderAndTabs"
 import Tailored from "../components/home/Tailored"
 
-const HomePage = () => {
+interface homeProps {
+  currentTheme: string,
+}
+
+const HomePage = (props: homeProps) => {
+
   return (
     <>
       <HomeHeader />
@@ -15,7 +20,7 @@ const HomePage = () => {
       <SliderAndTabs />
       <Products />
       <Tailored />
-      <PartnersCarousel />
+      <PartnersCarousel currentTheme={props.currentTheme} />
     </>
   )
 }

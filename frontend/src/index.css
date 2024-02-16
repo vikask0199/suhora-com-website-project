@@ -80,17 +80,15 @@ body {
 }
 
 /* removing extraa space of slider  */
-
 .slick-slider.slick-initialized {
     margin-bottom: -1.1vh;
 }
 
 .detailspage-hover {
     background-color: #0a4d8f;
-    
     color: #fff;
-
 }
+
 .detailspage-hover:hover {
     background-color: #1976D2;
     color: #fff;

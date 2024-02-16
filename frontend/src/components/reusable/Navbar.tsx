@@ -10,7 +10,7 @@ import { IoMoon } from "react-icons/io5";
 
 interface NavbarProps {
   toggleTheme: () => void;
-  currentTheme: 'theme-white' | 'theme-dark';
+  currentTheme: 'theme-white' | 'theme-dark'; // This expects specific string literals
 }
 
 const Navbar = (props: NavbarProps) => {
@@ -31,7 +31,7 @@ const Navbar = (props: NavbarProps) => {
       <div className="flex items-center justify-between">
         <div className="z-50 p-5 md:w-auto w-full flex justify-between">
           <Link to="/" className='h-10 w-44'>
-            <img src={props.currentTheme === 'theme-white' ? LogoDark : logoWhite} alt="logo" className="md:cursor-pointer h-full w-full" />
+            <img src={props.currentTheme === 'theme-white' ? LogoDark : logoWhite} alt="logo" className="cursor-pointer h-full w-full object-center object-cover" />
           </Link>
           <div className="text-3xl md:hidden" onClick={() => setOpen(!open)}>
             {open ? <IoClose /> : <IoMenu />}
@@ -59,7 +59,7 @@ const Navbar = (props: NavbarProps) => {
         {/* Mobile nav */}
         <ul className={`md:hidden root-container fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4 duration-500 ${open ? "left-0" : "left-[-100%]"}`}>
           <li>
-            <Link to="/" className="py-6 inline-block hover:text-[#1266a0]" onClick={()=>setOpen(!open)}>
+            <Link to="/" className="py-6 inline-block hover:text-blue-500" onClick={()=>setOpen(!open)}>
               Home
             </Link>
           </li>

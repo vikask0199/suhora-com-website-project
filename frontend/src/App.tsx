@@ -2,27 +2,47 @@ import { Route, Routes } from 'react-router-dom';
 import PublicOutlet from './outlets/PublicOutlet';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
-import TeamsPage from './pages/TeamsPage';
-import JourneyPage from './pages/JourneyPage';
-import PrinciplePage from './pages/PrinciplePage';
-import SpadePage from './pages/SpadePage';
-import SidPage from './pages/SidPage';
-import LancePage from './pages/LancePage';
 import HydrologyPage from './pages/HydrologyPage';
-import TerrainMappingPage from './pages/TerrainMappingPage';
+import JourneyPage from './pages/JourneyPage';
+import LancePage from './pages/LancePage';
 import LandDeformationPage from './pages/LandDeformationPage';
+import PrinciplePage from './pages/PrinciplePage';
+import SidPage from './pages/SidPage';
+import SpadePage from './pages/SpadePage';
+import TeamsPage from './pages/TeamsPage';
+import TerrainMappingPage from './pages/TerrainMappingPage';
 // import Careers from './components/Careers';
 import BlogsPage from './pages/BlogsPage';
 import CareersPage from './pages/CareersPage';
 import NewsEventsPage from './pages/EventsNewsPage';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'theme-dark' ? 'theme-white' : 'theme-dark';
+    setTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+  };
+
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') as 'theme-dark' | 'theme-white' | null;
+    if (savedTheme) {
+      setTheme(savedTheme);
+    }
+  }, []);
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
 
   return (
     <>
       <Routes>
-        <Route path='/' element={<PublicOutlet />}>
-          <Route index element={<HomePage />} />
+        <Route path='/' element={<PublicOutlet toggleTheme={toggleTheme} currentTheme={theme}/>}>
+          <Route index element={<HomePage currentTheme={theme} />} />
           <Route path='contact-us' element={<ContactPage />} />
           <Route path='our-teams' element={<TeamsPage />} />
           <Route path='our-principles' element={<PrinciplePage />} />
