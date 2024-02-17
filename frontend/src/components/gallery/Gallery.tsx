@@ -1,9 +1,25 @@
 // import { useState, useEffect } from 'react';
-// import { Lightbox, initTE } from 'tw-elements';
+import { Lightbox, initTE } from 'tw-elements';
 
-
-
-
+// import img1 from "../../assets/satellite/agra_iceye_SLH.png"
+import img3 from "../../assets/satellite/rotterdam_iceye_SL_colorized_resized.png"
+import img2 from "../../assets/satellite/city_saocom_olf.png"
+import img1 from '../../assets/satellite/optical-1_Turkey.jpg'
+import img4 from '../../assets/satellite/optical-3_Bhama_askhed_reservoir.jpg'
+import img5 from '../../assets/satellite/optical-2_Dubai.png'
+import img6 from '../../assets/satellite/hero-5.jpg'
+import img8 from '../../assets/satellite/city_saocom_olf.png'
+import img10 from '../../assets/satellite/rotterdam_iceye_SL_colorized_resized.png'
+// import img4 from "../../assets/satellite/rotterdam_iceye_SL.png"
+// import img5 from "../../assets/satellite/sar_chennai_floods_iceye_SM_colorized_resized.jpg"
+// import img6 from "../../assets/satellite/sar_chennai_floods_iceye_SM_colorized_resized.jpg"
+import img7 from "../../assets/satellite/sar_chennai_floods_iceye_SM_colorized_resized.jpg"
+// import img8 from "../../assets/satellite/sar_rotterdam_iceye_SL_colorized.png"
+import img9 from "../../assets/satellite/sar_lhonak_new_iceye-nez_colorized2.png"
+// import img10 from "../../assets/satellite/sar_lhonak_new_iceye-nez_colorized2.png"
+import img11 from "../../assets/satellite/Taj Mahal_ICEYE_Dwell.jpg"
+// import img12 from "../../assets/satellite/defense - Copy.jpg"
+import { useEffect } from "react"
 function Gallery() {
   // const [images, setImages] = useState<{ name: string; url: string }[]>([]);
 
@@ -25,162 +41,105 @@ function Gallery() {
   //   fetchImages();
   // }, []);
 
+  useEffect(()=>{
+    initTE({ Lightbox });
+  },[])
 
 
+const getImageName = (imageUrl:any) => {
+  return imageUrl.split('/').pop().split('.')[0];
+};
   return (
-    <div className='px-14 py-12 root-container'>
+    <div className='px-14 py-12 root-container min-h-96'>
       <div
         data-te-lightbox-init
         className="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0 ">
         <div className="h-full w-full">
           <img
-            src="../../assets/satellite/agra_iceye_SLH.png"
-            data-te-img="../../assets/satellite/agra_iceye_SLH.png"
-            alt="Table Full of Spices"
+            src={img1}
+            data-te-img={img1}
+            alt={getImageName(img1)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
         <div className="h-full w-full">
           <img
-            src="../../assets/satellite/city_saocom_olf.png"
-            data-te-img="../../assets/satellite/city_saocom_olf.png"
-            alt="Winter Landscape"
+            src={img2}
+            data-te-img={img2}
+            alt={getImageName(img2)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
         <div className="h-full w-full">
           <img
-            src="../../assets/satellite/rotterdam_iceye_SL.png"
-            data-te-img="../../assets/satellite/rotterdam_iceye_SL.png"
+            src={img3}
+            data-te-img={img3}
             data-te-lightbox-disabled
-            alt="Disabled image"
+            alt={getImageName(img3)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
         <div className="h-full w-full ">
           <img
-            src="../../assets/satellite/rotterdam_iceye_SL_colorized_resized.png"
-            data-te-img="../../assets/satellite/rotterdam_iceye_SL_colorized_resized.png"
-            alt="Place Royale Bruxelles"
+            src={img4}
+            data-te-img={img4}
+            alt={getImageName(img4)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
         <div className="h-full w-full ">
           <img
-            src="../../assets/satellite/sar_chennai_floods_iceye_SM_colorized_resized.jpg"
-            data-te-img="../../assets/satellite/sar_chennai_floods_iceye_SM_colorized_resized.jpg"
-            alt="Place Royale Bruxelles"
+            src={img5}
+            data-te-img={img5}
+            alt={getImageName(img5)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
         <div className="h-full w-full ">
           <img
-            src="../../assets/satellite/sar_chennai_floods_iceye_SM_colorized_resized.jpg"
-            data-te-img="../../assets/satellite/sar_chennai_floods_iceye_SM_colorized_resized.jpg"
-            alt="Place Royale Bruxelles"
+            src= {img6}
+            data-te-img={img6}
+            alt={getImageName(img6)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
         <div className="h-full w-full ">
           <img
-            src="../../assets/satellite/sar_chennai_floods_iceye_SM_colorized_resized.jpg"
-            data-te-img="../../assets/satellite/sar_chennai_floods_iceye_SM_colorized_resized.jpg"
-            alt="Place Royale Bruxelles"
+            src= {img7}
+            data-te-img={img7}
+            alt={getImageName(img7)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
         <div className="h-full w-full ">
           <img
-            src="../../assets/satellite/sar_rotterdam_iceye_SL_colorized.png"
-            data-te-img="../../assets/satellite/sar_rotterdam_iceye_SL_colorized.png"
-            alt="Place Royale Bruxelles"
+            src={img8}
+            data-te-img={img8}
+            alt={getImageName(img8)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
         <div className="h-full w-full ">
           <img
-            src="../../assets/satellite/sar_lhonak_new_iceye-nez_colorized2.png"
-            data-te-img= "../../assets/satellite/sar_lhonak_new_iceye-nez_colorized2.png"
-            alt="Place Royale Bruxelles"
+            src={img9}
+            data-te-img= {img9}
+            alt={getImageName(img9)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
         <div className="h-full w-full ">
           <img
-            src="../../assets/satellite/sar_lhonak_new_iceye-nez_colorized2.png"
-            data-te-img= "../../assets/satellite/sar_lhonak_new_iceye-nez_colorized2.png"
-            alt="Place Royale Bruxelles"
+            src={img10}
+            data-te-img= {img10}
+            alt={getImageName(img10)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
         <div className="h-full w-full ">
           <img
-            src="../../assets/satellite/Taj Mahal_ICEYE_Dwell.jpg"
-            data-te-img= "../../assets/satellite/Taj Mahal_ICEYE_Dwell.jpg"
-            alt="Place Royale Bruxelles"
+            src={img11}
+            data-te-img= {img11}
+            alt={getImageName(img11)}
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
-        <div className="h-full w-full ">
+        {/* <div className="h-full w-full ">
           <img
-            src="../../assets/satellite/defense - Copy.jpg"
-            data-te-img= "../../assets/satellite/defense - Copy.jpg"
+            src={img12}
+            data-te-img= {img12}
             alt="Place Royale Bruxelles"
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
-        </div>
-        <div className="h-full w-full ">
-          <img
-            src="../../assets/satellite/defense.jpg"
-            data-te-img= "../../assets/satellite/defense.jpg"
-            alt="Place Royale Bruxelles"
-            className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
-        </div>
-        <div className="h-full w-full ">
-          <img
-            src="../../assets/satellite/disaster.jpg"
-            data-te-img= "../../assets/satellite/disaster.jpg"
-            alt="Place Royale Bruxelles"
-            className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
-        </div>
-        <div className="h-full w-full ">
-          <img
-            src="../../assets/satellite/hero-1.png"
-            data-te-img= "../../assets/satellite/hero-1.png"
-            alt="Place Royale Bruxelles"
-            className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
-        </div>
-        <div className="h-full w-full ">
-          <img
-            src="../../assets/satellite/hero-4.jpg"
-            data-te-img= "../../assets/satellite/hero-4.jpg"
-            alt="Place Royale Bruxelles"
-            className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
-        </div>
-        <div className="h-full w-full ">
-          <img
-            src="../../assets/satellite/hero-5.jpg"
-            data-te-img= "../../assets/satellite/hero-5.jpg"
-            alt="Place Royale Bruxelles"
-            className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
-        </div>
-        <div className="h-full w-full ">
-          <img
-            src="../../assets/satellite/infra.jpg"
-            data-te-img= "../../assets/satellite/infra.jpg"
-            alt="Place Royale Bruxelles"
-            className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
-        </div>
-        <div className="h-full w-full ">
-          <img
-            src="../../assets/satellite/optical-1_Turkey.jpg"
-            data-te-img= "../../assets/satellite/optical-1_Turkey.jpg"
-            alt="Place Royale Bruxelles"
-            className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
-        </div>
-        <div className="h-full w-full ">
-          <img
-            src="../../assets/satellite/optical-2_Dubai.png"
-            data-te-img= "../../assets/satellite/optical-2_Dubai.png"
-            alt="Place Royale Bruxelles"
-            className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
-        </div>
-        <div className="h-full w-full ">
-          <img
-            src="../../assets/satellite/optical-3_Bhama_askhed_reservoir.jpg"
-            data-te-img= "../../assets/satellite/optical-3_Bhama_askhed_reservoir.jpg"
-            alt="Place Royale Bruxelles"
-            className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
-        </div>
-
+        </div> */}
+        
       </div>
     </div>
   );
