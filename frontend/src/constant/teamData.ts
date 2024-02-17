@@ -9,7 +9,7 @@ import hamna from '../assets/img/teams/Hamna.jpg'
 import pratanu from '../assets/img/teams/Pratanu.jpg'
 import pratibha from '../assets/img/teams/Pratibha.jpg'
 import sarunisha from '../assets/img/teams/Sarunisha.jpg'
-import sikandar from '../assets/img/teams/Sikander.jpg'
+import sikandar from '../assets/img/teams/Sikandar.jpg'
 import subhajit from '../assets/img/teams/Subhajit.jpg'
 // import vinodbothale from '../assets/img/teams/Vinodbothale.jpg'
 import vishal from '../assets/img/teams/Vishal.png'
@@ -17,7 +17,11 @@ import tanmoyadhikari from '../assets/img/teams/TanmoyAdhikari.jpeg'
 import vikas from '../assets/img/teams/Vikas.jpg'
 import surojitbose from '../assets/img/teams/Surojit-Bose.jpg'
 import navneetkaushik from '../assets/img/teams/NavneetKaushik.jpg'
-
+import sakshi from '../assets/img/teams/Sakshi.jpg'
+import kripa from '../assets/img/teams/Kripa.jpg'
+import aman from '../assets/img/teams/Aman.jpg'
+import prateek from '../assets/img/teams/Prateek.jpg'
+import suyash from '../assets/img/teams/Suyash.jpg'
 
 
 export interface Employee {
@@ -104,12 +108,42 @@ const employees: Employee[] = [
         }
     },
     {
-        name: 'Ruby Yadav',
-        designation: 'Sr. Accounts and HR executive ',
-        img: ruby,
+        name: 'Aman Shrivastava',
+        designation: 'Web Developer',
+        img: aman,
         links: {
             website: 'https://www.example.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/ruby-yadav-97941b138',
+            linkedin: 'https://www.linkedin.com/in/aman-shrivastava-99b046231/',
+            github: 'https://github.com/johndoe'
+        }
+    },
+    {
+        name: 'Hamna Khan',
+        designation: 'Jr. Software Developer',
+        img: hamna,
+        links: {
+            website: 'https://www.example.com/johndoe',
+            linkedin: 'https://www.linkedin.com/in/hamna-khan-769535247/',
+            github: 'https://github.com/johndoe'
+        }
+    },
+    {
+        name: 'Keerthana Govardhana',
+        designation: 'Software Developer',
+        img: keerthana,
+        links: {
+            website: 'https://www.example.com/johndoe',
+            linkedin: 'https://www.linkedin.com/in/keerthana-govardhana-2249231a4/',
+            github: 'https://github.com/johndoe'
+        }
+    },
+    {
+        name: 'Kripa Bharadwaj',
+        designation: 'Remote Sensing Analyst Intern',
+        img: kripa,
+        links: {
+            website: 'https://www.example.com/johndoe',
+            linkedin: 'https://www.linkedin.com/in/kripa-bhardwaj-a09089209/',
             github: 'https://github.com/johndoe'
         }
     },
@@ -123,9 +157,8 @@ const employees: Employee[] = [
             github: 'https://github.com/johndoe'
         }
     },
- 
     {
-        name: 'Pratanu',
+        name: 'Pratanu Maity',
         designation: 'Geospatial Analyst',
         img: pratanu,
         links: {
@@ -135,12 +168,12 @@ const employees: Employee[] = [
         }
     },
     {
-        name: 'Sarunisha R',
-        designation: 'Geospatial Analyst',
-        img: sarunisha,
+        name: 'Prateek Verma',
+        designation: 'SDE Intern',
+        img: prateek,
         links: {
             website: 'https://www.example.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/sarunisha-ramachandran-911884181',
+            linkedin: 'https://www.linkedin.com/in/prateek-kumar-verma-39a3a6212',
             github: 'https://github.com/johndoe'
         }
     },
@@ -154,13 +187,37 @@ const employees: Employee[] = [
             github: 'https://github.com/johndoe'
         }
     },
+
     {
-        name: 'Subhajit Bera',
-        designation: 'Geospatial Analyst',
-        img: subhajit,
+        name: 'Ruby Yadav',
+        designation: 'Sr. Accounts and HR executive ',
+        img: ruby,
         links: {
             website: 'https://www.example.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/subhajit-bera',
+            linkedin: 'https://www.linkedin.com/in/ruby-yadav-97941b138',
+            github: 'https://github.com/johndoe'
+        }
+    },
+    
+
+    {
+        name: 'Sakshi Jain',
+        designation: 'Marketing Associate',
+        img: sakshi,
+        links: {
+            website: 'https://www.example.com/johndoe',
+            linkedin: 'https://www.linkedin.com/in/sakshi14jain/',
+            github: 'https://github.com/johndoe'
+        }
+    },
+
+    {
+        name: 'Sarunisha R',
+        designation: 'Geospatial Analyst',
+        img: sarunisha,
+        links: {
+            website: 'https://www.example.com/johndoe',
+            linkedin: 'https://www.linkedin.com/in/sarunisha-ramachandran-911884181',
             github: 'https://github.com/johndoe'
         }
     },
@@ -175,16 +232,27 @@ const employees: Employee[] = [
         }
     },
     {
-        name: 'Keerthana Govardhana',
-        designation: 'Software Developer',
-        img: keerthana,
+        name: 'Subhajit Bera',
+        designation: 'Geospatial Analyst',
+        img: subhajit,
         links: {
             website: 'https://www.example.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/keerthana-govardhana-2249231a4/',
+            linkedin: 'https://www.linkedin.com/in/subhajit-bera',
             github: 'https://github.com/johndoe'
         }
     },
-   
+
+    {
+        name: 'Suyash Rajput',
+        designation: 'SDE Intern',
+        img: suyash,
+        links: {
+            website: 'https://www.example.com/johndoe',
+            linkedin: 'https://www.linkedin.com/in/suyashismm',
+            github: 'https://github.com/johndoe'
+        }
+    },
+
     {
         name: 'Vishal Kumar',
         designation: 'Web Developer',
@@ -195,16 +263,7 @@ const employees: Employee[] = [
             github: 'https://github.com/johndoe'
         }
     },
-    {
-        name: 'Hamna Khan',
-        designation: 'Jr. Software Developer',
-        img: hamna,
-        links: {
-            website: 'https://www.example.com/johndoe',
-            linkedin: 'https://www.linkedin.com/in/hamna-khan-769535247/',
-            github: 'https://github.com/johndoe'
-        }
-    },
+
     {
         name: 'Vikas Kumar',
         designation: 'Jr. Software Engineer',
