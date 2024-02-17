@@ -24,9 +24,9 @@ const Tailored = () => {
         </div>
         <div className='flex flex-wrap'>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <TailoredCards image={dark1} name="Hydrology" description="/" link="/" />
-            <TailoredCards image={light1} name="Terrain Mapping" description="/" link="/" />
-            <TailoredCards image={dark1} name="Land Deformation Monitoring" description="/" link="/" />
+            <TailoredCards image={dark1} name="Hydrology" description="/" link="/services/hydrology" />
+            <TailoredCards image={light1} name="Terrain Mapping" description="/" link="/services/terrain-mapping" />
+            <TailoredCards image={dark1} name="Land Deformation Monitoring" description="/" link="/services/land-deformation-monitoring" />
           </div>
         </div>
       </div>

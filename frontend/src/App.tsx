@@ -19,7 +19,7 @@ import NewsEventsPage from './pages/EventsNewsPage';
 import GalleryPage from './pages/GalleryPage';
 
 function App() {
-  const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
+  const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-white');
 
   const toggleTheme = () => {
     const newTheme = theme === 'theme-dark' ? 'theme-white' : 'theme-dark';
@@ -53,7 +53,7 @@ function App() {
           <Route path='products/lance' element={<LancePage />} />
           <Route path='services/hydrology' element={<HydrologyPage />} />
           <Route path='services/terrain-mapping' element={<TerrainMappingPage />} />
-          <Route path='services/land-deformation' element={<LandDeformationPage />} />
+          <Route path='services/land-deformation-monitoring' element={<LandDeformationPage />} />
           <Route path='careers' element={<CareersPage />} />
           <Route path='blogs' element={<BlogsPage />} />
           <Route path='events-news' element={<NewsEventsPage />} />

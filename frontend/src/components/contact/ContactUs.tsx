@@ -5,13 +5,6 @@ import { SlEarphones } from "react-icons/sl";
 import axios from "axios"
 import { useState } from "react";
 
-interface FormData {
-    name: string,
-    email: string,
-    phone: string,
-    subject: string,
-    message: string
-}
 
 const ContactUs = () => {
     const [name, setName] = useState('');

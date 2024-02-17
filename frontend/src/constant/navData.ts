@@ -56,7 +56,7 @@ export const links: Link[] = [
             },
             {
                 name: "Land Deformation Monitoring",
-                link: "/services/land-deformation"
+                link: "/services/land-deformation-monitoring"
             }
         ]
     },

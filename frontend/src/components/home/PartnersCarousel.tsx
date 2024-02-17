@@ -10,12 +10,12 @@ import img4 from "../../assets/img/4.png"
 import img5 from "../../assets/img/5.png"
 import img6 from "../../assets/img/6.png"
 import iceYe from "../../assets/img/ICEYE_white.png"
-import veng_white from "../../assets/img/veng_white.png"
+// import veng_white from "../../assets/img/veng_white.png"
 import planet_white from "../../assets/img/planet_white.png"
 import Satellogic_white from "../../assets/img/Satellogic_white.png"
 import restec_white from "../../assets/img/restec_white.png"
 
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 interface PartnerProps {
   currentTheme: string;
