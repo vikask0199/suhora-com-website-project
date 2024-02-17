@@ -7,8 +7,8 @@ import defence from "../../assets/img/defense.jpg"
 import mining from "../../assets/img/mining.jpg"
 import enegy from "../../assets/img/energy.jpg"
 import disaster from "../../assets/img/disaster.jpg"
-import { BsFillPatchCheckFill } from "react-icons/bs";
-import { MdSatelliteAlt, MdOutlineSecurity  } from "react-icons/md";
+// import { BsFillPatchCheckFill } from "react-icons/bs";
+import { MdOutlineSecurity  } from "react-icons/md";
 
 const slides = [
     {
@@ -63,7 +63,8 @@ const SliderAndTabs = () => {
     }, [slides.length]);
 
     const handleTabClick = (index: number) => {
-        setDirection(index > currentSlideIndex ? "forward" : "backward");
+        const isForward = index > currentSlideIndex;
+        setDirection(isForward ? "forward" : "backward");
         setCurrentSlideIndex(index);
     };
 
@@ -71,7 +72,7 @@ const SliderAndTabs = () => {
         <div className="root-container root-container-separator md:px-14 py-10 flex flex-col">
             <h2 className={`text-3xl font-bold mb-6 text-center font-century-gothic scroll-smooth focus:scroll-auto `}>Industries We Serve</h2>
             <div className="overflow-hidden root-container">
-                <div className={classNames("flex", { "transition-transform duration-500 ease-in-out": direction === "forward", "transition-none": direction === "backward", })} style={{ transform: `translateX(-${currentSlideIndex * 100}%)`, }} >
+                <div className={classNames("flex", { "transition-transform duration-500 ease-in-out": true, })} style={{ transform: `translateX(-${currentSlideIndex * 100}%)` }} >
                     {slides.map((slide, index) => (
                         <div key={index} className="flex-shrink-0 w-full flex items-center flex-col md:flex-row justify-center">
                             <div className="md:w-1/2 flex flex-col h-full p-7 pt-10 gap-5">
@@ -90,16 +91,6 @@ const SliderAndTabs = () => {
                                 ))}
                                 </ul>
 
-                                {/* <div className="flex flex-col gap-2">
-                                    {slide.content.map((content, index) => (
-                                        <div className="flex gap-2 ">
-                                             <MdOutlineSecurity className="text-5xl" />
-                                        <div key={index} className="flex gap-2 "> 
-                                        <span className="font-bold w-fill">{content[0]}:</span> {content[1]}</div>
-                                        </div>
-                                    ))}
-                                <p className="">{slide.content}</p>
-                                </div> */}
                             </div>
                             <div className="md:w-1/2 h-full">
                                 <img src={slide.image} alt={`Slide ${index + 1}`} className="h-full w-full object-cover" />
