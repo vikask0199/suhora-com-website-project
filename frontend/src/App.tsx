@@ -18,7 +18,7 @@ import NewsEventsPage from './pages/EventsNewsPage';
 import { useEffect, useState } from 'react';
 
 function App() {
-  const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
+  const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-white');
 
   const toggleTheme = () => {
     const newTheme = theme === 'theme-dark' ? 'theme-white' : 'theme-dark';
