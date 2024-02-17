@@ -1,4 +1,4 @@
-import krishanu from '../assets/img/teams/Krishanu.jpg'
+import krishanu from '../assets/img/teams/Krishanu_old.jpg'
 import rupesh from '../assets/img/teams/rupesh.jpg'
 import amit from '../assets/img/teams/Amit.jpg'
 import ruby from '../assets/img/teams/Ruby.jpg'
@@ -252,7 +252,6 @@ const employees: Employee[] = [
             github: 'https://github.com/johndoe'
         }
     },
-
     {
         name: 'Vishal Kumar',
         designation: 'Web Developer',
