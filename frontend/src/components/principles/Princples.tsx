@@ -1,12 +1,12 @@
-import Vision from "./Vision"
-import Vaalue from "./Vaalue"
-import Mision from "./Mision"
 import { useState } from "react"
+import Mision from "./Mision"
+import Vision from "./Vision"
 import WhatWeStandFor from "./WhatWeStandFor"
 
 const Princples = () => {
     const [selectedTab, setSelectedTab] = useState(0);
-    const tabs = ['Mission', 'Vision', 'Value'];
+    // const tabs = ['Mission', 'Vision', 'Value'];
+    const tabs = ['Mission', 'Vision'];
 
     const renderTabContent = () => {
         switch (selectedTab) {
@@ -14,8 +14,8 @@ const Princples = () => {
                 return <div><Mision /></div>;
             case 1:
                 return <div><Vision /></div>;
-            case 2:
-                return <div><Vaalue /></div>;
+            // case 2:
+            //     return <div><Vaalue /></div>;
             default:
                 return null;
         }

@@ -12,10 +12,11 @@ import SpadePage from './pages/SpadePage';
 import TeamsPage from './pages/TeamsPage';
 import TerrainMappingPage from './pages/TerrainMappingPage';
 // import Careers from './components/Careers';
+import { useEffect, useState } from 'react';
 import BlogsPage from './pages/BlogsPage';
 import CareersPage from './pages/CareersPage';
 import NewsEventsPage from './pages/EventsNewsPage';
-import { useEffect, useState } from 'react';
+import GalleryPage from './pages/GalleryPage';
 
 function App() {
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-dark');
@@ -41,7 +42,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path='/' element={<PublicOutlet toggleTheme={toggleTheme} currentTheme={theme}/>}>
+        <Route path='/' element={<PublicOutlet toggleTheme={toggleTheme} currentTheme={theme} />}>
           <Route index element={<HomePage currentTheme={theme} />} />
           <Route path='contact-us' element={<ContactPage />} />
           <Route path='our-teams' element={<TeamsPage />} />
@@ -56,6 +57,7 @@ function App() {
           <Route path='careers' element={<CareersPage />} />
           <Route path='blogs' element={<BlogsPage />} />
           <Route path='events-news' element={<NewsEventsPage />} />
+          <Route path='open-gallery' element={<GalleryPage />} />
         </Route>
       </Routes>
     </>

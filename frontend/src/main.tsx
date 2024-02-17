@@ -5,6 +5,7 @@ import './index.css'
 import ScrollToTop from './constant/ScrollToTop.tsx'
 import FlotingIcon from './components/flotingIcons/FlotingIcon.tsx'
 
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <>
     <BrowserRouter>

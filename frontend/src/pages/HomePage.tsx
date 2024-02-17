@@ -1,3 +1,4 @@
+import Gallery from "../components/gallery/Gallery"
 import AboutUs from "../components/home/AboutUs"
 import HomeHeader from "../components/home/HomeHeader"
 import Imaging from "../components/home/Imaging"

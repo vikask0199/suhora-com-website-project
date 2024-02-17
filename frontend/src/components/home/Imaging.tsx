@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import optical1 from '../../assets/img/optical-1_Turkey.jpg'
 import optical2 from '../../assets/img/optical-2_Dubai.png'
 import optical3 from '../../assets/img/optical-3_Bhama_askhed_reservoir.jpg'
@@ -12,6 +12,7 @@ import sar3 from '../../assets/img/rotterdam_iceye_SL_colorized_resized.png'
 import thermal1 from '../../assets/img/Jamnagar_oilrefinery.png'
 import thermal2 from '../../assets/img/Tenchhekha.png'
 import thermal3 from '../../assets/img/padkhvab-e-Shaneh.png'
+import { Link } from "react-router-dom";
 const Portfolio = () => {
   const [showCard, setShowCard] = useState("all");
 
@@ -46,11 +47,10 @@ const Portfolio = () => {
                 <li className="mb-1 ">
                   <button
                     onClick={() => handleProject("all")}
-                    className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 hover:bg-[#1266a0] hover:text-white ${
-                      showCard === "all"
-                        ? "activeClasses bg-[#174773] text-white"
-                        : "inactiveClasses "
-                    }`}
+                    className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 hover:bg-[#1266a0] hover:text-white ${showCard === "all"
+                      ? "activeClasses bg-[#174773] text-white"
+                      : "inactiveClasses "
+                      }`}
                   >
                     All
                   </button>
@@ -58,11 +58,10 @@ const Portfolio = () => {
                 <li className="mb-1">
                   <button
                     onClick={() => handleProject("optical")}
-                    className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 hover:bg-[#1266a0] hover:text-white ${
-                      showCard === "optical"
-                        ? "activeClasses  bg-[#174773] text-white"
-                        : "inactiveClasses "
-                    }`}
+                    className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 hover:bg-[#1266a0] hover:text-white ${showCard === "optical"
+                      ? "activeClasses  bg-[#174773] text-white"
+                      : "inactiveClasses "
+                      }`}
                   >
                     Optical
                   </button>
@@ -70,11 +69,10 @@ const Portfolio = () => {
                 <li className="mb-1">
                   <button
                     onClick={() => handleProject("sar")}
-                    className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 hover:bg-[#1266a0] hover:text-white ${
-                      showCard === "sar"
-                        ? "activeClasses  bg-[#174773] text-white"
-                        : "inactiveClasses "
-                    }`}
+                    className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 hover:bg-[#1266a0] hover:text-white ${showCard === "sar"
+                      ? "activeClasses  bg-[#174773] text-white"
+                      : "inactiveClasses "
+                      }`}
                   >
                     SAR
                   </button>
@@ -82,11 +80,10 @@ const Portfolio = () => {
                 <li className="mb-1">
                   <button
                     onClick={() => handleProject("thermal")}
-                    className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 hover:bg-[#1266a0] hover:text-white ${
-                      showCard === "thermal"
-                        ? "activeClasses  bg-[#174773] text-white "
-                        : "inactiveClasses "
-                    }`}
+                    className={`inline-block rounded-lg py-2 px-5 text-center text-base font-semibold transition md:py-3 lg:px-8 hover:bg-[#1266a0] hover:text-white ${showCard === "thermal"
+                      ? "activeClasses  bg-[#174773] text-white "
+                      : "inactiveClasses "
+                      }`}
                   >
                     Thermal
                   </button>
@@ -123,7 +120,7 @@ const Portfolio = () => {
               // buttonHref="#"
               showCard={showCard}
             />
-             <PortfolioCard
+            <PortfolioCard
               ImageHref={optical3}
               category="Optical"
               title="Bhama Askhed Reservoir"
@@ -147,7 +144,7 @@ const Portfolio = () => {
               // buttonHref="#"
               showCard={showCard}
             />
-             <PortfolioCard
+            <PortfolioCard
               ImageHref={sar3}
               category="SAR"
               title="Rotterdam, Netherlands"
@@ -171,7 +168,7 @@ const Portfolio = () => {
               // buttonHref="#"
               showCard={showCard}
             />
-              <PortfolioCard
+            <PortfolioCard
               ImageHref={thermal3}
               category="Thermal"
               title="Lowgar, Afghanistan"
@@ -182,6 +179,9 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
+      <Link to="/open-gallery">
+        <button >View Gallery</button>
+      </Link>
     </div>
   );
 };
@@ -195,7 +195,8 @@ const PortfolioCard = ({
   title,
   button,
   // buttonHref,
-}:{ showCard: string,
+}: {
+  showCard: string,
   category: string,
   ImageHref: string,
   title: string,
@@ -205,11 +206,10 @@ const PortfolioCard = ({
   return (
     <>
       <div
-        className={`w-full px-4 md:w-1/2 xl:w-1/3 root-container ${
-          showCard === "all" || showCard === category.toLowerCase()
-            ? "block"
-            : "hidden"
-        }`}
+        className={`w-full px-4 md:w-1/2 xl:w-1/3 root-container ${showCard === "all" || showCard === category.toLowerCase()
+          ? "block"
+          : "hidden"
+          }`}
       >
         <div className="relative mb-12 hover:transform hover:scale-105 duration-300">
           <div className="overflow-hidden rounded-[10px]">
@@ -219,14 +219,14 @@ const PortfolioCard = ({
             {/* <span className="text-primary mb-1 block text-sm font-medium">
               {category}
             </span> */}
-             <span 
+            <span
               className=" inline-block pb-2 text-sm font-medium transition "
             >
               {button}
-              </span>
+            </span>
             <h3 className=" mb-2 text-xl font-bold">{title}</h3>
-           
-            
+
+
           </div>
         </div>
       </div>

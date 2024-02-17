@@ -13,7 +13,7 @@ export const links: Link[] = [
         name: "Who we are",
         subLinks: [
             {
-                name: "Our Principal",
+                name: "Our Principles",
                 link: "/our-principles"
             },
             {
