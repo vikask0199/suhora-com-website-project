@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 interface ProductsCardProps {
   image: string;
   name: string;
@@ -12,13 +13,13 @@ const TailoredCards = (props: ProductsCardProps) => {
         <img className="rounded-t-lg w-full" src={props.image} alt="" />
       </a>
       <div className="p-5">
-        <a href="#">
+        {/* <a href="#"> */}
           <h5 className="mb-2 text-xl font-bold">{props.name}</h5>
-        </a>
+        {/* </a> */}
         <p className="mb-3 font-normal">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
         <div className="flex justify-end pr-3">
-        <a
-          href={props.link}
+        <Link
+          to={props.link}
           className="inline-flex float-right items-center px-3 py-2 w-fit text-sm font-medium text-center text-white bg-[#1266a0] rounded-lg hover:bg-[#174773] focus:ring-4 focus:outline-none"
         >
           Read more
@@ -37,7 +38,7 @@ const TailoredCards = (props: ProductsCardProps) => {
               d="M1 5h12m0 0L9 1m4 4L9 9"
             />
           </svg>
-        </a>
+        </Link>
         </div>
       </div>
     </div>

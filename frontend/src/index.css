@@ -81,7 +81,7 @@ body {
 
 /* removing extraa space of slider  */
 .slick-slider.slick-initialized {
-    margin-bottom: -1.1vh;
+    margin-bottom: -2vh;
 }
 
 .detailspage-hover {

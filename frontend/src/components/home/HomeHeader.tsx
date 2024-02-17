@@ -1,4 +1,4 @@
-import img1 from "../../assets/img/hero-1.jpg"
+import img1 from "../../assets/img/hero-1.png"
 import img2 from "../../assets/img/hero-4.jpg"
 import img3 from "../../assets/img/hero-5.jpg"
 import "slick-carousel/slick/slick.css";

@@ -52,7 +52,7 @@ function App() {
           <Route path='products/lance' element={<LancePage />} />
           <Route path='services/hydrology' element={<HydrologyPage />} />
           <Route path='services/terrain-mapping' element={<TerrainMappingPage />} />
-          <Route path='services/land-deformation' element={<LandDeformationPage />} />
+          <Route path='services/land-deformation-monitoring' element={<LandDeformationPage />} />
           <Route path='careers' element={<CareersPage />} />
           <Route path='blogs' element={<BlogsPage />} />
           <Route path='events-news' element={<NewsEventsPage />} />
