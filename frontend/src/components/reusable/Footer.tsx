@@ -10,35 +10,19 @@ interface footerProps {
   currentTheme: 'theme-dark' | 'theme-white';
 }
 const Footer = (props: footerProps) => {
-
   const dateTime = new Date();
   const year = dateTime.getFullYear();
-
   return (
     <div className={`root-container px-8 border-t  ${props.currentTheme === 'theme-dark' ? 'border-slate-800' : 'border-slate-200'}`}>
       <footer className="">
         <div className="mx-auto w-full max-w-screen-xl">
-          <div className="flex justify-between p-[5vh]">
+          <div className="flex justify-between px-8 py-10 flex-wrap">
             <div>
-              <div className="h-10 w-44 flex items-center justify-start">
-                <Link to="/" className='h-10 w-44'>
+              <div className="h-10 w-44  flex items-center justify-start relative right-[10.2vh] bottom-[0.4vh] sm:ml-[5vh]">
+                <Link to="/" className='h-10 w-44 '>
                   <img src={props.currentTheme === 'theme-white' ? LogoLight : LogoDark} alt="logo" className="cursor-pointer h-full w-full object-center object-cover" />
                 </Link>
               </div>
-              <ul className=" font-sm">
-                <li className="mb-2">
-                  <a href="#about" className=" hover:underline hover:text-blue-800">About</a>
-                </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Careers</a>
-                </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Brand Center</a>
-                </li>
-                <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Blog</a>
-                </li>
-              </ul>
             </div>
             <div>
               <h2 className="mb-6 text-sm font-semibold  uppercase">Who We Are</h2>
@@ -69,16 +53,16 @@ const Footer = (props: footerProps) => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase">Legal</h2>
+              <h2 className="mb-6 text-sm font-semibold uppercase">Services</h2>
               <ul className="font-medium">
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Privacy Policy</a>
+                  <a href="#" className="hover:underline hover:text-blue-800">Hydrology</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Licensing</a>
+                  <a href="#" className="hover:underline hover:text-blue-800">Terrain Mapping</a>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Terms &amp; Conditions</a>
+                  <a href="#" className="hover:underline hover:text-blue-800">Land Deformation Monitoring</a>
                 </li>
               </ul>
             </div>
@@ -102,7 +86,7 @@ const Footer = (props: footerProps) => {
           </div>
           <div className={`px-4 py-6 border-t ${props.currentTheme === 'theme-dark' ? 'border-slate-800' : 'border-slate-200'} md:flex md:items-center md:justify-between`}>
             <div className="invisible">nothing</div>
-            <span className="text-sm  sm:text-center">© {year} <a href="#">Suhora™</a>. All Rights Reserved.
+            <span className="text-sm  sm:text-center">© {year} <a href="#">Suhora™</a>. All Rights Reserved. | Privacy Policy
             </span>
             <div className="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
               <a href="https://www.linkedin.com/company/suhora/" target="blank">

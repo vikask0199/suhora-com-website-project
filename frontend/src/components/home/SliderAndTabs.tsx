@@ -14,37 +14,37 @@ const slides = [
     {
         image:  defence ,
         heading: "Defense & Intelligence",
-        content: ['Advanced Surveillance','Real-Time Intelligence', 'Multi-Sensor Data Fusion', 'Secure Communication','Custom Analytical Tools']
+        content: [['Advanced Surveillance','Harness cutting-edge satellite imagery, SAR, and RF signals for comprehensive maritime and land surveillance'],['Real-Time Intelligence','Utilize real-time Earth Observation (EO) and Signals Intelligence (SIGINT) for prompt maritime tracking and defense insights'],['Multi-Sensor Data Fusion','Merge data from optical, SAR, thermal, AIS, and RF sources to create an integrated view of global dynamics'],['Secure Communication','Implement robust encryption protocols for the protected transfer of Image Intelligence'],['Custom Analytical Tools','Engineer specialized analytical tools integrating various data streams for custom defense intelligence applications']]
     },
     {
         image:  disaster ,
         heading: "Disaster & Insurance",
-        content: ["Suhora provides valuable tools and data for government organizations to enable them in making informed decisions about a variety of issues. Among various facets of government decision making such as compliance, internal security, natural resource planning and sustainability. With multi-mission and big data analytics approach, seemingly infeasible problems can be solved with relative ease."]
+        content: [["Suhora",'']," provides valuable tools and data for government organizations to enable them in making informed decisions about a variety of issues. Among various facets of government decision making such as compliance, internal security, natural resource planning and sustainability. With multi-mission and big data analytics approach, seemingly infeasible problems can be solved with relative ease."]
     },
     {
         image:  enegy ,
         heading: "Renewable Energy",
-        content: ["SUHORA provides solutions based on the customers’ needs and the site situation. With a thorough understanding of the customers’ needs, every project starts with an analysis of the individual situation – The Case Study – allowing us to offer and implement the right solution for the right project. SUHORA’s renewable energy portfolio covers Feasibility Studies, Topographic Survey to system design automation and O&M support. Suhora provides an intuitive platform for construction monitoring of Solar PV installations."]
+        content: [["Suhora",''],"SUHORA provides solutions based on the customers’ needs and the site situation. With a thorough understanding of the customers’ needs, every project starts with an analysis of the individual situation – The Case Study – allowing us to offer and implement the right solution for the right project. SUHORA’s renewable energy portfolio covers Feasibility Studies, Topographic Survey to system design automation and O&M support. Suhora provides an intuitive platform for construction monitoring of Solar PV installations."]
     },
     {
         image:  mining ,
         heading: "Mining",
-        content: ["Intelligence, surveillance, and reconnaissance (ISR) is the collection and analysis of information about an adversary or target. At Suhora we provide requisite inputs, data processing and fusion  for generation of ISR reports.  Both SAR and Optical imagery are used to support a wide range of ISR missions such as IMINT."]
+        content: [["Suhora",''],"Intelligence, surveillance, and reconnaissance (ISR) is the collection and analysis of information about an adversary or target. At Suhora we provide requisite inputs, data processing and fusion  for generation of ISR reports.  Both SAR and Optical imagery are used to support a wide range of ISR missions such as IMINT."]
     },
     {
         image:  infra ,
         heading: "Infrastructure",
-        content: ["Suhora provides valuable tools and data for government organizations to enable them in making informed decisions about a variety of issues. Among various facets of government decision making such as compliance, internal security, natural resource planning and sustainability. With multi-mission and big data analytics approach, seemingly infeasible problems can be solved with relative ease."]
+        content: [["Suhora",''],"Suhora provides valuable tools and data for government organizations to enable them in making informed decisions about a variety of issues. Among various facets of government decision making such as compliance, internal security, natural resource planning and sustainability. With multi-mission and big data analytics approach, seemingly infeasible problems can be solved with relative ease."]
     },
     {
         image:  forest ,
         heading: "Forestry",
-        content: ["Around 30 percent of earth landmass is covered by forests. Constant monitoring and conservation of the green areas is the only way we hand down the planet to the next generation without compromising the quality of our environment. With reliable partners SUHORA can monitor large swaths of forest for health, encroachment and deforestation. With intelligence deep learning algorithms, we provide insights from large volumes of remote sensing data. "]
+        content: [["Suhora",''],"Around 30 percent of earth landmass is covered by forests. Constant monitoring and conservation of the green areas is the only way we hand down the planet to the next generation without compromising the quality of our environment. With reliable partners SUHORA can monitor large swaths of forest for health, encroachment and deforestation. With intelligence deep learning algorithms, we provide insights from large volumes of remote sensing data. "]
     },
     {
         image:  agreicu ,
         heading: "Agriculture",
-        content: ["SUHORA provides important inputs for accurate assessment of Crop health, Acreage, Yield estimation and damage assessment. With diversity of satellite data available with Suhora, you can be assured of robust coverage with respect to temporal and spectral characteristics. Insurance companies have immense use of SUHORA’s accurate damage assessment maps and historical damage analytics."]
+        content: [["Suhora",''],"SUHORA provides important inputs for accurate assessment of Crop health, Acreage, Yield estimation and damage assessment. With diversity of satellite data available with Suhora, you can be assured of robust coverage with respect to temporal and spectral characteristics. Insurance companies have immense use of SUHORA’s accurate damage assessment maps and historical damage analytics."]
     },
 ];
 
@@ -78,8 +78,11 @@ const SliderAndTabs = () => {
                                 <h2 className="font-bold text-xl">{slide.heading}</h2>
                                 <div className="flex flex-col gap-2">
                                     {slide.content.map((content, index) => (
-                                        <p key={index} className="flex gap-2 items-center "> 
-                                        <BsFillPatchCheckFill className="text-blue-700" /> {content}</p>
+                                        <div className="flex gap-2 ">
+                                             <BsFillPatchCheckFill className="text-blue-700 text-3xl" />
+                                        <div key={index} className="flex gap-2 "> 
+                                        <span className="font-bold w-fill">{content[0]}:</span> {content[1]}</div>
+                                        </div>
                                     ))}
                                 {/* <p className="">{slide.content}</p> */}
                                 </div>
