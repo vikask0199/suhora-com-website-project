@@ -1,24 +1,17 @@
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import img1 from "../../assets/img/1.png"
-import img2 from "../../assets/img/2.png"
-import img3 from "../../assets/img/3.png"
-import img4 from "../../assets/img/4.png"
-import img5 from "../../assets/img/5.png"
-import img6 from "../../assets/img/6.png"
-import iceYe from "../../assets/img/ICEYE_white.png"
+import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
+import img1 from "../../assets/img/1.png";
+import img2 from "../../assets/img/2.png";
+import img3 from "../../assets/img/3.png";
+import img4 from "../../assets/img/4.png";
+import img5 from "../../assets/img/5.png";
+import img6 from "../../assets/img/6.png";
+import iceYe from "../../assets/img/ICEYE_white.png";
 // import veng_white from "../../assets/img/veng_white.png"
-import planet_white from "../../assets/img/planet_white.png"
-import Satellogic_white from "../../assets/img/Satellogic_white.png"
-<<<<<<< HEAD
-import restec_white from "../../assets/img/restec_white.png"
-
-// import { useEffect, useState } from "react";
-=======
-import restec_white from "../../assets/img/restec_white.png"  
-import { useEffect, useState } from "react";
->>>>>>> aman
+import Satellogic_white from "../../assets/img/Satellogic_white.png";
+import planet_white from "../../assets/img/planet_white.png";
+import restec_white from "../../assets/img/restec_white.png";
 
 interface PartnerProps {
   currentTheme: string;
