@@ -7,19 +7,19 @@ import defence from "../../assets/img/defense.jpg"
 import mining from "../../assets/img/mining.jpg"
 import enegy from "../../assets/img/energy.jpg"
 import disaster from "../../assets/img/disaster.jpg"
-import { BsFillPatchCheckFill } from "react-icons/bs";
-
+// import { BsFillPatchCheckFill } from "react-icons/bs";
+import { MdOutlineSecurity  } from "react-icons/md";
 
 const slides = [
     {
         image:  defence ,
         heading: "Defense & Intelligence",
-        content: [['Advanced Surveillance','Harness cutting-edge satellite imagery, SAR, and RF signals for comprehensive maritime and land surveillance'],['Real-Time Intelligence','Utilize real-time Earth Observation (EO) and Signals Intelligence (SIGINT) for prompt maritime tracking and defense insights'],['Multi-Sensor Data Fusion','Merge data from optical, SAR, thermal, AIS, and RF sources to create an integrated view of global dynamics'],['Secure Communication','Implement robust encryption protocols for the protected transfer of Image Intelligence'],['Custom Analytical Tools','Engineer specialized analytical tools integrating various data streams for custom defense intelligence applications']]
+        content: [['Advanced Surveillance','Harness cutting-edge satellite imagery for comprehensive maritime and land surveillance'],['Real-Time Intelligence','Utilize real-time Earth Observation (EO) and Signals Intelligence (SIGINT) for prompt tracking and insights'],['Multi-Sensor Data Fusion','Merge data from optical, SAR, thermal, AIS, and RF sources to create an integrated view'],['Custom Analytical Tools','Engineer specialized analytical tools integrating various data streams ']]
     },
     {
         image:  disaster ,
         heading: "Disaster & Insurance",
-        content: [["Suhora",'']," provides valuable tools and data for government organizations to enable them in making informed decisions about a variety of issues. Among various facets of government decision making such as compliance, internal security, natural resource planning and sustainability. With multi-mission and big data analytics approach, seemingly infeasible problems can be solved with relative ease."]
+        content: [["Advanced Surveillance",''],["Real-Time Intelligence",''],["Multi-Sensor Data Fusion",''],["Secure Communication",'']]
     },
     {
         image:  enegy ,
@@ -63,7 +63,8 @@ const SliderAndTabs = () => {
     }, [slides.length]);
 
     const handleTabClick = (index: number) => {
-        setDirection(index > currentSlideIndex ? "forward" : "backward");
+        const isForward = index > currentSlideIndex;
+        setDirection(isForward ? "forward" : "backward");
         setCurrentSlideIndex(index);
     };
 
@@ -71,21 +72,25 @@ const SliderAndTabs = () => {
         <div className="root-container root-container-separator md:px-14 py-10 flex flex-col">
             <h2 className={`text-3xl font-bold mb-6 text-center font-century-gothic scroll-smooth focus:scroll-auto `}>Industries We Serve</h2>
             <div className="overflow-hidden root-container">
-                <div className={classNames("flex", { "transition-transform duration-500 ease-in-out": direction === "forward", "transition-none": direction === "backward", })} style={{ transform: `translateX(-${currentSlideIndex * 100}%)`, }} >
+                <div className={classNames("flex", { "transition-transform duration-500 ease-in-out": true, })} style={{ transform: `translateX(-${currentSlideIndex * 100}%)` }} >
                     {slides.map((slide, index) => (
                         <div key={index} className="flex-shrink-0 w-full flex items-center flex-col md:flex-row justify-center">
                             <div className="md:w-1/2 flex flex-col h-full p-7 pt-10 gap-5">
-                                <h2 className="font-bold text-xl">{slide.heading}</h2>
-                                <div className="flex flex-col gap-2">
-                                    {slide.content.map((content, index) => (
-                                        <div className="flex gap-2 ">
-                                             <BsFillPatchCheckFill className="text-blue-700 text-3xl" />
-                                        <div key={index} className="flex gap-2 "> 
-                                        <span className="font-bold w-fill">{content[0]}:</span> {content[1]}</div>
-                                        </div>
-                                    ))}
-                                {/* <p className="">{slide.content}</p> */}
-                                </div>
+                                <h2 className="font-bold text-2xl">{slide.heading}</h2>
+
+                                <ul className="grid place-content-center sm:grid-cols-2 gap-8">
+                                {slide.content.map((content, index) => (
+                                <li className="flex" key={index}>
+                                    <div className="px-4 text-xl font-extralight "><MdOutlineSecurity /></div>
+                                    <div>
+                                        
+                                        <div className="text-xl font-bold ">{content[0]}</div>
+                                        <p className="max-w-xs py-2 text-sm ">{content[1]}</p>
+                                    </div>
+                                </li>
+                                ))}
+                                </ul>
+
                             </div>
                             <div className="md:w-1/2 h-full">
                                 <img src={slide.image} alt={`Slide ${index + 1}`} className="h-full w-full object-cover" />
@@ -96,7 +101,7 @@ const SliderAndTabs = () => {
             </div>
             <div className="flex justify-center items-center flex-wrap">
                 {slides.map((slide, index) => (
-                    <div key={index} className={classNames("px-4 flex-grow py-2 cursor-pointer text-center text-sm ", { "root-container border-l border-r": index === currentSlideIndex, "servicetabs": index !== currentSlideIndex, })} onClick={() => handleTabClick(index)}>
+                    <div key={index} className={classNames("px-4 flex-grow py-2 cursor-pointer text-center text-sm text-bold ", { "root-container border-l border-r": index === currentSlideIndex, "servicetabs": index !== currentSlideIndex, })} onClick={() => handleTabClick(index)}>
                         <h3>{slide.heading}</h3>
                     </div>
                 ))}
