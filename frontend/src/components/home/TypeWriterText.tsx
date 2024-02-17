@@ -7,9 +7,9 @@ const TypeWriterText = ({ text}:any) => {
       loop={Infinity}
       cursor
       cursorStyle='|'
-      typeSpeed={70}
-      deleteSpeed={40}
-      delaySpeed={1000}
+      typeSpeed={180}
+      deleteSpeed={70}
+      delaySpeed={1500}
     />
     )
   }

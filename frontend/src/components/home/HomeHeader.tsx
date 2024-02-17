@@ -11,12 +11,15 @@ const ImageSlider = () => {
     dots: false,
     lazyLoad: true as any,
     infinite: true,
-    speed: 1000,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
     initialSlide: 0,
-    pauseOnHover: false
+    pauseOnHover: false,
+    arrows: true,
+    autoplaySpeed: 3500
+
   };
 
   return (
