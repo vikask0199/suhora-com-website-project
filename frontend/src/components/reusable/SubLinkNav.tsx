@@ -24,7 +24,7 @@ const SubLinkNav = ({ closeNavbar }: SubLinkNavProps) => {
                 links.map((link) => (
                     <div>
                         <div className=" text-left md:cursor-pointer group">
-                            <h1 className='py-7 flex justify-between items-center md:pr-0 pr-5 group hover:text-blue-500' onClick={() => { heading !== link.name ? setHeading(link.name) : setHeading("") }}>
+                            <h1 className='py-7 flex justify-between items-center md:pr-0 pr-5 group  hover:text-blue-500' onClick={() => { heading !== link.name ? setHeading(link.name) : setHeading("") }}>
                                 {link.name}
                                 <span className='md:hidden inline'>
                                     {
@@ -39,10 +39,10 @@ const SubLinkNav = ({ closeNavbar }: SubLinkNavProps) => {
                                 link.subLinks && (
                                     <div>
                                         <div className='absolute top-20 hidden group-hover:md:block hover:md:block'>
-                                            <div className='root-container px-7 flex flex-col gap-3 pb-5 '>
+                                            <div className='root-container px-7 flex flex-col gap-3 pb-5 shadow-2xl'>
                                                 {
                                                     link.subLinks.map((sLink) => (
-                                                        <li className='hover:text-blue-500'>
+                                                        <li className='hover:text-blue-500 '>
                                                             <Link to={sLink.link}>
                                                                 {sLink.name}
                                                             </Link>

@@ -39,13 +39,13 @@ const Navbar = (props: NavbarProps) => {
         </div>
         <ul className="md:flex hidden text-md items-center gap-4">
           <li className=''>
-            <Link to="/" className="py-7 inline-block hover:text-blue-500">
+            <Link to="/" className="py-7 inline-block hover:text-blue-500 ">
               Home
             </Link>
           </li>
           <SubLinkNav closeNavbar = {handleCloseNavbar}/>
           <li className=''>
-            <Link to="/contact-us" className="py-7 inline-block hover:text-blue-500">
+            <Link to="/contact-us" className="py-7 inline-block hover:text-blue-500 ">
               Contact Us
             </Link>
           </li>

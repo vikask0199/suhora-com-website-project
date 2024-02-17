@@ -20,6 +20,17 @@ const ContactUs = () => {
         setMessage('');
     };
 
+    const handlePhoneChange = (e:any) => {
+        if (e.target) {
+          const inputValue = e.target.value;
+          // Replace any character that is not a number or special character with an empty string
+          const sanitizedValue = inputValue.replace(/[^0-9\-()+#@]/g, '');
+          // Update state with sanitized value
+          setPhone(sanitizedValue);
+        }
+      };
+    
+
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         axios.post('https://test.suhora.com/send/', {
@@ -89,7 +100,7 @@ const ContactUs = () => {
             <form className="flex flex-col gap-5 md:w-1/2 p-5 w-full" method="post" onSubmit={handleSubmit}>
                 <input type="text" placeholder="Your Name" name="name" value={name} onChange={(e) => setName(e.target.value)} className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
                 <input type="text" placeholder="Email Address" name="email" value={email} onChange={(e) => setEmail(e.target.value)} className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
-                <input type="text" placeholder="Phone Number" name="phone" value={phone} onChange={(e) => setPhone(e.target.value)} className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
+                <input type="text" placeholder="Phone Number" name="phone" value={phone} onChange={handlePhoneChange} className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
                 <input type="text" placeholder="Subject" name="subject" value={subject} onChange={(e) => setSubject(e.target.value)} className="focus:border-blue-500 outline-none border-2 border-slate-300 h-16 indent-5 placeholder:text-lg contact-input-container rounded-lg" />
                 <textarea name="message" id="" placeholder="Your Message" value={message} onChange={(e) => setMessage(e.target.value)} className="focus:border-blue-500 resize-none h-52 contact-input-container rounded-lg indent-5 placeholder:text-lg outline-none border-2 border-slate-300">
                 </textarea>

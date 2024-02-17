@@ -28,13 +28,13 @@ const Footer = (props: footerProps) => {
               <h2 className="mb-6 text-sm font-semibold  uppercase">Who We Are</h2>
               <ul className="font-medium">
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Our Principles</a>
+                  <Link to="/our-principles" className="hover:underline hover:text-blue-800">Our Principles</Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Our Team</a>
+                  <Link to="/our-teams" className="hover:underline hover:text-blue-800">Our Team</Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Our Journey</a>
+                  <Link to="/our-journey" className="hover:underline hover:text-blue-800">Our Journey</Link>
                 </li>
               </ul>
             </div>
@@ -42,13 +42,13 @@ const Footer = (props: footerProps) => {
               <h2 className="mb-6 text-sm font-semibold  uppercase">Products</h2>
               <ul className="font-medium">
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">SPADE</a>
+                  <Link to="/products/spade" className="hover:underline hover:text-blue-800">SPADE</Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">LANCE</a>
+                  <Link to="/products/lance" className="hover:underline hover:text-blue-800">LANCE</Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">SID</a>
+                  <Link to="/products/sid" className="hover:underline hover:text-blue-800">SID</Link>
                 </li>
               </ul>
             </div>
@@ -56,13 +56,13 @@ const Footer = (props: footerProps) => {
               <h2 className="mb-6 text-sm font-semibold uppercase">Services</h2>
               <ul className="font-medium">
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Hydrology</a>
+                  <Link to="/services/hydrology" className="hover:underline hover:text-blue-800">Hydrology</Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Terrain Mapping</a>
+                  <Link to="/services/terrain-mapping" className="hover:underline hover:text-blue-800">Terrain Mapping</Link>
                 </li>
                 <li className="mb-2">
-                  <a href="#" className="hover:underline hover:text-blue-800">Land Deformation Monitoring</a>
+                  <Link to="/services/land-deformation" className="hover:underline hover:text-blue-800">Land Deformation Monitoring</Link>
                 </li>
               </ul>
             </div>
@@ -76,7 +76,7 @@ const Footer = (props: footerProps) => {
               </div>
               <div className="flex items-center mb-2">
                 <div className="mr-[0.4vh]"><MdMail /></div>
-                <a href="mailto:someone@example.com" target="_blank" className="hover:text-blue-800"><div>hello@suhora.com</div></a>
+                <a href="mailto:hello@suhora.com" target="_blank" className="hover:text-blue-800"><div>hello@suhora.com</div></a>
               </div>
               <div className="flex items-center mb-2">
                 <div className="mr-[0.4vh]"><FaPhoneAlt /></div>
