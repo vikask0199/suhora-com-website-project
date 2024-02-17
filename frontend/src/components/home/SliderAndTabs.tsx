@@ -70,7 +70,23 @@ const SliderAndTabs = () => {
 
     return (
         <div className="root-container-separator md:px-14 py-10 flex flex-col">
-            <h2 className={`text-3xl font-bold mb-6 text-center font-century-gothic scroll-smooth focus:scroll-auto `}>Industries We Serve</h2>
+            {/* <h2 className={`text-3xl font-bold mb-6 text-center font-century-gothic scroll-smooth focus:scroll-auto `}>Industries We Serve</h2> */}
+           
+            <div className="relative flex flex-col items-center">
+              
+              <h1 className="md:text-3xl text-2xl font-bold leading-tight"> Industries <span
+                      className="text-[#1266a0]"> We Serve
+                  </span> </h1>
+              <div className="flex w-32 mt-1 mb-6 overflow-hidden rounded">
+                  <div className="flex-1 h-2 bg-blue-200">
+                  </div>
+                  <div className="flex-1 h-2 bg-[#1266a0]">
+                  </div>
+                  <div className="flex-1 h-2 bg-[#174773]">
+                  </div>
+              </div>
+          </div>           
+           
             <div className="overflow-hidden root-container">
                 <div className={classNames("flex", { "transition-transform duration-500 ease-in-out": true, })} style={{ transform: `translateX(-${currentSlideIndex * 100}%)` }} >
                     {slides.map((slide, index) => (

@@ -77,7 +77,21 @@ function PartnersCarousel(props: PartnerProps) {
 
   return (
     <div className="align-middle root-container px-14 py-10">
-      <h3 className=" text-4xl mb-2">Our Amazing Partners</h3>
+      {/* <h3 className=" text-4xl mb-2">Our Amazing Partners</h3> */}
+      <div className="relative flex flex-col items-center">
+              
+              <h1 className="md:text-3xl text-2xl font-bold leading-tight"> Our <span
+                      className="text-[#1266a0]"> Amazing Partners
+                  </span> </h1>
+              <div className="flex w-24 mt-1 mb-6 overflow-hidden rounded">
+                  <div className="flex-1 h-2 bg-blue-200">
+                  </div>
+                  <div className="flex-1 h-2 bg-[#1266a0]">
+                  </div>
+                  <div className="flex-1 h-2 bg-[#174773]">
+                  </div>
+              </div>
+          </div>
       <div className="border-t-2 border-blue-900 "></div>
 
       <Slider {...settings} className="py-6 flex justify-center md:flex">

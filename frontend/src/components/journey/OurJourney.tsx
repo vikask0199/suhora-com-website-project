@@ -8,10 +8,10 @@ const OurJourney = () => {
             <div className="text-center ">
                 <div className="relative flex flex-col items-center">
                   
-                    <h1 className="text-3xl font-bold leading-tight"> Company <span
-                            className="text-[#1266a0]"> Timeline
+                    <h1 className="md:text-3xl text-2xl font-bold leading-tight"> Our <span
+                            className="text-[#1266a0]"> Journey
                         </span> </h1>
-                    <div className="flex w-24 mt-1 mb-10 overflow-hidden rounded">
+                    <div className="flex w-28 mt-1 mb-10 overflow-hidden rounded">
                         <div className="flex-1 h-2 bg-blue-200">
                         </div>
                         <div className="flex-1 h-2 bg-[#1266a0]">
@@ -27,12 +27,12 @@ const OurJourney = () => {
                 </p>
             </div>
         </div>
-        <div className="w-full mx-auto lg:max-w-3xl">
-            <div className="relative flex justify-between">
-                <div className="hidden w-24 py-3 md:block ">
+        <div className="w-full mx-auto lg:max-w-3xl ">
+            <div className="relative flex justify-between ">
+                <div className="hidden w-24 py-3 md:block">
                     <h2 className="text-base font-bold ">2002-2005</h2>
                 </div>
-                <div className="absolute inline-block w-24 py-3 left-14 -top-14 md:hidden px-2 cards">
+                <div className="absolute inline-block w-24 py-3 left-14 -top-14 md:hidden px-2 cards ">
                     <h2 className="text-base font-bold">2002-2005</h2>
                 </div>
                 <div className="flex flex-col items-center w-10 mr-4 md:w-24">
@@ -52,7 +52,7 @@ const OurJourney = () => {
                     </div>
                     <div className="w-px h-full bg-blue-300"></div>
                 </div>
-                <div className="relative flex-1 mb-16  rounded shadow md:mb-8 ">
+                <div className="relative flex-1 mb-16  rounded shadow md:mb-8  hover:transform hover:scale-105 duration-300">
                     <div className="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -left-4">
                         <div
                             className="h-10 origin-top-right transform -rotate-45  drop-shadow-lg">
@@ -88,7 +88,7 @@ const OurJourney = () => {
                     </div>
                     <div className="w-px h-full bg-blue-300"></div>
                 </div>
-                <div className="relative flex-1 mb-16  rounded shadow md:mb-8">
+                <div className="relative flex-1 mb-16  rounded shadow md:mb-8 hover:transform hover:scale-105 duration-300">
                     <div className="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -left-4">
                         <div
                             className="h-10 origin-top-right transform -rotate-45  drop-shadow-lg">
@@ -125,7 +125,7 @@ const OurJourney = () => {
                     </div>
                     <div className="w-px h-full bg-blue-300"></div>
                 </div>
-                <div className="relative flex-1 mb-16  rounded shadow md:mb-8 ">
+                <div className="relative flex-1 mb-16  rounded shadow md:mb-8 hover:transform hover:scale-105 duration-300">
                     <div className="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -left-4">
                         <div
                             className="h-10 origin-top-right transform -rotate-45  drop-shadow-lg">
@@ -163,7 +163,7 @@ const OurJourney = () => {
                     </div>
                     <div className="w-px h-full bg-blue-300"></div>
                 </div>
-                <div className="relative flex-1 rounded shadow ">
+                <div className="relative flex-1 rounded shadow hover:transform hover:scale-105 duration-300">
                     <div className="absolute inline-block w-4 overflow-hidden -translate-y-1/2 top-7 -left-4">
                         <div
                             className="h-10 origin-top-right transform -rotate-45  drop-shadow-lg">

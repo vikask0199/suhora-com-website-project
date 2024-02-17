@@ -56,6 +56,20 @@ const getImageName = (imageUrl:any) => {
 };
   return (
     <div className='px-14 py-12 root-container min-h-96'>
+          <div className="relative flex flex-col items-center">
+                  
+                  <h1 className="md:text-3xl text-2xl font-bold leading-tight"> Our <span
+                          className="text-[#1266a0]"> Gallery
+                      </span> </h1>
+                  <div className="flex w-28 mt-1 mb-10 overflow-hidden rounded">
+                      <div className="flex-1 h-2 bg-blue-200">
+                      </div>
+                      <div className="flex-1 h-2 bg-[#1266a0]">
+                      </div>
+                      <div className="flex-1 h-2 bg-[#174773]">
+                      </div>
+                  </div>
+              </div>
       <div
         data-te-lightbox-init
         className="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0 ">
