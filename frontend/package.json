@@ -22,6 +22,7 @@
     "google-spreadsheet": "^4.1.1",
     "googleapis": "^133.0.0",
     "lightbox.js-react": "^1.0.0",
+    "lightgallery": "^2.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",

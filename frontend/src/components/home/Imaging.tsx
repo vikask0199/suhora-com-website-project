@@ -179,8 +179,8 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
-      <Link to="/open-gallery">
-        <button >View Gallery</button>
+      <Link to="/open-gallery" className="flex justify-center">
+        <button className="w-40 py-2 rounded text-white bg-[#174773] hover:bg-[#1266a0] duration-300">View Gallery</button>
       </Link>
     </div>
   );
