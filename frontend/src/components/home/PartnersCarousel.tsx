@@ -8,7 +8,7 @@ import img4 from "../../assets/img/4.png"
 import img5 from "../../assets/img/5.png"
 import img6 from "../../assets/img/6.png"
 import iceYe from "../../assets/img/ICEYE_white.png"
-import veng_white from "../../assets/img/veng_white.png"
+// import veng_white from "../../assets/img/veng_white.png"
 import planet_white from "../../assets/img/planet_white.png"
 import Satellogic_white from "../../assets/img/Satellogic_white.png"
 import restec_white from "../../assets/img/restec_white.png"  
@@ -80,7 +80,7 @@ function PartnersCarousel(props: PartnerProps) {
       <h3 className=" text-4xl mb-2">Our Amazing Partners</h3>
       <div className="border-t-2 border-blue-900 "></div>
 
-      <Slider {...settings} className="py-6 flex justify-center md:flex justify-center">
+      <Slider {...settings} className="py-6 flex justify-center md:flex">
 
         <div className="w-full blue-border h-[24vh] hover:transform hover:scale-110 duration-300 md:flex justify-center">
           <img src={props.currentTheme === 'theme-white' ? img1 : planet_white} alt="img" className="ml-[12vh] mt-[6vh] h-2/4  green-border mb-1" />
