@@ -21,7 +21,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="root-container px-14 py-12">
+    <div className="root-container md:px-14 py-12 px-5">
       <section className="">
         <div className="container mx-auto">
           <div className="flex flex-wrap -mx-4">
@@ -41,8 +41,8 @@ const Portfolio = () => {
             </div>
           </div>
 
-          <div className="w-full flex flex-wrap justify-center -mx-4">
-            <div className="w-full px-4">
+          <div className="w-full flex flex-wrap justify-between">
+            <div className="w-full ">
               <ul className="flex flex-wrap justify-center mb-6 space-x-1">
                 <li className="mb-1 ">
                   <button

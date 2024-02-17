@@ -25,7 +25,7 @@ const ImageSlider = () => {
   return (
     <div className="relative overflow-hidden ">
       <div className="absolute z-10 top-[40%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 text-white">
-        <div className="mt-[3vh] text-5xl font-semibold">
+        <div className="mt-[3vh] md:text-5xl text-2xl font-semibold">
           <span>Space </span>
           <TypeWriterText text="Analytics" />
           <span> Simplified</span>

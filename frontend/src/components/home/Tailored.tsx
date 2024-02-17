@@ -4,7 +4,7 @@ import dark1 from '../../assets/img/dark_bg.jpg';
 import light1 from '../../assets/img/light_bg.png';
 const Tailored = () => {
   return (
-    <section className="py-12 px-14 root-container-separator">
+    <section className="py-12 md:px-14 px-5 root-container-separator">
       <div className="container mx-auto">
         <div className=" flex flex-wrap">
           <div className="w-full px-4">

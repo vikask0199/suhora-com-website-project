@@ -64,7 +64,6 @@ const Spade = () => {
     return (
         <section className="root-container">
 
-
             <div className="container mx-auto">
                 <div className="flex flex-wrap relative">
                     <div className="h-72 w-full" >
@@ -75,7 +74,7 @@ const Spade = () => {
                     </div>
                 </div>
 
-                <div className="flex root-container-separator px-14 pt-10">
+                <div className="flex root-container-separator md:px-14 pt-10 px-5">
                     {tabs.map((tab, index) => (
                         <button key={index}
                             className={`py-2 w-28 text-lg font-semibold ${selectedTab === index ? 'root-container' : 'text-gray-500'}`}
@@ -84,8 +83,7 @@ const Spade = () => {
                         </button>
                     ))}
                 </div>
-                <div className="root-container-separator pb-10">{renderTabContent()}</div>
-
+                <div className="root-container-separator pb-10 ">{renderTabContent()}</div>
 
                 <section className="bg-gray-50 py-12 sm:py-16 lg:py-20 xl:py-24 root-container">
                     <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -177,7 +175,7 @@ Pick best scenes from Archive or Auto-select for new collection request.</h4>
 
                 <h2 className='text-center text-2xl font-bold pt-1 hover:text-pretty'>Features of SPADE</h2>
 
-                <div className='flex flex-wrap justify-center py-10'>
+                <div className='flex flex-wrap justify-center py-10 md:px-14 px-5'>
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         <ProductsPageCards image={dark1} name="Integrated Multi-Sensor Platform" description="SPADE provides an integrated platform for constant monitoring using a robust optical and SAR satellite constellation" />
                         <ProductsPageCards image={light1} name="Reliability and Security" description="Ensures secure data transmission with guaranteed collection, offering dependable insights round-the-clock" />

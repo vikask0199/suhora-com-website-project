@@ -79,7 +79,7 @@ const Spade = () => {
   
    </div>
    
-   <div className="flex root-container-separator px-14 pt-10">
+   <div className="flex root-container-separator md:px-14 pt-10 px-5">
                 {tabs.map((tab, index) => (
                     <button key={index}
                         className={`py-2 w-28 text-lg font-semibold ${selectedTab === index ? 'root-container' : 'text-gray-500'}`}
@@ -93,7 +93,7 @@ const Spade = () => {
 
 
    <h2 className='text-center text-2xl font-bold pt-10 hover:text-pretty hover:underline'>Features of SID</h2>
-            <div className='flex flex-wrap justify-center py-10'>
+            <div className='flex flex-wrap justify-center py-10 md:px-14 px-5'>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {/* <ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
   data for a spectrum of commercial applications." link="/products/spade" /> */}

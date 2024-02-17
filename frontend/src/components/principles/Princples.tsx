@@ -26,7 +26,7 @@ const Princples = () => {
             <div>
                 <WhatWeStandFor />
             </div>
-            <div className="flex root-container-separator px-14 pt-10">
+            <div className="flex root-container-separator md:px-14 px-5 pt-10">
                 {tabs.map((tab, index) => (
                     <button key={index}
                         className={`py-2 w-28 text-lg font-semibold ${selectedTab === index ? 'root-container' : 'text-gray-500'}`}

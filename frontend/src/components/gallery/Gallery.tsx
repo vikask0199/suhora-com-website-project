@@ -1,5 +1,7 @@
+
 // import { useState, useEffect } from 'react';
 import { Lightbox, initTE } from 'tw-elements';
+
 
 // import img1 from "../../assets/satellite/agra_iceye_SLH.png"
 import img3 from "../../assets/satellite/rotterdam_iceye_SL_colorized_resized.png"
@@ -30,7 +32,9 @@ function Gallery() {
   //     const imageList: { name: string; url: string }[] = [];
 
   //     for (const imagePath in imagesObject) {
+
   //       const imageUrl = await imagesObject[imagePath]();
+  //       const imageUrl = await imagesObject[imagePath]() as any;
   //       const imageName = imagePath.split('/').pop()?.split('.')[0] || '';
   //       imageList.push({ name: imageName, url: imageUrl.default });
   //     }
@@ -44,6 +48,7 @@ function Gallery() {
   useEffect(()=>{
     initTE({ Lightbox });
   },[])
+
 
 
 const getImageName = (imageUrl:any) => {
