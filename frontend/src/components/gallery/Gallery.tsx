@@ -28,7 +28,7 @@ function Gallery() {
 
 
   return (
-    <div className='px-14 py-12'>
+    <div className='px-14 py-12 root-container'>
       <div
         data-te-lightbox-init
         className="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0 ">
