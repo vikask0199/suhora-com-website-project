@@ -28,10 +28,10 @@ function Gallery() {
 
 
   return (
-    <>
+    <div className='px-14 py-12'>
       <div
         data-te-lightbox-init
-        className="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0">
+        className="flex flex-col space-y-5 lg:flex-row lg:space-x-5 lg:space-y-0 ">
         <div className="h-full w-full">
           <img
             src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/1.webp"
@@ -54,7 +54,7 @@ function Gallery() {
             alt="Disabled image"
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
-        <div className="h-full w-full">
+        <div className="h-full w-full ">
           <img
             src="https://mdbcdn.b-cdn.net/img/Photos/Thumbnails/Slides/4.webp"
             data-te-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/4.webp"
@@ -62,7 +62,7 @@ function Gallery() {
             className="w-full cursor-zoom-in data-[te-lightbox-disabled]:cursor-auto" />
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
