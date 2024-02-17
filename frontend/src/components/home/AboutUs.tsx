@@ -3,7 +3,7 @@
 
 const AboutUs = () => {
     return (
-        <section className={`py-12 root-container-separator px-14 scroll-smooth focus:scroll-auto`}>
+        <section className={`py-12 root-container-separator md:px-14 px-5 scroll-smooth focus:scroll-auto`}>
             <div className="mx-auto text-center relative">
                 <h2 className={`text-3xl font-bold mb-6 text-center font-century-gothic scroll-smooth focus:scroll-auto `}>About Us</h2>
                 <div className="grid grid-cols-1 md:grid-cols-1 gap-8 justify-normal">

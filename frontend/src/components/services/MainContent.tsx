@@ -12,9 +12,9 @@ interface MaincontentProps {
 const Mission = (props: MaincontentProps) => {
     return (
         <>
-            <div className='mx-14 root-container'>
-                <div className='flex gap-4 h-96'>
-                    <div className="p-5 w-1/2">
+            <div className='md:mx-14 root-container mx-5'>
+                <div className='flex gap-4 md:h-96'>
+                    <div className="p-5 md:w-1/2">
                         {/* <a href="#"> */}
                             <h5 className="mb-5 text-2xl font-bold tracking-tight pl-4 text">{props.name}</h5>
                         {/* </a> */}
@@ -28,7 +28,7 @@ const Mission = (props: MaincontentProps) => {
                         </div>
                     </div>
 
-                    <div className="w-1/2 flex items-center justify-center p-5 hover:transform hover:scale-105 duration-300">
+                    <div className="w-1/2 md:flex items-center justify-center p-5 hover:transform hover:scale-105 duration-300 hidden">
                         {/* <a href="#" className='h-full w-full'> */}
                             <img className="rounded-lg h-full w-full object-cover" src={props.image} alt="" />
                         {/* </a> */}

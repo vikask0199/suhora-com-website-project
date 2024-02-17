@@ -3,7 +3,7 @@ import dark1 from '../../assets/img/dark_bg.jpg';
 import light1 from '../../assets/img/light_bg.png';
 const Products = () => {
   return (
-    <section className="py-12 px-14 root-container">
+    <section className="py-12 md:px-14 px-5 root-container">
       <div className="container mx-auto">
         <div className=" flex flex-wrap">
           <div className="w-full px-4">

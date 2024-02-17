@@ -50,11 +50,11 @@ const slides = [
 
 const SliderAndTabs = () => {
     const [currentSlideIndex, setCurrentSlideIndex] = useState<number>(0);
-    const [direction, setDirection] = useState<"forward" | "backward">("forward");
+    // const [direction, setDirection] = useState<"forward" | "backward">("forward");
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setDirection("forward");
+            // setDirection("forward");
             setCurrentSlideIndex((prevIndex) =>
                 prevIndex === slides.length - 1 ? 0 : prevIndex + 1
             );
@@ -63,13 +63,13 @@ const SliderAndTabs = () => {
     }, [slides.length]);
 
     const handleTabClick = (index: number) => {
-        const isForward = index > currentSlideIndex;
-        setDirection(isForward ? "forward" : "backward");
+        // const isForward = index > currentSlideIndex;
+        // setDirection(isForward ? "forward" : "backward");
         setCurrentSlideIndex(index);
     };
 
     return (
-        <div className="root-container root-container-separator md:px-14 py-10 flex flex-col">
+        <div className="root-container-separator md:px-14 py-10 flex flex-col">
             <h2 className={`text-3xl font-bold mb-6 text-center font-century-gothic scroll-smooth focus:scroll-auto `}>Industries We Serve</h2>
             <div className="overflow-hidden root-container">
                 <div className={classNames("flex", { "transition-transform duration-500 ease-in-out": true, })} style={{ transform: `translateX(-${currentSlideIndex * 100}%)` }} >
@@ -81,18 +81,18 @@ const SliderAndTabs = () => {
                                 <ul className="grid place-content-center sm:grid-cols-2 gap-8">
                                 {slide.content.map((content, index) => (
                                 <li className="flex" key={index}>
-                                    <div className="px-4 text-xl font-extralight "><MdOutlineSecurity /></div>
+                                    <div className="px-4 md:text-xl text-lg font-extralight "><MdOutlineSecurity /></div>
                                     <div>
                                         
-                                        <div className="text-xl font-bold ">{content[0]}</div>
-                                        <p className="max-w-xs py-2 text-sm ">{content[1]}</p>
+                                        <div className="md:text-xl text-lg font-bold ">{content[0]}</div>
+                                        <p className="max-w-xs py-1 text-sm ">{content[1]}</p>
                                     </div>
                                 </li>
                                 ))}
                                 </ul>
 
                             </div>
-                            <div className="md:w-1/2 h-full">
+                            <div className="md:w-1/2 h-full hidden md:block">
                                 <img src={slide.image} alt={`Slide ${index + 1}`} className="h-full w-full object-cover" />
                             </div>
                         </div>

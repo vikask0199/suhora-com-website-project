@@ -10,22 +10,24 @@ interface footerProps {
   currentTheme: 'theme-dark' | 'theme-white';
 }
 const Footer = (props: footerProps) => {
+
   const dateTime = new Date();
   const year = dateTime.getFullYear();
+
   return (
     <div className={`root-container px-8 border-t  ${props.currentTheme === 'theme-dark' ? 'border-slate-800' : 'border-slate-200'}`}>
       <footer className="">
         <div className="mx-auto w-full max-w-screen-xl">
           <div className="flex justify-between px-8 py-10 flex-wrap">
             <div>
-              <div className="h-10 w-44  flex items-center justify-start relative right-[10.2vh] bottom-[0.4vh] sm:ml-[5vh]">
+              <div className="h-10 w-44 flex items-center justify-start relative right-[10.2vh] bottom-[0.4vh] min-[375px]:ml-[5vh] mb-[3vh] sm:ml-[5.3vh] md:ml-0 lg:ml-0 mb-0 xl:ml-0 mb-0 2xl:0 mb-0">
                 <Link to="/" className='h-10 w-44 '>
                   <img src={props.currentTheme === 'theme-white' ? LogoLight : LogoDark} alt="logo" className="cursor-pointer h-full w-full object-center object-cover" />
                 </Link>
               </div>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold  uppercase">Who We Are</h2>
+              <h2 className="mb-2 text-sm font-semibold  uppercase">Who We Are</h2>
               <ul className="font-medium">
                 <li className="mb-2">
                   <Link to="/our-principles" className="hover:underline hover:text-blue-800">Our Principles</Link>
@@ -39,7 +41,7 @@ const Footer = (props: footerProps) => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold  uppercase">Products</h2>
+              <h2 className="mb-2 text-sm font-semibold  uppercase">Products</h2>
               <ul className="font-medium">
                 <li className="mb-2">
                   <Link to="/products/spade" className="hover:underline hover:text-blue-800">SPADE</Link>
@@ -53,7 +55,7 @@ const Footer = (props: footerProps) => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase">Services</h2>
+              <h2 className="mb-2 text-sm font-semibold uppercase">Services</h2>
               <ul className="font-medium">
                 <li className="mb-2">
                   <Link to="/services/hydrology" className="hover:underline hover:text-blue-800">Hydrology</Link>
@@ -67,7 +69,7 @@ const Footer = (props: footerProps) => {
               </ul>
             </div>
             <div>
-              <h2 className="mb-6 text-sm font-semibold uppercase ">Contact us</h2>
+              <h2 className="mb-2 text-sm font-semibold uppercase ">Contact us</h2>
               <div className="flex items-center mb-2">
                 <div className="mr-[0.4vh] mb-[3vh] "><AiFillHome /></div>
                 <div className="hover:text-blue-800">313, Tower-B, Noida One, Sector-62,

@@ -1,29 +1,27 @@
-import { useState, useEffect } from 'react';
-import { Lightbox, initTE } from 'tw-elements';
 
 
 
 
 function Gallery() {
-  const [images, setImages] = useState<{ name: string; url: string }[]>([]);
+  // const [images, setImages] = useState<{ name: string; url: string }[]>([]);
 
-  useEffect(() => {
-    initTE({ Lightbox });
-    const fetchImages = async () => {
-      const imagesObject = await import.meta.glob('../../assets/img/*.{png,jpg,svg}');
-      const imageList: { name: string; url: string }[] = [];
+  // useEffect(() => {
+  //   initTE({ Lightbox });
+  //   const fetchImages = async () => {
+  //     const imagesObject = await import.meta.glob('../../assets/img/*.{png,jpg,svg}');
+  //     const imageList: { name: string; url: string }[] = [];
 
-      for (const imagePath in imagesObject) {
-        const imageUrl = await imagesObject[imagePath]();
-        const imageName = imagePath.split('/').pop()?.split('.')[0] || '';
-        imageList.push({ name: imageName, url: imageUrl.default });
-      }
+  //     for (const imagePath in imagesObject) {
+  //       const imageUrl = await imagesObject[imagePath]() as any;
+  //       const imageName = imagePath.split('/').pop()?.split('.')[0] || '';
+  //       imageList.push({ name: imageName, url: imageUrl.default });
+  //     }
 
-      setImages(imageList);
-    };
+  //     setImages(imageList);
+  //   };
 
-    fetchImages();
-  }, []);
+  //   fetchImages();
+  // }, []);
 
 
 

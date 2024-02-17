@@ -23,8 +23,8 @@ const SubLinkNav = ({ closeNavbar }: SubLinkNavProps) => {
             {
                 links.map((link) => (
                     <div>
-                        <div className=" text-left md:cursor-pointer group">
-                            <h1 className='py-7 flex justify-between items-center md:pr-0 pr-5 group  hover:text-blue-500' onClick={() => { heading !== link.name ? setHeading(link.name) : setHeading("") }}>
+                        <div className="text-left md:cursor-pointer group">
+                            <h1 className='md:py-7 py-3 flex justify-between items-center md:pr-0 pr-5 group  hover:text-blue-500' onClick={() => { heading !== link.name ? setHeading(link.name) : setHeading("") }}>
                                 {link.name}
                                 <span className='md:hidden inline'>
                                     {
@@ -57,7 +57,7 @@ const SubLinkNav = ({ closeNavbar }: SubLinkNavProps) => {
                         </div>
 
                         {/* Mobile view */}
-                        <div className={`${heading === link.name ? 'md:hidden' : 'hidden'} flex flex-col gap-10 px-10`}>
+                        <div className={`${heading === link.name ? 'md:hidden' : 'hidden'} flex flex-col gap-4 px-10 z-[99999]`}>
                             {
                                 link.subLinks.map((sLink) => (
                                     <Link to={sLink.link} onClick={closeNavbar}>
