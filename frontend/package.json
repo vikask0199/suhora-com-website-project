@@ -17,6 +17,8 @@
     "babel-plugin-transform-vite-meta-glob": "^1.1.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.4",
+    "flowbite": "^2.3.0",
+    "flowbite-react": "^0.7.2",
     "framer-motion": "^11.0.3",
     "google-auth-library": "^9.6.3",
     "google-spreadsheet": "^4.1.1",

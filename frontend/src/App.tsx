@@ -17,6 +17,7 @@ import BlogsPage from './pages/BlogsPage';
 import CareersPage from './pages/CareersPage';
 import NewsEventsPage from './pages/EventsNewsPage';
 import GalleryPage from './pages/GalleryPage';
+import DefenceIntelligence from './components/industries/DefenceIntelligence';
 
 function App() {
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-white');
@@ -58,6 +59,7 @@ function App() {
           <Route path='blogs' element={<BlogsPage />} />
           <Route path='events-news' element={<NewsEventsPage />} />
           <Route path='open-gallery' element={<GalleryPage />} />
+          <Route path='defence-intelligence' element={<DefenceIntelligence />} />
         </Route>
       </Routes>
     </>
