@@ -87,7 +87,7 @@ const SliderAndTabs = () => {
               </div>
           </div>           
            
-            <div className="overflow-hidden root-container">
+            <div className="overflow-hidden root-container shadow">
                 <div className={classNames("flex", { "transition-transform duration-500 ease-in-out": true, })} style={{ transform: `translateX(-${currentSlideIndex * 100}%)` }} >
                     {slides.map((slide, index) => (
                         <div key={index} className="flex-shrink-0 w-full flex items-center flex-col md:flex-row justify-center">
@@ -108,8 +108,8 @@ const SliderAndTabs = () => {
                                 </ul>
 
                             </div>
-                            <div className="md:w-1/2 h-full hidden md:block">
-                                <img src={slide.image} alt={`Slide ${index + 1}`} className="h-full w-full object-cover" />
+                            <div className="md:w-1/2 h-full hidden md:block hover:transform hover:scale-105 duration-300 rounded-lg p-6 mr-1">
+                                <img src={slide.image} alt={`Slide ${index + 1}`} className="h-full w-full object-cover rounded" />
                             </div>
                         </div>
                     ))}

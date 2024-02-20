@@ -219,6 +219,7 @@ const PortfolioCard = ({
   button: string,
   // buttonHref: string,
 }) => {
+
   return (
     <>
       <div
@@ -229,7 +230,7 @@ const PortfolioCard = ({
       >
         <div className="relative mb-12 hover:transform hover:scale-105 duration-300">
           <div className="overflow-hidden rounded-[10px]">
-            <img src={ImageHref} alt="portfolio" className="w-full" />
+            <img src={ImageHref} alt="portfolio" className="w-full " />
           </div>
           <div className="relative z-10 mx-7 -mt-10 rounded-lg cards dark:bg-dark-2 py-[10px] px-2 text-center shadow-portfolio dark:shadow-box-dark">
             {/* <span className="text-primary mb-1 block text-sm font-medium">
