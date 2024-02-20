@@ -2,7 +2,7 @@ interface ProductsCardProps {
     image: string;
     name: string;
     description: string;
-
+    link: string;
   }
   
   const ProductsPageCards = (props: ProductsCardProps) => {
@@ -22,7 +22,7 @@ interface ProductsCardProps {
           <p className="mb-3 font-normal">
             {props.description}
           </p>
-          {/* <div className="flex justify-end pr-3">
+          <div className="flex justify-end pr-3">
           <a
             href={props.link}
             className="inline-flex float-right items-center px-3 py-2 w-fit text-sm font-medium text-center text-white bg-[#1266a0] rounded-lg hover:bg-[#174773] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
@@ -44,7 +44,7 @@ interface ProductsCardProps {
               />
             </svg>
           </a>
-          </div> */}
+          </div>
         </div>
       </div>
     );
