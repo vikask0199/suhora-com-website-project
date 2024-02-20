@@ -5,6 +5,10 @@ import { useState } from "react";
 // import TailoredCards from '../home/TailoredCards';
 import dark1 from '../../assets/img/dark_bg.jpg'
 import light1 from '../../assets/img/light_bg.png'
+import { MdSatelliteAlt, MdOutlineSecurity  } from "react-icons/md";
+import { AiFillBuild } from "react-icons/ai";
+import { GrDeploy } from "react-icons/gr";
+import { PiStrategy } from "react-icons/pi";
 const Spade = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   const tabs = ['LANCE'];
@@ -61,7 +65,7 @@ const Spade = () => {
     <section className="root-container">
 
 
-      <div className="container mx-auto">
+      <div className="">
         <div className="flex flex-wrap">
           <div
             className="relative overflow-hidden  bg-cover bg-no-repeat p-12 text-center"
@@ -90,97 +94,87 @@ const Spade = () => {
         </div>
         <div className="root-container-separator pb-10">{renderTabContent()}</div>
 
-
-
-        <h2 className='text-center text-2xl font-bold pt-10 hover:text-pretty'>Features of Lance</h2>
-        <div className='flex flex-wrap justify-center py-10 md:px-14 px-5'>
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {/* <ProductsCard image={dark1} name="SPADE" description="A seamless SaaS platform delivering comprehensive access to multi-sensor satellite
-  data for a spectrum of commercial applications." link="/products/spade" /> */}
-            <ProductsPageCards image={dark1} name="Integrated Multi-Sensor Platform" description="SPADE provides an integrated platform for constant monitoring using a robust optical and SAR satellite constellation" />
-            <ProductsPageCards image={light1} name="Reliability and Security" description="Ensures secure data transmission with guaranteed collection, offering dependable insights round-the-clock" />
-            <ProductsPageCards image={dark1} name="Cost-Effectiveness and Accessibility" description="Offers the most cost-effective satellite data service in the market with easy B2B API integration and strategic expansion plans" />
-            <ProductsPageCards image={dark1} name="Integrated Multi-Sensor Platform" description="SPADE provides an integrated platform for constant monitoring using a robust optical and SAR satellite constellation" />
-            <ProductsPageCards image={light1} name="Reliability and Security" description="Ensures secure data transmission with guaranteed collection, offering dependable insights round-the-clock" />
-            <ProductsPageCards image={dark1} name="Cost-Effectiveness and Accessibility" description="Offers the most cost-effective satellite data service in the market with easy B2B API integration and strategic expansion plans" />
-          </div>
-        </div>
-
-
-        <div className="root-container-separator py-10">
-          <h2 className='text-center text-2xl font-bold '>Industries</h2>
-          <div className='flex flex-wrap justify-center py-10 '>
-            {/* <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  
+        <div className="root-container-separator py-10 md:px-14 px-5">
+                    <h2 className='text-center text-2xl font-bold '>Features of LANCE</h2>
+                    <div className='flex flex-wrap justify-center py-10 '>
+                        {/* <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         <ProductsPageCards image={dark1} name="Hydrology" description="" />
                         <ProductsPageCards image={light1} name="Terrain Mapping" description="" />
                         <ProductsPageCards image={dark1} name="Land Deformation Monitoring" description="" />
                     </div> */}
-            <div className="p-4">
+                        <div className="p-4 flex justify-center ">
 
-              <ul className="grid place-content-center sm:grid-cols-2 gap-8">
-                <li className="flex">
-                  <div className="px-4 text-5xl font-extralight ">01.</div>
-                  <div>
-                    <div className="text-xl font-bold ">Research</div>
-                    <p className="max-w-xs py-2 text-sm ">We love numbers! We collect data and insights, analyze
-                      them then take the time to learn about your objectives, ask the right questions to understand your
-                      business.</p>
-                  </div>
-                </li>
-                <li className="flex">
-                  <div className="px-4 text-5xl font-extralight ">02.</div>
-                  <div>
-                    <div className="text-xl font-bold ">Strategey</div>
-                    <p className="max-w-xs py-2 text-sm ">Solutions are born from proper research, hard work, and
-                      strong strategy. We build data-driven roadmaps for every project to make pave the way to success.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex">
-                  <div className="px-4 text-5xl font-extralight ">03.</div>
-                  <div>
-                    <div className="text-xl font-bold ">Design</div>
-                    <p className="max-w-xs py-2 text-sm ">We design the right solution for your business. We
-                      craft beautiful, intuitive, and user-friendly interfaces that are easy to use and easy to maintain.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex">
-                  <div className="px-4 text-5xl font-extralight ">04.</div>
-                  <div>
-                    <div className="text-xl font-bold ">Development</div>
-                    <p className="max-w-xs py-2 text-sm ">We build the right solution for your business. We
-                      craft beautiful, intuitive, and user-friendly interfaces that are easy to use and easy to maintain.
-                    </p>
-                  </div>
-                </li>
-                <li className="flex">
-                  <div className="px-4 text-5xl font-extralight ">05.</div>
-                  <div>
-                    <div className="text-xl font-bold ">Deployment</div>
-                    <p className="max-w-xs py-2 text-sm ">We build the right solution for your business. We
-                      craft beautiful, intuitive, and user-friendly interfaces that are easy to use and easy to maintain.
-                    </p>
-                  </div>
-                </li>
-              </ul>
+                            <ul className=" flex flex-wrap gap-y-5 ">
+                                <li className="flex md:w-1/3">
+                                    <div className="px-4 text-5xl font-extralight "><MdOutlineSecurity /></div>
+                                    <div>
+                                        <div className="text-xl font-bold lg:text-2xl ">Research</div>
+                                        <p className="py-2 text-sm lg:text-lg">We love numbers! We collect data and insights, analyze
+                                            them then take the time to learn about your objectives, ask the right questions to understand your
+                                            business.</p>
+                                    </div>
+                                </li>
+                                <li className="flex md:w-1/3">
+                                    <div className="px-4 text-5xl font-extralight "><PiStrategy /></div>
+                                    <div>
+                                        <div className="text-xl font-bold lg:text-2xl">Strategey</div>
+                                        <p className=" py-2 text-sm lg:text-lg">Solutions are born from proper research, hard work, and
+                                            strong strategy. We build data-driven roadmaps for every project to make pave the way to success.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="flex md:w-1/3">
+                                    <div className="px-4 text-5xl font-extralight "><MdSatelliteAlt /></div>
+                                    <div>
+                                        <div className="text-xl font-bold lg:text-2xl">Design</div>
+                                        <p className="py-2 text-sm lg:text-lg">We design the right solution for your business. We
+                                            craft beautiful, intuitive, and user-friendly interfaces that are easy to use and easy to maintain.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="flex md:w-1/3">
+                                    <div className="px-4 text-5xl font-extralight "><AiFillBuild /></div>
+                                    <div>
+                                        <div className="text-xl font-bold lg:text-2xl">Development</div>
+                                        <p className=" py-2 text-sm lg:text-lg">We build the right solution for your business. We
+                                            craft beautiful, intuitive, and user-friendly interfaces that are easy to use and easy to maintain.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="flex md:w-1/3">
+                                    <div className="px-4 text-5xl font-extralight "><GrDeploy /></div>
+                                    <div>
+                                        <div className="text-xl font-bold lg:text-2xl">Deployment</div>
+                                        <p className="py-2 text-sm lg:text-lg">We build the right solution for your business. We
+                                            craft beautiful, intuitive, and user-friendly interfaces that are easy to use and easy to maintain.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className='flex flex-wrap justify-center py-10 md:px-14 px-5'>
+                <h2 className='text-center text-2xl font-bold pt-1 hover:text-pretty mb-10 '>Industries</h2>
+                    <div className="flex flex-wrap justify-center ">
+                        <ProductsPageCards image={dark1} name="Integrated Multi-Sensor Platform" description="SPADE provides an integrated platform for constant monitoring using a robust optical and SAR satellite constellation" />
+                        <ProductsPageCards image={light1} name="Reliability and Security" description="Ensures secure data transmission with guaranteed collection, offering dependable insights round-the-clock" />
+                        <ProductsPageCards image={dark1} name="Cost-Effectiveness and Accessibility" description="Offers the most cost-effective satellite data service in the market with easy B2B API integration and strategic expansion plans" />
+                        <ProductsPageCards image={dark1} name="Integrated Multi-Sensor Platform" description="SPADE provides an integrated platform for constant monitoring using a robust optical and SAR satellite constellation" />
+                        <ProductsPageCards image={light1} name="Reliability and Security" description="Ensures secure data transmission with guaranteed collection, offering dependable insights round-the-clock" />
+                        <ProductsPageCards image={dark1} name="Cost-Effectiveness and Accessibility" description="Offers the most cost-effective satellite data service in the market with easy B2B API integration and strategic expansion plans" />
+                    </div>
+
+                </div>
             </div>
-          </div>
-        </div>
-
-        {/* <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <ProductsPageCards image={dark1} name="Hydrology" description="" />
-            <ProductsPageCards image={light1} name="Terrain Mapping" description=""  />
-            <ProductsPageCards image={dark1} name="Land Deformation Monitoring" description=""  />
-          </div> */}
-
-      </div>
 
 
 
 
-    </section>
-  )
+        </section>
+    )
 }
+
 
 export default Spade

@@ -21,9 +21,9 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="root-container md:px-14 py-12 px-5">
+    <div className="root-container md:px-14 py-12 px-5 ">
       <section className="">
-        <div className="container mx-auto">
+        <div className="">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full px-4">
               <div className="mx-auto text-center">

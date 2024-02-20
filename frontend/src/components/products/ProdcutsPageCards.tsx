@@ -8,7 +8,7 @@ interface ProductsCardProps {
   const ProductsPageCards = (props: ProductsCardProps) => {
 
     return (
-      <div className="max-w-sm  rounded-lg shadow cards flex flex-col justify-between hover:transform hover:scale-105 duration-300">
+      <div className="md:w-1/4  rounded-lg cards m-5 flex flex-col justify-between hover:transform hover:scale-105 duration-300">
         {/* <a href="#"> */}
           <img className="rounded-t-lg w-full" src={props.image} alt="" />
         {/* </a> */}

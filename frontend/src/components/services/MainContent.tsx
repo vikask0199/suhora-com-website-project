@@ -13,14 +13,14 @@ const Mission = (props: MaincontentProps) => {
     return (
         <>
             <div className='md:mx-14 root-container mx-5'>
-                <div className='flex gap-4 md:h-96'>
+                <div className='flex gap-4'>
                     <div className="p-5 md:w-1/2">
                         {/* <a href="#"> */}
-                            <h5 className="mb-5 text-2xl font-bold tracking-tight pl-4 text">{props.name}</h5>
+                            <h5 className="mb-5 text-2xl font-bold tracking-tight pl-4">{props.name}</h5>
                         {/* </a> */}
-                        <p className="mb-3 font-normal flex pl-4">
-                        <div dangerouslySetInnerHTML={{ __html: props.description }}></div>
-                        </p>
+                        {/* <p className="mb-3 font-normal flex pl-4"> */}
+                        <div className="mb-3 font-normal flex pl-4" dangerouslySetInnerHTML={{ __html: props.description }}></div>
+                        {/* </p> */}
                         <div className='flex justify-end'>
                         <a href="/contact-us" className="inline-flex  items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#1266a0] rounded-lg hover:bg-[#174773] focus:ring-4 focus:outline-none focus:ring-blue-300">
                             Request Demo <ArrowRightIcon className="w-5 h-5 ml-2" />
@@ -28,7 +28,7 @@ const Mission = (props: MaincontentProps) => {
                         </div>
                     </div>
 
-                    <div className="w-1/2 md:flex items-center justify-center p-5 hover:transform hover:scale-105 duration-300 hidden">
+                    <div className="md:w-1/2 md:flex items-center justify-center p-5 hover:transform hover:scale-105 duration-300 hidden">
                         {/* <a href="#" className='h-full w-full'> */}
                             <img className="rounded-lg h-full w-full object-cover" src={props.image} alt="" />
                         {/* </a> */}
