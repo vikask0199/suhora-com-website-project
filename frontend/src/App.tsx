@@ -39,7 +39,7 @@ function App() {
   useEffect(() => {
     console.log("2nd:"+theme);
     document.body.className = theme;
-  }, [theme]);
+  }, []);
 
 
   return (
