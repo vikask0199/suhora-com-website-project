@@ -20,6 +20,7 @@ import GalleryPage from './pages/GalleryPage';
 import DefenceIntelligence from './components/industries/DefenceIntelligence';
 
 function App() {
+  console.log("ININININ");
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-white');
 
   const toggleTheme = () => {
