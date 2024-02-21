@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import PublicOutlet from './outlets/PublicOutlet';
-import ContactPage from './pages/ContactPage';
+// import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import HydrologyPage from './pages/HydrologyPage';
 import JourneyPage from './pages/JourneyPage';
