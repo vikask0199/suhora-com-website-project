@@ -6,7 +6,7 @@ import whatsapp from "../../assets/img/whatsapp.png"
 
 const FlotingIcon = () => {
     const handleWhatsAppClick = () => {
-        const phoneNumber = '+91-9999664437';
+        const phoneNumber = '+919999664437';
         const whatsappUrl = `https://wa.me/${phoneNumber}`;
         window.open(whatsappUrl, '_blank');
     };

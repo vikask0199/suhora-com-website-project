@@ -55,7 +55,7 @@ const getImageName = (imageUrl:any) => {
   return imageUrl.split('/').pop().split('.')[0];
 };
   return (
-    <div className='px-14 py-12 root-container min-h-96'>
+    <div className='px-14 py-12 root-container min-h-screen'>
           <div className="relative flex flex-col items-center">
                   
                   <h1 className="md:text-3xl text-2xl font-bold leading-tight"> Our <span

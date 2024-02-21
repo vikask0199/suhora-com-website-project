@@ -74,6 +74,10 @@ export const links: Link[] = [
             {
                 name: "Careers",
                 link: "/careers"
+            },
+            {
+                name: "Gallery",
+                link: "/open-gallery"
             }
         ]
     }
