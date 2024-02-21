@@ -1,6 +1,6 @@
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
-import App from './App.tsx'
+//import App from './App.tsx'
 import './index.css'
 import ScrollToTop from './constant/ScrollToTop.tsx'
 import FlotingIcon from './components/flotingIcons/FlotingIcon.tsx'
@@ -9,7 +9,7 @@ initTE({ Carousel }, true)
 
 
 //import { Route, Routes } from 'react-router-dom';
-import PublicOutlet from './outlets/PublicOutlet';
+//import PublicOutlet from './outlets/PublicOutlet';
 import ContactPage from './pages/ContactPage';
 import HomePage from './pages/HomePage';
 import HydrologyPage from './pages/HydrologyPage';
