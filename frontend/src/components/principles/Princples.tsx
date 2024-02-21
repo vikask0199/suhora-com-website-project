@@ -5,7 +5,6 @@ import WhatWeStandFor from "./WhatWeStandFor"
 
 const Princples = () => {
     const [selectedTab, setSelectedTab] = useState(0);
-    // const tabs = ['Mission', 'Vision', 'Value'];
     const tabs = ['Mission', 'Vision'];
 
     const renderTabContent = () => {
@@ -14,8 +13,6 @@ const Princples = () => {
                 return <div><Mision /></div>;
             case 1:
                 return <div><Vision /></div>;
-            // case 2:
-            //     return <div><Vaalue /></div>;
             default:
                 return null;
         }
