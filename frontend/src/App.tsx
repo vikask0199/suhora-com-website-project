@@ -30,12 +30,14 @@ function App() {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as 'theme-dark' | 'theme-white' | null;
+    console.log(savedTheme);
     if (savedTheme) {
       setTheme(savedTheme);
     }
   }, []);
 
   useEffect(() => {
+    console.log("2nd:"+theme);
     document.body.className = theme;
   }, [theme]);
 
