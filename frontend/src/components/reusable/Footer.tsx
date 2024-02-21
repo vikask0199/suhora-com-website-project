@@ -29,7 +29,7 @@ const Footer = (props: footerProps) => {
           </p>
         </div>
         <div className="flex flex-col gap-4 pl-4">
-          <h1 className="text-[#1266A0] font-bold tracking-wide">COMPANY</h1>
+          <h1 className="text-[#1266A0] font-bold tracking-wide">WHO WE ARE</h1>
           <ul className="flex flex-col gap-3">
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
@@ -41,7 +41,7 @@ const Footer = (props: footerProps) => {
             </li>
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
-              Terms
+              Our Principles
             </li>
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
@@ -49,16 +49,16 @@ const Footer = (props: footerProps) => {
             </li>
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
-              Branding
+              Our Team
             </li>
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
-              Career
+              Our Journey
             </li>
           </ul>
         </div>
         <div className="flex flex-col gap-4 pl-4">
-          <h1 className="text-[#1266A0] font-bold tracking-wide">GENERAL</h1>
+          <h1 className="text-[#1266A0] font-bold tracking-wide">PRODUCTS</h1>
           <ul className="flex flex-col gap-3">
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
@@ -66,32 +66,32 @@ const Footer = (props: footerProps) => {
             </li>
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
-              Write to us
+             SPADE
             </li>
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
-              Mobile App
+              LANCE
             </li>
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
-              Site map
+              SID
             </li>
           </ul>
         </div>
         <div className="flex flex-col gap-4 pl-4">
-          <h1 className="text-[#1266A0] font-bold tracking-wide">PAGES</h1>
+          <h1 className="text-[#1266A0] font-bold tracking-wide">SERVICES</h1>
           <ul className="flex flex-col gap-3">
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
-              Amazon Offer
+            Hydrology
             </li>
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
-              Google Pay Offers
+             Terrain Mapping
             </li>
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
-              PayPal Offers
+              Land Deformation Monitoring
             </li>
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
@@ -108,7 +108,7 @@ const Footer = (props: footerProps) => {
           </ul>
         </div>
         <div className="flex flex-col gap-4  pl-4">
-          <h1 className="text-[#1266A0] font-bold tracking-wide">MORE</h1>
+          <h1 className="text-[#1266A0] font-bold tracking-wide">CONTACT US</h1>
           <ul className="flex flex-col gap-3">
             <li className="flex items-center gap-1 cursor-pointer ease-in-out duration-300 hover:translate-x-2 hover:text-[#1266A0]">
               <IoMdArrowDropright />
