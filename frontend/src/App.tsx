@@ -20,7 +20,6 @@ import GalleryPage from './pages/GalleryPage';
 import DefenceIntelligence from './components/industries/DefenceIntelligence';
 
 function App() {
-  console.log("ININININ");
   const [theme, setTheme] = useState<'theme-dark' | 'theme-white'>('theme-white');
 
   const toggleTheme = () => {
@@ -31,16 +30,14 @@ function App() {
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme') as 'theme-dark' | 'theme-white' | null;
-    console.log(savedTheme);
     if (savedTheme) {
       setTheme(savedTheme);
     }
   }, []);
 
   useEffect(() => {
-    console.log("2nd:"+theme);
     document.body.className = theme;
-  }, []);
+  }, [theme]);
 
 
   return (

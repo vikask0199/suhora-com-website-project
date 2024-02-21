@@ -1,9 +1,12 @@
-import { useState } from 'react';
-import { IoClose, IoMenu, IoMoon, IoSunny } from "react-icons/io5";
-import { Link, NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import LogoDark from "../../assets/img/suhora_logo.png";
 import logoWhite from "../../assets/img/suhora_white.png";
+import { IoClose } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
+import { useState } from 'react';
 import SubLinkNav from './SubLinkNav';
+import { IoSunny } from "react-icons/io5";
+import { IoMoon } from "react-icons/io5";
 
 interface NavbarProps {
   toggleTheme: () => void;
@@ -23,8 +26,6 @@ const Navbar = (props: NavbarProps) => {
   };
 
 
-
-
   return (
     <nav className="sticky top-0 left-0 z-[99999] md:px-14 root-container nav-shadow">
       <div className="flex items-center justify-between">
@@ -42,11 +43,11 @@ const Navbar = (props: NavbarProps) => {
               Home
             </Link>
           </li>
-          <SubLinkNav closeNavbar={handleCloseNavbar} />
+          <SubLinkNav closeNavbar = {handleCloseNavbar}/>
           <li className=''>
-            <NavLink to="/contact-us" className="py-7 inline-block hover:text-blue-500 ">
+            <Link to="/contact-us" className="py-7 inline-block hover:text-blue-500 ">
               Contact Us
-            </NavLink>
+            </Link>
           </li>
         </ul>
         <div className="md:block hidden">
@@ -58,18 +59,18 @@ const Navbar = (props: NavbarProps) => {
         {/* Mobile nav */}
         <ul className={`md:hidden root-container fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4 duration-500 ${open ? "left-0" : "left-[-100%]"}`}>
           <li>
-            <Link to="/" className="py-2 inline-block hover:text-blue-500" onClick={() => setOpen(!open)}>
+            <Link to="/" className="py-2 inline-block hover:text-blue-500" onClick={()=>setOpen(!open)}>
               Home
             </Link>
           </li>
-          <SubLinkNav closeNavbar={handleCloseNavbar} />
-          <li className='' onClick={() => setOpen(!open)}>
+          <SubLinkNav closeNavbar = {handleCloseNavbar}/>
+          <li className='' onClick={()=>setOpen(!open)}>
             <Link to="/contact-us" className="py-2 inline-block hover:text-blue-500">
               Contact Us
             </Link>
           </li>
           <button className="pt-5" onClick={toggleThemeButton}>
-            {props.currentTheme === 'theme-white' ? (<div className='text-lg'><IoMoon /></div>) : (<div className='text-yellow-400 text-xl'><IoSunny /></div>)}
+          {props.currentTheme === 'theme-white' ? (<div className='text-lg'><IoMoon /></div>) : (<div className='text-yellow-400 text-xl'><IoSunny /></div>)}
           </button>
         </ul>
       </div>
