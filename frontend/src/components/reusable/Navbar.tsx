@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import LogoDark from "../../assets/img/suhora_logo.png";
 import logoWhite from "../../assets/img/suhora_white.png";
 import { IoClose } from "react-icons/io5";
@@ -25,7 +25,7 @@ const Navbar = (props: NavbarProps) => {
     setOpen(!open);
   };
 
-  const navigate  = useNavigate()
+  const navigate = useNavigate()
 
 
   return (
@@ -45,11 +45,11 @@ const Navbar = (props: NavbarProps) => {
               Home
             </Link>
           </li>
-          <SubLinkNav closeNavbar = {handleCloseNavbar}/>
+          <SubLinkNav closeNavbar={handleCloseNavbar} />
           <li className=''>
-            <div onClick={()=>navigate('/contact-us')} className="py-7 inline-block hover:text-blue-500 ">
+            <NavLink to="/contact-us" className="py-7 inline-block hover:text-blue-500 ">
               Contact Us
-            </div>
+            </NavLink>
           </li>
         </ul>
         <div className="md:block hidden">
@@ -61,18 +61,18 @@ const Navbar = (props: NavbarProps) => {
         {/* Mobile nav */}
         <ul className={`md:hidden root-container fixed w-full top-0 overflow-y-auto bottom-0 py-24 pl-4 duration-500 ${open ? "left-0" : "left-[-100%]"}`}>
           <li>
-            <Link to="/" className="py-2 inline-block hover:text-blue-500" onClick={()=>setOpen(!open)}>
+            <Link to="/" className="py-2 inline-block hover:text-blue-500" onClick={() => setOpen(!open)}>
               Home
             </Link>
           </li>
-          <SubLinkNav closeNavbar = {handleCloseNavbar}/>
-          <li className='' onClick={()=>setOpen(!open)}>
+          <SubLinkNav closeNavbar={handleCloseNavbar} />
+          <li className='' onClick={() => setOpen(!open)}>
             <Link to="/contact-us" className="py-2 inline-block hover:text-blue-500">
               Contact Us
             </Link>
           </li>
           <button className="pt-5" onClick={toggleThemeButton}>
-          {props.currentTheme === 'theme-white' ? (<div className='text-lg'><IoMoon /></div>) : (<div className='text-yellow-400 text-xl'><IoSunny /></div>)}
+            {props.currentTheme === 'theme-white' ? (<div className='text-lg'><IoMoon /></div>) : (<div className='text-yellow-400 text-xl'><IoSunny /></div>)}
           </button>
         </ul>
       </div>
