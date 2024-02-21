@@ -1,12 +1,6 @@
-import { AiFillHome } from "react-icons/ai";
-import { MdMail } from "react-icons/md";
-import { FaPhoneAlt } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
+import { IoMdArrowDropright } from "react-icons/io";
 import LogoLight from "../../assets/img/suhora_logo.png";
 import LogoDark from '../../assets/img/suhora_white.png';
-import { Link } from "react-router-dom";
-import { IoMdArrowDropright } from "react-icons/io";
 interface footerProps {
   currentTheme: 'theme-dark' | 'theme-white';
 }
@@ -131,7 +125,7 @@ const Footer = (props: footerProps) => {
       </div>
 
       <div className="sm:flex sm:items-center sm:justify-between pl-4">
-        <span className="text-sm ">© 2023 <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.
+        <span className="text-sm ">© {year} <a href="https://flowbite.com/" className="hover:underline">Flowbite™</a>. All Rights Reserved.
         </span>
         <div className="flex mt-4 sm:justify-center sm:mt-0">
           <a href="#" className="hover:text-[#1266A0] ">

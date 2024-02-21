@@ -107,6 +107,8 @@ const DefenceIntelligence = () => {
                     </div>
                 </div>
             </section>
+
+            
             <section className="mb-20 md:px-14 px-5">
                 <div className="slider-container">
                     <Slider {...settings}>
