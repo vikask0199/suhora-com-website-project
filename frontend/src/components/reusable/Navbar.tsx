@@ -1,12 +1,9 @@
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { useState } from 'react';
+import { IoClose, IoMenu, IoMoon, IoSunny } from "react-icons/io5";
+import { Link, NavLink } from 'react-router-dom';
 import LogoDark from "../../assets/img/suhora_logo.png";
 import logoWhite from "../../assets/img/suhora_white.png";
-import { IoClose } from "react-icons/io5";
-import { IoMenu } from "react-icons/io5";
-import { useState } from 'react';
 import SubLinkNav from './SubLinkNav';
-import { IoSunny } from "react-icons/io5";
-import { IoMoon } from "react-icons/io5";
 
 interface NavbarProps {
   toggleTheme: () => void;
@@ -25,7 +22,7 @@ const Navbar = (props: NavbarProps) => {
     setOpen(!open);
   };
 
-  const navigate = useNavigate()
+
 
 
   return (
