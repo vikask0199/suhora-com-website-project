@@ -47,7 +47,7 @@ function App() {
       <Routes>
         <Route path='/' element={<PublicOutlet toggleTheme={toggleTheme} currentTheme={theme} />}>
           <Route index element={<HomePage currentTheme={theme} />} />
-          <Route path='contact-us' element={<ContactPage />} />
+          {/* <Route path='contact-us' element={<ContactPage />} /> */}
           <Route path='our-teams' element={<TeamsPage />} />
           <Route path='our-principles' element={<PrinciplePage />} />
           <Route path='our-journey' element={<JourneyPage />} />
