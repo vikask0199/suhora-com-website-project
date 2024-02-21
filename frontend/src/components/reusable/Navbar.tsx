@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import LogoDark from "../../assets/img/suhora_logo.png";
 import logoWhite from "../../assets/img/suhora_white.png";
 import { IoClose } from "react-icons/io5";
@@ -25,6 +25,8 @@ const Navbar = (props: NavbarProps) => {
     setOpen(!open);
   };
 
+  const navigate  = useNavigate()
+
 
   return (
     <nav className="sticky top-0 left-0 z-[99999] md:px-14 root-container nav-shadow">
@@ -45,9 +47,9 @@ const Navbar = (props: NavbarProps) => {
           </li>
           <SubLinkNav closeNavbar = {handleCloseNavbar}/>
           <li className=''>
-            <Link to="/contact-us" className="py-7 inline-block hover:text-blue-500 ">
+            <div onClick={()=>navigate('/contact-us')} className="py-7 inline-block hover:text-blue-500 ">
               Contact Us
-            </Link>
+            </div>
           </li>
         </ul>
         <div className="md:block hidden">
